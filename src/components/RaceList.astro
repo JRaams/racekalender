@@ -1,0 +1,146 @@
+---
+import TimeDistance from './TimeDistance.svelte';
+import { Icon } from 'astro-icon/components';
+import type { Race } from '~/types'
+import dayjs from 'dayjs';
+import 'dayjs/locale/nl';
+import relativeTime from 'dayjs/plugin/relativeTime';
+dayjs.extend(relativeTime);
+dayjs.locale('nl');
+
+type Props = {
+  races: Race[];
+}
+
+const { races } = Astro.props;
+
+function isInThePast(race: Race) {
+  const date = dayjs(race.raceTimestamp);
+  return date.isBefore(new Date(), 'days');
+}
+
+function isToday(race: Race) {
+  const date = dayjs(race.raceTimestamp);
+  return date.isSame(new Date(), 'days');
+}
+
+function formatDate(race: Race) {
+  const date = dayjs(race.raceTimestamp);
+  return date.format('dd DD MMMM, HH:mm')
+}
+---
+
+<div class="overflow-auto">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Round</th>
+        <th scope="col">Name</th>
+        <th scope="col">Date</th>
+        <th scope="col">Circuit</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        races.map(race => 
+          <tr class:list={{ past: isInThePast(race), today: isToday(race)}}>
+            <td data-col="Round">{race.round}</td>
+            <td data-col="Name">{race.name}</td>
+            <td data-col="Date">
+              <div class="date-wrapper">
+                <span>{formatDate(race)}</span>
+                <TimeDistance client:only="svelte" timestamp={race.raceTimestamp}/>
+              </div>
+            </td>
+            <td data-col="Circuit">
+              <div class="flex-row">
+                { 
+                  <Icon name={'flagpack:' + race.circuit.countryCode} size={32} />
+                }
+                <div class="flex-col">
+                  <span>{race.circuit.name}</span>
+                  <small>{race.circuit.city}, {race.circuit.country}</small>
+                </div>
+              </div>
+            </td>
+          </tr>
+        )
+      }
+    </tbody>
+  </table>
+</div>
+
+<style scoped>
+  @media screen and (max-width: 1024px) {
+    table {
+      thead {
+        display: none;
+      }
+
+    }
+
+    tbody {
+      tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        border-radius: 4px;
+        border: 2px solid var(--pico-color-slate-800);
+        --pico-background-color: var(--pico-color-slate-900);
+
+        td {
+          display: grid;
+          grid-template-columns: 70px 1fr;
+          place-items: center start;
+
+          &::before {
+            content: attr(data-col);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  tr.past {
+    --pico-background-color: var(--pico-color-slate-800)
+  }
+  tr.today {
+    background: linear-gradient(-45deg, var(--pico-color-jade-200), var(--pico-color-green-200), var(--pico-color-lime-200), var(--pico-color-amber-250));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  tr.today td {
+    background: transparent;
+    --pico-color: var(--pico-color-slate-800);
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .date-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75em;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+</style>

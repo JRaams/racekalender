@@ -10,8 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.4.4",
     "@astrojs/check": "^0.5.5",
+    "@astrojs/svelte": "^5.0.3",
+    "@iconify-json/flagpack": "^1.1.14",
+    "@picocss/pico": "^2.0.3",
+    "astro": "^4.4.4",
+    "astro-icon": "^1.1.0",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.5",
+    "dayjs": "^1.11.10",
+    "svelte": "^4.2.12",
     "typescript": "^5.3.3"
   }
 }
