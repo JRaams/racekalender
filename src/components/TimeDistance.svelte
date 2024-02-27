@@ -8,7 +8,8 @@
     export let timestamp: number;
     
     const date = dayjs(timestamp);
-    const dateDistance = date.fromNow()
+    const today = date.isSame(new Date(), 'days');
+    const dateDistance = today ? 'Vandaag!' : date.fromNow()
 </script>
 
 <small>{dateDistance}</small>
