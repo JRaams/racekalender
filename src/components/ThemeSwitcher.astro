@@ -1,30 +1,29 @@
 <script>
-type Theme = 'dark' | 'light'
-const STORAGE_KEY = 'THEME';
-
-let storedTheme = localStorage.getItem(STORAGE_KEY) as Theme;
-if (!storedTheme) {
-  storedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches 
-    ? 'dark' 
-    : 'light';
-
+  type Theme = 'dark' | 'light'
+  const STORAGE_KEY = 'THEME';
+  
+  let storedTheme = localStorage.getItem(STORAGE_KEY) as Theme;
+  if (!storedTheme) {
+    storedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+  }
   changeTheme(storedTheme);
-}
-
-const checkbox = document.querySelector('#theme-toggle-state') as HTMLInputElement | undefined;
-if (checkbox) {
-  checkbox.checked = storedTheme === 'dark';
-
-  checkbox.addEventListener('change', (event) => {
-    const isChecked = (event.target as HTMLInputElement).checked;
-    changeTheme(isChecked ? 'dark' : 'light')
-  })
-}
-
-function changeTheme(theme: Theme) {
-  localStorage.setItem(STORAGE_KEY, theme);
-  document.documentElement.setAttribute('data-theme', theme)
-}
+  
+  const checkbox = document.querySelector('#theme-toggle-state') as HTMLInputElement | undefined;
+  if (checkbox) {
+    checkbox.checked = storedTheme === 'dark';
+  
+    checkbox.addEventListener('change', (event) => {
+      const isChecked = (event.target as HTMLInputElement).checked;
+      changeTheme(isChecked ? 'dark' : 'light')
+    })
+  }
+  
+  function changeTheme(theme: Theme) {
+    localStorage.setItem(STORAGE_KEY, theme);
+    document.documentElement.setAttribute('data-theme', theme)
+  }
 </script>
 
 <label class="theme-toggle" title="Toggle theme">
