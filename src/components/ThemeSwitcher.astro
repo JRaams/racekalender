@@ -1,23 +1,29 @@
 <script>
-const checkbox = document.querySelector('#theme-toggle-state') as HTMLInputElement | undefined;
+type Theme = 'dark' | 'light'
+const STORAGE_KEY = 'THEME';
 
+let storedTheme = localStorage.getItem(STORAGE_KEY) as Theme;
+if (!storedTheme) {
+  storedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches 
+    ? 'dark' 
+    : 'light';
+
+  changeTheme(storedTheme);
+}
+
+const checkbox = document.querySelector('#theme-toggle-state') as HTMLInputElement | undefined;
 if (checkbox) {
-  const storedTheme = localStorage.getItem('THEME');
   checkbox.checked = storedTheme === 'dark';
 
   checkbox.addEventListener('change', (event) => {
     const isChecked = (event.target as HTMLInputElement).checked;
-    let theme = isChecked ? 'dark' : 'light';
-  
-    if (theme === 'dark' && !localStorage.getItem('THEME')) {
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        theme = 'light';
-      }
-    }
-  
-    localStorage.setItem('THEME', theme);
-    document.documentElement.setAttribute('data-theme', theme)
+    changeTheme(isChecked ? 'dark' : 'light')
   })
+}
+
+function changeTheme(theme: Theme) {
+  localStorage.setItem(STORAGE_KEY, theme);
+  document.documentElement.setAttribute('data-theme', theme)
 }
 </script>
 

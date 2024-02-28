@@ -19,14 +19,6 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-
-		<script>
-			const storedTheme = localStorage.getItem('THEME');
-
-			if (storedTheme) {
-				document.documentElement.setAttribute('data-theme', storedTheme)
-			}
-		</script>
 	</head>
 
 	<body >
@@ -47,11 +39,13 @@ const { title } = Astro.props;
 	/* Pico overrides */
 }
 
-header {
-	background-color: var(--pico-color-slate-950);
+:root[data-theme="dark"] {
+	header {
+		background-color: var(--pico-color-slate-950);
+	}
 }
 
-:root:not([data-theme="dark"])  {
+:root[data-theme="light"]  {
 	header {
 		background-color: var(--pico-color-slate-50);
 	}
