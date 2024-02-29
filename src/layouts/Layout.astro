@@ -37,15 +37,7 @@ const lang = getLangFromUrl(Astro.url);
 </html>
 
 <style>
-:root[data-theme="dark"] {
-	header {
-		background-color: var(--pico-color-slate-950);
-	}
-}
-
-:root[data-theme="light"]  {
-	header {
-		background-color: var(--pico-color-slate-50);
-	}
+header {
+	border-bottom: 4px solid var(--pico-table-border-color);
 }
 </style>

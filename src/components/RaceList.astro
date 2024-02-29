@@ -1,18 +1,22 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import TimeDistance from './TimeDistance.svelte';
 import { Icon } from 'astro-icon/components';
 import type { Race } from '~/types'
 import dayjs from 'dayjs';
 import 'dayjs/locale/nl';
 import relativeTime from 'dayjs/plugin/relativeTime';
-dayjs.extend(relativeTime);
-dayjs.locale('nl');
 
 type Props = {
   races: Race[];
 }
 
 const { races } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+dayjs.extend(relativeTime);
+dayjs.locale(lang);
 
 function isInThePast(race: Race) {
   const date = dayjs(race.raceTimestamp);
@@ -35,24 +39,24 @@ function formatDate(race: Race) {
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Date</th>
-        <th scope="col">Circuit</th>
+        <th scope="col">{t('list.table.name')}</th>
+        <th scope="col">{t('list.table.date')}</th>
+        <th scope="col">{t('list.table.circuit')}</th>
       </tr>
     </thead>
     <tbody>
       {
         races.map(race => 
           <tr class:list={{ past: isInThePast(race), today: isToday(race)}}>
-            <td data-col="Round">{race.round}</td>
-            <td data-col="Name">{race.name}</td>
-            <td data-col="Date">
+            <td data-col={t('list.table.round')}>{race.round}</td>
+            <td data-col={t('list.table.name')}>{race.name}</td>
+            <td data-col={t('list.table.date')}>
               <div class="date-wrapper">
                 <span>{formatDate(race)}</span>
-                <TimeDistance client:only="svelte" timestamp={race.raceTimestamp}/>
+                <TimeDistance client:only="svelte" timestamp={race.raceTimestamp} lang={lang}/>
               </div>
             </td>
-            <td data-col="Circuit">
+            <td data-col={t('list.table.circuit')}>
               <div class="flex-row">
                 { 
                   <Icon name={'flagpack:' + race.circuit.countryCode} size={32} />
