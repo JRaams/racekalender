@@ -1,0 +1,13 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import f1 from '~/static/2024/f1.json';
+import RaceList from "~/components/RaceList.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t('nav.title')}>
+  <RaceList races={f1}/>
+</Layout>

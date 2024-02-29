@@ -16,5 +16,5 @@ export default defineConfig({
         standard: [":hover", ":focus", ":where", ":is", "button", ".past"]
       },
     }),
-  ],
+  ]
 });

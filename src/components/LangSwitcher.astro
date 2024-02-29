@@ -1,0 +1,45 @@
+---
+import { Icon } from 'astro-icon/components';
+import { getLangFromUrl } from "~/i18n/utils";
+import { languages } from '~/i18n/ui'
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<details class="dropdown">
+  <summary>
+    <Icon name={languages[lang].flagIconName} size={32} />
+  </summary>
+  <ul dir="rtl">
+    {Object.entries(languages).map(([lang, { label, flagIconName }]) => (
+        <li>
+          <a class="language-link" href={`/${lang}/`}>
+            <Icon name={flagIconName} size={32} />
+            {label}
+          </a>
+        </li>
+      ))}
+  </ul>
+</details>
+
+<style scoped lang="postcss">
+summary {
+  background: transparent !important;
+  border: none !important;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  &::after {
+    display: none !important;
+  }
+}
+
+.language-link {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 9px;
+}
+
+</style>

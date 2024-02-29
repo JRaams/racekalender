@@ -1,14 +1,21 @@
 ---
 import ThemeSwitcher from './ThemeSwitcher.astro';
+import LangSwitcher from './LangSwitcher.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <nav>
   <ul>
-    <li><strong>Racekalender 2024</strong></li>
+    <li><strong>{t('nav.title')}</strong></li>
     <!-- <li><a href="/">Lijst</a></li>
     <li><a href="/calendar">Kalender</a></li> -->
+    
   </ul>
   <ul>
+    <li style="display: flex; align-items: center;"><LangSwitcher /></li>
     <li><ThemeSwitcher /></li>
   </ul>
 </nav>
