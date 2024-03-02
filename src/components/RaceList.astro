@@ -1,11 +1,8 @@
 ---
+import { Icon } from 'astro-icon/components';
+import type { Race } from '~/types';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import TimeDistance from './TimeDistance.svelte';
-import { Icon } from 'astro-icon/components';
-import type { Race } from '~/types'
-import dayjs from 'dayjs';
-import 'dayjs/locale/nl';
-import relativeTime from 'dayjs/plugin/relativeTime';
 
 type Props = {
   races: Race[];
@@ -15,24 +12,25 @@ const { races } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-dayjs.extend(relativeTime);
-dayjs.locale(lang);
-
-function isInThePast(race: Race) {
-  const date = dayjs(race.raceTimestamp);
-  return date.isBefore(new Date(), 'days');
-}
-
-function isToday(race: Race) {
-  const date = dayjs(race.raceTimestamp);
-  return date.isSame(new Date(), 'days');
-}
-
-function formatDate(race: Race) {
-  const date = dayjs(race.raceTimestamp);
-  return date.format('dd DD MMMM, HH:mm')
-}
 ---
+
+<script>
+  import dayjs from 'dayjs';
+
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.race-list-row').forEach(tr => {
+      const timestamp = Number(tr.getAttribute('data-timestamp'));
+      const date = dayjs(timestamp);
+      
+      if (date.isBefore(new Date(), 'days')) {
+        tr.classList.add('past');
+      } else if (date.isSame(new Date(), 'days')) {
+        console.info('today??')
+        tr.classList.add('today');
+      }
+    })
+  })
+</script>
 
 <div class="overflow-auto">
   <table>
@@ -47,14 +45,11 @@ function formatDate(race: Race) {
     <tbody>
       {
         races.map(race => 
-          <tr class:list={{ past: isInThePast(race), today: isToday(race)}}>
+          <tr class="race-list-row" data-timestamp={race.raceTimestamp}>
             <td data-col={t('list.table.round')}>{race.round}</td>
             <td data-col={t('list.table.name')}>{race.name}</td>
-            <td data-col={t('list.table.date')}>
-              <div class="date-wrapper">
-                <span>{formatDate(race)}</span>
-                <TimeDistance client:only="svelte" timestamp={race.raceTimestamp} lang={lang}/>
-              </div>
+            <td style="min-height: 4em;" data-col={t('list.table.date')}>
+              <TimeDistance client:only="svelte" timestamp={race.raceTimestamp} lang={lang}/>
             </td>
             <td data-col={t('list.table.circuit')}>
               <div class="flex-row">
@@ -95,6 +90,10 @@ function formatDate(race: Race) {
           display: grid;
           grid-template-columns: 70px 1fr;
           place-items: center start;
+          
+          &:last-child {
+            border-bottom: none;
+          }
 
           &::before {
             content: attr(data-col);
@@ -128,11 +127,6 @@ function formatDate(race: Race) {
     100% {
       background-position: 0% 50%;
     }
-  }
-
-  .date-wrapper {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
   }
 
   .flex-row {
