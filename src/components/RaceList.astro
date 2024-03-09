@@ -76,7 +76,13 @@ const t = useTranslations(lang);
 </div>
 
 <style scoped>
+  .no-wrap {
+    white-space: nowrap;
+  }
   @media screen and (max-width: 1024px) {
+    .no-wrap {
+      white-space: initial;
+    }
     table {
       thead {
         display: none;
@@ -147,7 +153,7 @@ const t = useTranslations(lang);
     flex-direction: column;
   }
 
-  .no-wrap {
-    white-space: nowrap;
+  svg {
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
   }
 </style>

@@ -10,7 +10,6 @@ TODO:
 
 - Calendar view
 - Category select
-- MotoGP
 - Superbike
 - Export list to PDF
 - Show next race
