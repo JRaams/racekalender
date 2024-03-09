@@ -9,7 +9,4 @@
 TODO: 
 
 - Calendar view
-- Category select
-- Superbike
-- Export list to PDF
 - Show next race
