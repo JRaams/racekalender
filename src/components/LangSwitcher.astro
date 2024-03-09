@@ -3,17 +3,18 @@ import { Icon } from 'astro-icon/components';
 import { getLangFromUrl } from "~/i18n/utils";
 import { languages } from '~/i18n/ui'
 
-const lang = getLangFromUrl(Astro.url);
+const currentLanguage = getLangFromUrl(Astro.url);
+const pathname = new URL(Astro.url).pathname;
 ---
 
 <details class="dropdown">
   <summary>
-    <Icon name={languages[lang].flagIconName} size={32} />
+    <Icon name={languages[currentLanguage].flagIconName} size={32} />
   </summary>
   <ul dir="rtl">
     {Object.entries(languages).map(([lang, { label, flagIconName }]) => (
         <li>
-          <a class="language-link" href={`/${lang}/`}>
+          <a class="language-link" href={pathname.replace(currentLanguage, lang)}>
             <Icon name={flagIconName} size={32} />
             {label}
           </a>

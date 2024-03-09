@@ -20,6 +20,9 @@ export const ui = {
     "list.table.date": "Date",
     "list.table.circuit": "Circuit",
     "time.today": "Today!",
+    "kind.formula1": "Formula 1",
+    "kind.motogp": "Moto GP",
+    "kind.superbike": "Superbike",
 
     "gp.name.f1.bahrain": "Bahrain Grand Prix",
     "gp.name.f1.saudiarabian": "Saudi Arabian Grand Prix",
@@ -119,6 +122,9 @@ export const ui = {
     "list.table.date": "Datum",
     "list.table.circuit": "Circuit",
     "time.today": "Vandaag!",
+    "kind.formula1": "Formule 1",
+    "kind.motogp": "Moto GP",
+    "kind.superbike": "Superbike",
 
     "gp.name.f1.bahrain": "GP van Bahrein",
     "gp.name.f1.saudiarabian": "GP van Saoedi-Arabië",

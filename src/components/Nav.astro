@@ -2,17 +2,26 @@
 import ThemeSwitcher from './ThemeSwitcher.astro';
 import LangSwitcher from './LangSwitcher.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { kinds } from '~/types';
 
+const params = Astro.params;
+const kind = params.kind;
 const lang = getLangFromUrl(Astro.url);
+
 const t = useTranslations(lang);
 ---
 
 <nav>
   <ul>
-    <li><strong>{t('nav.title')}</strong></li>
-    <!-- <li><a href="/">Lijst</a></li>
-    <li><a href="/calendar">Kalender</a></li> -->
-    
+    <li>
+      <a href={"/" + lang + "/"} class="secondary">
+        <strong>{t('nav.title')}</strong>
+      </a>
+    </li>
+
+    {
+      kinds.map(x => <li><a href={"/" + lang + "/" + x} aria-current={kind === x}>{t('kind.' + x as any)}</a></li>)
+    }
   </ul>
   <ul>
     <li style="display: flex; align-items: center;"><LangSwitcher /></li>

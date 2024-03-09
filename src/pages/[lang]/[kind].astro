@@ -1,0 +1,50 @@
+---
+import { languages, type Language } from "~/i18n/ui";
+import { kinds, type Kind } from "~/types"
+import { useTranslations } from "~/i18n/utils";
+import Layout from "~/layouts/Layout.astro";
+
+import f1 from '~/static/2024/f1.json';
+import motogp from '~/static/2024/motogp.json';
+import superbike from '~/static/2024/superbike.json';
+import RaceList from "~/components/RaceList.astro";
+import type { Race } from "~/types";
+
+const params = Astro.params;
+const lang = params.lang as Language;
+const kind = params.kind as Kind;
+const t = useTranslations(lang);
+
+let races: Race[] = [];
+switch (kind) {
+  case 'formula1':
+    races = f1;
+    break;
+  case 'motogp':
+    races = motogp;
+    break;
+  case 'superbike':
+    races = superbike;
+    break;
+  default:
+    break;
+}
+
+export function getStaticPaths() {
+  const paths = new Array();
+
+  Object.keys(languages).forEach(lang => {
+    kinds.forEach(kind => {
+      paths.push({
+        params: { lang, kind }
+      })
+    })
+  })
+
+  return paths;
+}
+---
+
+<Layout title={t('nav.title')}>
+  <RaceList showKind={false} races={races}/>
+</Layout>
