@@ -1,7 +1,7 @@
 [
   {
     "round": 1,
-    "name": "gp.name.bahrain",
+    "name": "gp.name.f1.bahrain",
     "raceTimestamp": 1709391600000,
     "circuit": {
       "country": "country.bahrain",
@@ -12,7 +12,7 @@
   },
   {
     "round": 2,
-    "name": "gp.name.saudiarabian",
+    "name": "gp.name.f1.saudiarabian",
     "raceTimestamp": 1710003600000,
     "circuit": {
       "country": "country.saudiarabia",
@@ -23,7 +23,7 @@
   },
   {
     "round": 3,
-    "name": "gp.name.australian",
+    "name": "gp.name.f1.australian",
     "raceTimestamp": 1711252800000,
     "circuit": {
       "country": "country.australia",
@@ -34,7 +34,7 @@
   },
   {
     "round": 4,
-    "name": "gp.name.japanese",
+    "name": "gp.name.f1.japanese",
     "raceTimestamp": 1712466000000,
     "circuit": {
       "country": "country.japan",
@@ -45,7 +45,7 @@
   },
   {
     "round": 5,
-    "name": "gp.name.chinese",
+    "name": "gp.name.f1.chinese",
     "raceTimestamp": 1713682800000,
     "circuit": {
       "country": "country.china",
@@ -56,7 +56,7 @@
   },
   {
     "round": 6,
-    "name": "gp.name.miami",
+    "name": "gp.name.f1.miami",
     "raceTimestamp": 1714939200000,
     "circuit": {
       "country": "country.unitedstates",
@@ -67,7 +67,7 @@
   },
   {
     "round": 7,
-    "name": "gp.name.emiliaromagna",
+    "name": "gp.name.f1.emiliaromagna",
     "raceTimestamp": 1716123600000,
     "circuit": {
       "country": "country.italy",
@@ -78,7 +78,7 @@
   },
   {
     "round": 8,
-    "name": "gp.name.monaco",
+    "name": "gp.name.f1.monaco",
     "raceTimestamp": 1716728400000,
     "circuit": {
       "country": "country.monaco",
@@ -89,7 +89,7 @@
   },
   {
     "round": 9,
-    "name": "gp.name.canadian",
+    "name": "gp.name.f1.canadian",
     "raceTimestamp": 1717956000000,
     "circuit": {
       "country": "country.canada",
@@ -100,7 +100,7 @@
   },
   {
     "round": 10,
-    "name": "gp.name.spanish",
+    "name": "gp.name.f1.spanish",
     "raceTimestamp": 1719147600000,
     "circuit": {
       "country": "country.spain",
@@ -111,7 +111,7 @@
   },
   {
     "round": 11,
-    "name": "gp.name.austrian",
+    "name": "gp.name.f1.austrian",
     "raceTimestamp": 1719752400000,
     "circuit": {
       "country": "country.austria",
@@ -122,7 +122,7 @@
   },
   {
     "round": 12,
-    "name": "gp.name.british",
+    "name": "gp.name.f1.british",
     "raceTimestamp": 1720360800000,
     "circuit": {
       "country": "country.england",
@@ -133,7 +133,7 @@
   },
   {
     "round": 13,
-    "name": "gp.name.hungarian",
+    "name": "gp.name.f1.hungarian",
     "raceTimestamp": 1721566800000,
     "circuit": {
       "country": "country.hungary",
@@ -144,7 +144,7 @@
   },
   {
     "round": 14,
-    "name": "gp.name.belgian",
+    "name": "gp.name.f1.belgian",
     "raceTimestamp": 1722171600000,
     "circuit": {
       "country": "country.belgium",
@@ -155,7 +155,7 @@
   },
   {
     "round": 15,
-    "name": "gp.name.dutch",
+    "name": "gp.name.f1.dutch",
     "raceTimestamp": 1724590800000,
     "circuit": {
       "country": "country.netherlands",
@@ -166,7 +166,7 @@
   },
   {
     "round": 16,
-    "name": "gp.name.italian",
+    "name": "gp.name.f1.italian",
     "raceTimestamp": 1725195600000,
     "circuit": {
       "country": "country.italy",
@@ -177,7 +177,7 @@
   },
   {
     "round": 17,
-    "name": "gp.name.azerbaijan",
+    "name": "gp.name.f1.azerbaijan",
     "raceTimestamp": 1726398000000,
     "circuit": {
       "country": "country.azerbaijan",
@@ -188,7 +188,7 @@
   },
   {
     "round": 18,
-    "name": "gp.name.singapore",
+    "name": "gp.name.f1.singapore",
     "raceTimestamp": 1727006400000,
     "circuit": {
       "country": "country.singapore",
@@ -199,7 +199,7 @@
   },
   {
     "round": 19,
-    "name": "gp.name.unitedstates",
+    "name": "gp.name.f1.unitedstates",
     "raceTimestamp": 1729450800000,
     "circuit": {
       "country": "country.unitedstates",
@@ -210,7 +210,7 @@
   },
   {
     "round": 20,
-    "name": "gp.name.mexicocity",
+    "name": "gp.name.f1.mexicocity",
     "raceTimestamp": 1730059200000,
     "circuit": {
       "country": "country.mexico",
@@ -221,7 +221,7 @@
   },
   {
     "round": 21,
-    "name": "gp.name.saopaulo",
+    "name": "gp.name.f1.saopaulo",
     "raceTimestamp": 1730653200000,
     "circuit": {
       "country": "country.brazil",
@@ -232,7 +232,7 @@
   },
   {
     "round": 22,
-    "name": "gp.name.lasvegas",
+    "name": "gp.name.f1.lasvegas",
     "raceTimestamp": 1732428000000,
     "circuit": {
       "country": "country.unitedstates",
@@ -243,7 +243,7 @@
   },
   {
     "round": 23,
-    "name": "gp.name.qatar",
+    "name": "gp.name.f1.qatar",
     "raceTimestamp": 1733072400000,
     "circuit": {
       "country": "country.qatar",
@@ -254,7 +254,7 @@
   },
   {
     "round": 24,
-    "name": "gp.name.abudhabi",
+    "name": "gp.name.f1.abudhabi",
     "raceTimestamp": 1733662800000,
     "circuit": {
       "country": "country.emirates",

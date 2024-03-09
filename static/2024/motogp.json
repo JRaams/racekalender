@@ -1,0 +1,233 @@
+[
+  {
+    "round": 1,
+    "name": "gp.name.motogp.qatar",
+    "raceTimestamp": 1710090000000,
+    "circuit": {
+      "country": "country.qatar",
+      "countryCode": "qa",
+      "city": "Lusail",
+      "name": "Lusail International Circuit"
+    }
+  },
+  {
+    "round": 2,
+    "name": "gp.name.motogp.portugal",
+    "raceTimestamp": 1711288800000,
+    "circuit": {
+      "country": "country.portugal",
+      "countryCode": "pt",
+      "city": "Portimão",
+      "name": "Algarve International Circuit"
+    }
+  },
+  {
+    "round": 3,
+    "name": "gp.name.motogp.america",
+    "raceTimestamp": 1713121200000,
+    "circuit": {
+      "country": "country.unitedstates",
+      "countryCode": "us",
+      "city": "Austin",
+      "name": "Circuit of the Americas"
+    }
+  },
+  {
+    "round": 4,
+    "name": "gp.name.motogp.spain",
+    "raceTimestamp": 1714305600000,
+    "circuit": {
+      "country": "country.spain",
+      "countryCode": "es",
+      "city": "Jerez de la Frontera",
+      "name": "Circuito de Jerez – Ángel Nieto"
+    }
+  },
+  {
+    "round": 5,
+    "name": "gp.name.motogp.france",
+    "raceTimestamp": 1715515200000,
+    "circuit": {
+      "country": "country.france",
+      "countryCode": "fr",
+      "city": "Le Mans",
+      "name": "Bugatti Circuit"
+    }
+  },
+  {
+    "round": 6,
+    "name": "gp.name.motogp.catalonia",
+    "raceTimestamp": 1716724800000,
+    "circuit": {
+      "country": "country.spain",
+      "countryCode": "es",
+      "city": "Montmeló",
+      "name": "Circuit de Barcelona-Catalunya"
+    }
+  },
+  {
+    "round": 7,
+    "name": "gp.name.motogp.italy",
+    "raceTimestamp": 1717329600000,
+    "circuit": {
+      "country": "country.italy",
+      "countryCode": "it",
+      "city": "Scarperia e San Piero",
+      "name": "Autodromo Internazionale del Mugello"
+    }
+  },
+  {
+    "round": 8,
+    "name": "gp.name.motogp.kazakhstan",
+    "raceTimestamp": 1718524800000,
+    "circuit": {
+      "country": "country.kazakhstan",
+      "countryCode": "kz",
+      "city": "Almaty",
+      "name": "Sokol International Racetrack"
+    }
+  },
+  {
+    "round": 9,
+    "name": "gp.name.motogp.netherlands",
+    "raceTimestamp": 1719748800000,
+    "circuit": {
+      "country": "country.netherlands",
+      "countryCode": "nl",
+      "city": "Assen",
+      "name": "TT Circuit Assen"
+    }
+  },
+  {
+    "round": 10,
+    "name": "gp.name.motogp.germany",
+    "raceTimestamp": 1720353600000,
+    "circuit": {
+      "country": "country.germany",
+      "countryCode": "de",
+      "city": "Hohenstein-Ernstthal",
+      "name": "Sachsenring"
+    }
+  },
+  {
+    "round": 11,
+    "name": "gp.name.motogp.england",
+    "raceTimestamp": 1722772800000,
+    "circuit": {
+      "country": "country.england",
+      "countryCode": "gb",
+      "city": "Silverstone",
+      "name": "Silverstone Circuit"
+    }
+  },
+  {
+    "round": 12,
+    "name": "gp.name.motogp.austria",
+    "raceTimestamp": 1723982400000,
+    "circuit": {
+      "country": "country.austria",
+      "countryCode": "at",
+      "city": "Spielberg",
+      "name": "Red Bull Ring"
+    }
+  },
+  {
+    "round": 13,
+    "name": "gp.name.motogp.aragon",
+    "raceTimestamp": 1725192000000,
+    "circuit": {
+      "country": "country.spain",
+      "countryCode": "es",
+      "city": "Alcañiz",
+      "name": "MotorLand Aragón"
+    }
+  },
+  {
+    "round": 14,
+    "name": "gp.name.motogp.sanmarino",
+    "raceTimestamp": 1725796800000,
+    "circuit": {
+      "country": "country.sanmarino",
+      "countryCode": "sm",
+      "city": "Misano Adriatico",
+      "name": "Misano World Circuit Marco Simoncelli"
+    }
+  },
+  {
+    "round": 15,
+    "name": "gp.name.motogp.india",
+    "raceTimestamp": 1726999200000,
+    "circuit": {
+      "country": "country.india",
+      "countryCode": "in",
+      "city": "Greater Noida",
+      "name": "Buddh International Circuit"
+    }
+  },
+  {
+    "round": 16,
+    "name": "gp.name.motogp.indonesia",
+    "raceTimestamp": 1727593200000,
+    "circuit": {
+      "country": "country.indonesia",
+      "countryCode": "id",
+      "city": "Central Lombok",
+      "name": "Pertamina Mandalika International Street Circuit"
+    }
+  },
+  {
+    "round": 17,
+    "name": "gp.name.motogp.japan",
+    "raceTimestamp": 1728190800000,
+    "circuit": {
+      "country": "country.japan",
+      "countryCode": "jp",
+      "city": "Motegi",
+      "name": "Mobility Resort Motegi"
+    }
+  },
+  {
+    "round": 18,
+    "name": "gp.name.motogp.australia",
+    "raceTimestamp": 1729393200000,
+    "circuit": {
+      "country": "country.australia",
+      "countryCode": "au",
+      "city": "Phillip Island",
+      "name": "Phillip Island Grand Prix Circuit"
+    }
+  },
+  {
+    "round": 19,
+    "name": "gp.name.motogp.thailand",
+    "raceTimestamp": 1730016000000,
+    "circuit": {
+      "country": "country.thailand",
+      "countryCode": "th",
+      "city": "Buriram",
+      "name": "Chang International Circuit"
+    }
+  },
+  {
+    "round": 20,
+    "name": "gp.name.motogp.malaysia",
+    "raceTimestamp": 1730617200000,
+    "circuit": {
+      "country": "country.malaysia",
+      "countryCode": "my",
+      "city": "Sepang",
+      "name": "Petronas Sepang International Circuit"
+    }
+  },
+  {
+    "round": 21,
+    "name": "gp.name.motogp.valencia",
+    "raceTimestamp": 1731848400000,
+    "circuit": {
+      "country": "country.spain",
+      "countryCode": "es",
+      "city": "Valencia",
+      "name": "Circuit Ricardo Tormo"
+    }
+  }
+]

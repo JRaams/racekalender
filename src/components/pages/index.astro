@@ -1,13 +1,20 @@
 ---
 import Layout from "~/layouts/Layout.astro";
 import f1 from '~/static/2024/f1.json';
+import motogp from '~/static/2024/motogp.json';
 import RaceList from "~/components/RaceList.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import type { Race } from "~/types";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const races = [
+  ...f1.map<Race>(x => ({ ...x, kind: 'F1' })),
+  ...motogp.map<Race>(x => ({ ...x, kind: 'MotoGP' })),
+].sort((a, b) => a.raceTimestamp - b.raceTimestamp)
 ---
 
 <Layout title={t('nav.title')}>
-  <RaceList races={f1}/>
+  <RaceList showKind={true} races={races}/>
 </Layout>
