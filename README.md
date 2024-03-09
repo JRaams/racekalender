@@ -8,13 +8,9 @@
 
 TODO: 
 
-- List view
 - Calendar view
 - Category select
-- F1
 - MotoGP
 - Superbike
-- Translations NL/EN
 - Export list to PDF
-- Show countdown to race
 - Show next race

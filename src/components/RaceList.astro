@@ -25,7 +25,6 @@ const t = useTranslations(lang);
       if (date.isBefore(new Date(), 'days')) {
         tr.classList.add('past');
       } else if (date.isSame(new Date(), 'days')) {
-        console.info('today??')
         tr.classList.add('today');
       }
     })
@@ -47,7 +46,7 @@ const t = useTranslations(lang);
         races.map(race => 
           <tr class="race-list-row" data-timestamp={race.raceTimestamp}>
             <td data-col={t('list.table.round')}>{race.round}</td>
-            <td data-col={t('list.table.name')}>{race.name}</td>
+            <td data-col={t('list.table.name')}>{t(race.name as any)}</td>
             <td style="min-height: 4em;" data-col={t('list.table.date')}>
               <TimeDistance client:only="svelte" timestamp={race.raceTimestamp} lang={lang}/>
             </td>
@@ -58,7 +57,7 @@ const t = useTranslations(lang);
                 }
                 <div class="flex-col">
                   <span>{race.circuit.name}</span>
-                  <small>{race.circuit.city}, {race.circuit.country}</small>
+                  <small>{race.circuit.city}, {t(race.circuit.country as any)}</small>
                 </div>
               </div>
             </td>

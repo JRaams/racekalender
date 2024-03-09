@@ -1,10 +1,10 @@
 [
   {
     "round": 1,
-    "name": "Bahrain Grand Prix",
+    "name": "gp.name.bahrain",
     "raceTimestamp": 1709391600000,
     "circuit": {
-      "country": "Bahrain",
+      "country": "country.bahrain",
       "countryCode": "bh",
       "city": "Sakhir",
       "name": "Bahrain International Circuit"
@@ -12,10 +12,10 @@
   },
   {
     "round": 2,
-    "name": "Saudi Arabian Grand Prix",
+    "name": "gp.name.saudiarabian",
     "raceTimestamp": 1710003600000,
     "circuit": {
-      "country": "Saudi Arabia",
+      "country": "country.saudiarabia",
       "countryCode": "sa",
       "city": "Jeddah",
       "name": "Jeddah Corniche Circuit"
@@ -23,10 +23,10 @@
   },
   {
     "round": 3,
-    "name": "Australian Grand Prix",
+    "name": "gp.name.australian",
     "raceTimestamp": 1711252800000,
     "circuit": {
-      "country": "Australia",
+      "country": "country.australia",
       "countryCode": "au",
       "name": "Albert Park Circuit",
       "city": "Melbourne"
@@ -34,10 +34,10 @@
   },
   {
     "round": 4,
-    "name": "Japanese Grand Prix",
+    "name": "gp.name.japanese",
     "raceTimestamp": 1712466000000,
     "circuit": {
-      "country": "Japan",
+      "country": "country.japan",
       "countryCode": "jp",
       "name": "Suzuka International Racing Course",
       "city": "Suzuka, Mie"
@@ -45,10 +45,10 @@
   },
   {
     "round": 5,
-    "name": "Chinese Grand Prix",
+    "name": "gp.name.chinese",
     "raceTimestamp": 1713682800000,
     "circuit": {
-      "country": "China",
+      "country": "country.china",
       "countryCode": "cn",
       "name": "Shanghai International Circuit",
       "city": "Shanghai"
@@ -56,10 +56,10 @@
   },
   {
     "round": 6,
-    "name": "Miami Grand Prix",
+    "name": "gp.name.miami",
     "raceTimestamp": 1714939200000,
     "circuit": {
-      "country": "United States",
+      "country": "country.unitedstates",
       "countryCode": "us",
       "name": "Miami International Autodrome",
       "city": "Miami Gardens, Florida"
@@ -67,10 +67,10 @@
   },
   {
     "round": 7,
-    "name": "Emilia Romagna Grand Prix",
+    "name": "gp.name.emiliaromagna",
     "raceTimestamp": 1716123600000,
     "circuit": {
-      "country": "Italy",
+      "country": "country.italy",
       "countryCode": "it",
       "name": "Imola Circuit",
       "city": "Imola"
@@ -78,10 +78,10 @@
   },
   {
     "round": 8,
-    "name": "Monaco Grand Prix",
+    "name": "gp.name.monaco",
     "raceTimestamp": 1716728400000,
     "circuit": {
-      "country": "Monaco",
+      "country": "country.monaco",
       "countryCode": "mc",
       "name": "Circuit de Monaco",
       "city": "Municipality of Monaco"
@@ -89,10 +89,10 @@
   },
   {
     "round": 9,
-    "name": "Canadian Grand Prix",
+    "name": "gp.name.canadian",
     "raceTimestamp": 1717956000000,
     "circuit": {
-      "country": "Canada",
+      "country": "country.canada",
       "countryCode": "ca",
       "name": "Circuit Gilles Villeneuve",
       "city": "Montreal"
@@ -100,10 +100,10 @@
   },
   {
     "round": 10,
-    "name": "Spanish Grand Prix",
+    "name": "gp.name.spanish",
     "raceTimestamp": 1719147600000,
     "circuit": {
-      "country": "Spain",
+      "country": "country.spain",
       "countryCode": "es",
       "name": "Circuit de Barcelona-Catalunya",
       "city": "Montmeló"
@@ -111,10 +111,10 @@
   },
   {
     "round": 11,
-    "name": "Austrian Grand Prix",
+    "name": "gp.name.austrian",
     "raceTimestamp": 1719752400000,
     "circuit": {
-      "country": "Austria",
+      "country": "country.austria",
       "countryCode": "at",
       "name": "Red Bull Ring",
       "city": "Spielberg, Styria"
@@ -122,10 +122,10 @@
   },
   {
     "round": 12,
-    "name": "British Grand Prix",
+    "name": "gp.name.british",
     "raceTimestamp": 1720360800000,
     "circuit": {
-      "country": "United Kingdom",
+      "country": "country.england",
       "countryCode": "gb",
       "name": "Silverstone Circuit",
       "city": "Silverstone"
@@ -133,10 +133,10 @@
   },
   {
     "round": 13,
-    "name": "Hungarian Grand Prix",
+    "name": "gp.name.hungarian",
     "raceTimestamp": 1721566800000,
     "circuit": {
-      "country": "Hungary",
+      "country": "country.hungary",
       "countryCode": "hu",
       "name": "Hungaroring",
       "city": "Mogyoród"
@@ -144,10 +144,10 @@
   },
   {
     "round": 14,
-    "name": "Belgian Grand Prix",
+    "name": "gp.name.belgian",
     "raceTimestamp": 1722171600000,
     "circuit": {
-      "country": "Belgium",
+      "country": "country.belgium",
       "countryCode": "be",
       "name": "Circuit de Spa-Francorchamps",
       "city": "Stavelot"
@@ -155,10 +155,10 @@
   },
   {
     "round": 15,
-    "name": "Dutch Grand Prix",
+    "name": "gp.name.dutch",
     "raceTimestamp": 1724590800000,
     "circuit": {
-      "country": "Netherlands",
+      "country": "country.netherlands",
       "countryCode": "nl",
       "name": "Circuit Zandvoort",
       "city": "Zandvoort"
@@ -166,10 +166,10 @@
   },
   {
     "round": 16,
-    "name": "Italian Grand Prix",
+    "name": "gp.name.italian",
     "raceTimestamp": 1725195600000,
     "circuit": {
-      "country": "Italy",
+      "country": "country.italy",
       "countryCode": "it",
       "name": "Monza Circuit",
       "city": "Monza"
@@ -177,10 +177,10 @@
   },
   {
     "round": 17,
-    "name": "Azerbaijan Grand Prix",
+    "name": "gp.name.azerbaijan",
     "raceTimestamp": 1726398000000,
     "circuit": {
-      "country": "Azerbaijan",
+      "country": "country.azerbaijan",
       "countryCode": "az",
       "name": "Baku City Circuit",
       "city": "Baku"
@@ -188,10 +188,10 @@
   },
   {
     "round": 18,
-    "name": "Singapore Grand Prix",
+    "name": "gp.name.singapore",
     "raceTimestamp": 1727006400000,
     "circuit": {
-      "country": "Singapore",
+      "country": "country.singapore",
       "countryCode": "sg",
       "name": "Marina Bay Street Circuit",
       "city": "Singapore"
@@ -199,10 +199,10 @@
   },
   {
     "round": 19,
-    "name": "United States Grand Prix",
+    "name": "gp.name.unitedstates",
     "raceTimestamp": 1729450800000,
     "circuit": {
-      "country": "United States",
+      "country": "country.unitedstates",
       "countryCode": "us",
       "name": "Circuit of the Americas",
       "city": "Austin, Texas"
@@ -210,10 +210,10 @@
   },
   {
     "round": 20,
-    "name": "Mexico City Grand Prix",
+    "name": "gp.name.mexicocity",
     "raceTimestamp": 1730059200000,
     "circuit": {
-      "country": "Mexico",
+      "country": "country.mexico",
       "countryCode": "mx",
       "name": "Autódromo Hermanos Rodríguez",
       "city": "Mexico City"
@@ -221,10 +221,10 @@
   },
   {
     "round": 21,
-    "name": "São Paulo Grand Prix",
+    "name": "gp.name.saopaulo",
     "raceTimestamp": 1730653200000,
     "circuit": {
-      "country": "Brazil",
+      "country": "country.brazil",
       "countryCode": "br",
       "name": "Interlagos Circuit",
       "city": "São Paulo"
@@ -232,10 +232,10 @@
   },
   {
     "round": 22,
-    "name": "Las Vegas Grand Prix",
+    "name": "gp.name.lasvegas",
     "raceTimestamp": 1732428000000,
     "circuit": {
-      "country": "United States",
+      "country": "country.unitedstates",
       "countryCode": "us",
       "name": "Las Vegas Strip Circuit",
       "city": "Paradise, Nevada"
@@ -243,10 +243,10 @@
   },
   {
     "round": 23,
-    "name": "Qatar Grand Prix",
+    "name": "gp.name.qatar",
     "raceTimestamp": 1733072400000,
     "circuit": {
-      "country": "Qatar",
+      "country": "country.qatar",
       "countryCode": "qa",
       "name": "Losail International Circuit",
       "city": "Lusail"
@@ -254,10 +254,10 @@
   },
   {
     "round": 24,
-    "name": "Abu Dhabi Grand Prix",
+    "name": "gp.name.abudhabi",
     "raceTimestamp": 1733662800000,
     "circuit": {
-      "country": "United Arab Emirates",
+      "country": "country.emirates",
       "countryCode": "ae",
       "name": "Yas Marina Circuit",
       "city": "Abu Dhabi"
