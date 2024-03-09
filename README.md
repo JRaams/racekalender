@@ -6,7 +6,7 @@
 - motoGP
 - superbike
 
-TODO: 
+TODO:
 
 - Calendar view
 - Show next race

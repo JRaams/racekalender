@@ -7,7 +7,7 @@ import TimeDistance from './TimeDistance.svelte';
 type Props = {
   showKind: boolean;
   races: Race[];
-}
+};
 
 const { showKind, races } = Astro.props;
 
@@ -19,26 +19,24 @@ const t = useTranslations(lang);
   import dayjs from 'dayjs';
 
   window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.race-list-row').forEach(tr => {
+    document.querySelectorAll('.race-list-row').forEach((tr) => {
       const timestamp = Number(tr.getAttribute('data-timestamp'));
       const date = dayjs(timestamp);
-      
+
       if (date.isBefore(new Date(), 'days')) {
         tr.classList.add('past');
       } else if (date.isSame(new Date(), 'days')) {
         tr.classList.add('today');
       }
-    })
-  })
+    });
+  });
 </script>
 
 <div class="overflow-auto">
   <table>
     <thead>
       <tr>
-        {
-          showKind && <th scope="col"></th>
-        }
+        {showKind && <th scope="col" />}
 
         <th scope="col">{t('list.table.name')}</th>
         <th scope="col">{t('list.table.date')}</th>
@@ -47,29 +45,27 @@ const t = useTranslations(lang);
     </thead>
     <tbody>
       {
-        races.map(race => 
+        races.map((race) => (
           <tr class="race-list-row" data-timestamp={race.raceTimestamp}>
-            {
-              showKind && <td>{race.kind}</td>
-            }
+            {showKind && <td>{race.kind}</td>}
 
             <td data-col={t('list.table.name')}>{t(race.name as any)}</td>
             <td class="no-wrap" style="min-height: 4em;" data-col={t('list.table.date')}>
-              <TimeDistance client:only="svelte" timestamp={race.raceTimestamp} lang={lang}/>
+              <TimeDistance client:only="svelte" timestamp={race.raceTimestamp} lang={lang} />
             </td>
             <td class="no-wrap" data-col={t('list.table.circuit')}>
               <div class="flex-row">
-                { 
-                  <Icon name={'flagpack:' + race.circuit.countryCode} size={32} />
-                }
+                {<Icon name={'flagpack:' + race.circuit.countryCode} size={32} />}
                 <div class="flex-col">
                   <span>{race.circuit.name}</span>
-                  <small>{race.circuit.city}, {t(race.circuit.country as any)}</small>
+                  <small>
+                    {race.circuit.city}, {t(race.circuit.country as any)}
+                  </small>
                 </div>
               </div>
             </td>
           </tr>
-        )
+        ))
       }
     </tbody>
   </table>
@@ -87,7 +83,6 @@ const t = useTranslations(lang);
       thead {
         display: none;
       }
-
     }
 
     tbody {
@@ -102,7 +97,7 @@ const t = useTranslations(lang);
           display: grid;
           grid-template-columns: 70px 1fr;
           place-items: center start;
-          
+
           &:last-child {
             border-bottom: none;
           }
@@ -117,10 +112,16 @@ const t = useTranslations(lang);
   }
 
   tr.past {
-    filter: opacity(0.34)
+    filter: opacity(0.34);
   }
   tr.today {
-    background: linear-gradient(-45deg, var(--pico-color-jade-200), var(--pico-color-green-200), var(--pico-color-lime-200), var(--pico-color-amber-250));
+    background: linear-gradient(
+      -45deg,
+      var(--pico-color-jade-200),
+      var(--pico-color-green-200),
+      var(--pico-color-lime-200),
+      var(--pico-color-amber-250)
+    );
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   }

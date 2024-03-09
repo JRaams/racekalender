@@ -1,36 +1,36 @@
 ---
-import Layout from "~/layouts/Layout.astro";
+import RaceList from '~/components/RaceList.astro';
+import { languages, type Language } from '~/i18n/ui';
+import { useTranslations } from '~/i18n/utils';
+import Layout from '~/layouts/Layout.astro';
 import f1 from '~/static/2024/f1.json';
 import motogp from '~/static/2024/motogp.json';
 import superbike from '~/static/2024/superbike.json';
-import RaceList from "~/components/RaceList.astro";
-import { useTranslations } from "~/i18n/utils";
-import type { Race } from "~/types";
-import { languages, type Language } from "~/i18n/ui";
+import type { Race } from '~/types';
 
 const params = Astro.params;
 const lang = params.lang as Language;
 const t = useTranslations(lang);
 
 const races = [
-  ...f1.map<Race>(x => ({ ...x, kind: 'F1' })),
-  ...motogp.map<Race>(x => ({ ...x, kind: 'MotoGP' })),
-  ...superbike.map<Race>(x => ({...x, kind: 'SBK'}))
-].sort((a, b) => a.raceTimestamp - b.raceTimestamp)
+  ...f1.map<Race>((x) => ({ ...x, kind: 'F1' })),
+  ...motogp.map<Race>((x) => ({ ...x, kind: 'MotoGP' })),
+  ...superbike.map<Race>((x) => ({ ...x, kind: 'SBK' })),
+].sort((a, b) => a.raceTimestamp - b.raceTimestamp);
 
 export function getStaticPaths() {
-  return Object.keys(languages).map(x => ({ params: { lang: x}}))
+  return Object.keys(languages).map((x) => ({ params: { lang: x } }));
 }
 ---
 
 <Layout title={t('nav.title')}>
   <div class="race-list">
-    <RaceList showKind={true} races={races}/>
+    <RaceList showKind={true} races={races} />
   </div>
 </Layout>
 
 <style scoped>
-.race-list {
-  margin-top: 2em;
-}
+  .race-list {
+    margin-top: 2em;
+  }
 </style>

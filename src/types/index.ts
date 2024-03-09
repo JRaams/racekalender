@@ -1,5 +1,5 @@
 export const kinds = ['formula1', 'motogp', 'superbike'] as const;
-export type Kind = typeof kinds[number];
+export type Kind = (typeof kinds)[number];
 
 export type Race = {
   kind?: string;

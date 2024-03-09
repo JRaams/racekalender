@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { getLangFromUrl } from "~/i18n/utils";
-import { languages } from '~/i18n/ui'
+import { languages } from '~/i18n/ui';
+import { getLangFromUrl } from '~/i18n/utils';
 
 const currentLanguage = getLangFromUrl(Astro.url);
 const pathname = new URL(Astro.url).pathname;
@@ -12,14 +12,16 @@ const pathname = new URL(Astro.url).pathname;
     <Icon name={languages[currentLanguage].flagIconName} size={32} />
   </summary>
   <ul dir="rtl">
-    {Object.entries(languages).map(([lang, { label, flagIconName }]) => (
+    {
+      Object.entries(languages).map(([lang, { label, flagIconName }]) => (
         <li>
           <a class="language-link" href={pathname.replace(currentLanguage, lang)}>
             <Icon name={flagIconName} size={32} />
             {label}
           </a>
         </li>
-      ))}
+      ))
+    }
   </ul>
 </details>
 

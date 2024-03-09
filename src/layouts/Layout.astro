@@ -1,11 +1,11 @@
 ---
-import '@picocss/pico/css/pico.blue.min.css'
-import '@picocss/pico/css/pico.colors.min.css'
+import '@picocss/pico/css/pico.blue.min.css';
+import '@picocss/pico/css/pico.colors.min.css';
 import Nav from '~/components/Nav.astro';
 import { getLangFromUrl } from '../i18n/utils';
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -14,30 +14,30 @@ const lang = getLangFromUrl(Astro.url);
 
 <!doctype html>
 <html lang={lang}>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Race kalender" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Race kalender" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
 
-	<body>
-		<header>
-			<div class="container">
-				<Nav />
-			</div>
-		</header>
+  <body>
+    <header>
+      <div class="container">
+        <Nav />
+      </div>
+    </header>
 
-		<main class="container">
-			<slot />
-		</main>
-	</body>
+    <main class="container">
+      <slot />
+    </main>
+  </body>
 </html>
 
 <style>
-header {
-	border-bottom: 4px solid var(--pico-table-border-color);
-}
+  header {
+    border-bottom: 4px solid var(--pico-table-border-color);
+  }
 </style>

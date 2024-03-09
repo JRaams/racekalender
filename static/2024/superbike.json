@@ -1,134 +1,134 @@
 [
-    {
-      "round": 1,
-      "name": "gp.name.sbk.australian",
-      "raceTimestamp": 1708826400000,
-      "circuit": {
-        "country": "country.australia",
-        "countryCode": "au",
-        "city": "Phillip Island, Victoria",
-        "name": "Phillip Island Grand Prix Circuit"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.catalunya",
-      "raceTimestamp": 1711274400000,
-      "circuit": {
-        "country": "country.spain",
-        "countryCode": "es",
-        "city": "Barcelona, Catalonia",
-        "name": "Circuit de Barcelona-Catalunya"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.dutch",
-      "raceTimestamp": 1713690000000,
-      "circuit": {
-        "country": "country.netherlands",
-        "countryCode": "nl",
-        "city": "Assen",
-        "name": "TT Circuit Assen"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.emiliaromagna",
-      "raceTimestamp": 1718528400000,
-      "circuit": {
-        "country": "country.italy",
-        "countryCode": "it",
-        "city": "Misano Adriatico, Rimini",
-        "name": "Misano World Circuit Marco Simoncelli"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.uk",
-      "raceTimestamp": 1720951200000,
-      "circuit": {
-        "country": "country.england",
-        "countryCode": "gb",
-        "city": "Leicestershire",
-        "name": "Donington Park"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.czech",
-      "raceTimestamp": 1721552400000,
-      "circuit": {
-        "country": "country.czech",
-        "countryCode": "cz",
-        "city": "Most",
-        "name": "Autodrom Most"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.portuguese",
-      "raceTimestamp": 1723387500000,
-      "circuit": {
-        "country": "country.portugal",
-        "countryCode": "pt",
-        "city": "Portimão",
-        "name": "Algarve International Circuit"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.hungarian",
-      "raceTimestamp": 1724579100000,
-      "circuit": {
-        "country": "country.hungary",
-        "countryCode": "hu",
-        "city": "Balatonfőkajár",
-        "name": "Balaton Park Circuit"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.french",
-      "raceTimestamp": 1725786000000,
-      "circuit": {
-        "country": "country.france",
-        "countryCode": "fr",
-        "city": "Magny-Cours",
-        "name": "Circuit de Nevers Magny-Cours"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.italian",
-      "raceTimestamp": 1726995600000,
-      "circuit": {
-        "country": "country.italy",
-        "countryCode": "it",
-        "city": "San Martino del Lago",
-        "name": "Cremona Circuit"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.aragon",
-      "raceTimestamp": 1727600400000,
-      "circuit": {
-        "country": "country.spain",
-        "countryCode": "es",
-        "city": "Alcañiz",
-        "name": "MotorLand Aragón"
-      }
-    },
-    {
-      "round": 1,
-      "name": "gp.name.sbk.spanish",
-      "raceTimestamp": 1729414800000,
-      "circuit": {
-        "country": "country.spain",
-        "countryCode": "es",
-        "city": "Jerez de la Frontera",
-        "name": "Circuito de Jerez"
-      }
+  {
+    "round": 1,
+    "name": "gp.name.sbk.australian",
+    "raceTimestamp": 1708826400000,
+    "circuit": {
+      "country": "country.australia",
+      "countryCode": "au",
+      "city": "Phillip Island, Victoria",
+      "name": "Phillip Island Grand Prix Circuit"
     }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.catalunya",
+    "raceTimestamp": 1711274400000,
+    "circuit": {
+      "country": "country.spain",
+      "countryCode": "es",
+      "city": "Barcelona, Catalonia",
+      "name": "Circuit de Barcelona-Catalunya"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.dutch",
+    "raceTimestamp": 1713690000000,
+    "circuit": {
+      "country": "country.netherlands",
+      "countryCode": "nl",
+      "city": "Assen",
+      "name": "TT Circuit Assen"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.emiliaromagna",
+    "raceTimestamp": 1718528400000,
+    "circuit": {
+      "country": "country.italy",
+      "countryCode": "it",
+      "city": "Misano Adriatico, Rimini",
+      "name": "Misano World Circuit Marco Simoncelli"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.uk",
+    "raceTimestamp": 1720951200000,
+    "circuit": {
+      "country": "country.england",
+      "countryCode": "gb",
+      "city": "Leicestershire",
+      "name": "Donington Park"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.czech",
+    "raceTimestamp": 1721552400000,
+    "circuit": {
+      "country": "country.czech",
+      "countryCode": "cz",
+      "city": "Most",
+      "name": "Autodrom Most"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.portuguese",
+    "raceTimestamp": 1723387500000,
+    "circuit": {
+      "country": "country.portugal",
+      "countryCode": "pt",
+      "city": "Portimão",
+      "name": "Algarve International Circuit"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.hungarian",
+    "raceTimestamp": 1724579100000,
+    "circuit": {
+      "country": "country.hungary",
+      "countryCode": "hu",
+      "city": "Balatonfőkajár",
+      "name": "Balaton Park Circuit"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.french",
+    "raceTimestamp": 1725786000000,
+    "circuit": {
+      "country": "country.france",
+      "countryCode": "fr",
+      "city": "Magny-Cours",
+      "name": "Circuit de Nevers Magny-Cours"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.italian",
+    "raceTimestamp": 1726995600000,
+    "circuit": {
+      "country": "country.italy",
+      "countryCode": "it",
+      "city": "San Martino del Lago",
+      "name": "Cremona Circuit"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.aragon",
+    "raceTimestamp": 1727600400000,
+    "circuit": {
+      "country": "country.spain",
+      "countryCode": "es",
+      "city": "Alcañiz",
+      "name": "MotorLand Aragón"
+    }
+  },
+  {
+    "round": 1,
+    "name": "gp.name.sbk.spanish",
+    "raceTimestamp": 1729414800000,
+    "circuit": {
+      "country": "country.spain",
+      "countryCode": "es",
+      "city": "Jerez de la Frontera",
+      "name": "Circuito de Jerez"
+    }
+  }
 ]
