@@ -24,13 +24,5 @@ export function getStaticPaths() {
 ---
 
 <Layout title={t('nav.title')}>
-  <div class="race-list">
-    <RaceList showKind={true} races={races} />
-  </div>
+  <RaceList showKind={true} races={races} />
 </Layout>
-
-<style scoped>
-  .race-list {
-    margin-top: 2em;
-  }
-</style>

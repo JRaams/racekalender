@@ -30,8 +30,10 @@ const lang = getLangFromUrl(Astro.url);
       </div>
     </header>
 
-    <main class="container">
-      <slot />
+    <main>
+      <div class="container">
+        <slot />
+      </div>
     </main>
   </body>
 </html>
@@ -39,5 +41,9 @@ const lang = getLangFromUrl(Astro.url);
 <style>
   header {
     border-bottom: 4px solid var(--pico-table-border-color);
+  }
+
+  main > .container {
+    margin-top: 2em;
   }
 </style>
