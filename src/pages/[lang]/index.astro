@@ -4,10 +4,12 @@ import f1 from '~/static/2024/f1.json';
 import motogp from '~/static/2024/motogp.json';
 import superbike from '~/static/2024/superbike.json';
 import RaceList from "~/components/RaceList.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 import type { Race } from "~/types";
+import { languages, type Language } from "~/i18n/ui";
 
-const lang = getLangFromUrl(Astro.url);
+const params = Astro.params;
+const lang = params.lang as Language;
 const t = useTranslations(lang);
 
 const races = [
@@ -15,6 +17,10 @@ const races = [
   ...motogp.map<Race>(x => ({ ...x, kind: 'MotoGP' })),
   ...superbike.map<Race>(x => ({...x, kind: 'SBK'}))
 ].sort((a, b) => a.raceTimestamp - b.raceTimestamp)
+
+export function getStaticPaths() {
+  return Object.keys(languages).map(x => ({ params: { lang: x}}))
+}
 ---
 
 <Layout title={t('nav.title')}>
