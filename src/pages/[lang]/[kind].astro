@@ -1,5 +1,5 @@
 ---
-import RaceList from '~/components/RaceList.astro';
+import WeekendList from '~/components/WeekendList.astro';
 import { languages, type Language } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/Layout.astro';
@@ -45,5 +45,6 @@ export function getStaticPaths() {
 ---
 
 <Layout title={t('nav.title')}>
-  <RaceList showKind={false} races={races} />
+  <WeekendList {races} />
+  <!-- <RaceList showKind={false} races={races} /> -->
 </Layout>

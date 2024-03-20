@@ -14,9 +14,12 @@ dependencies:
   '@iconify-json/flagpack':
     specifier: ^1.1.14
     version: 1.1.14
+  '@iconify-json/material-symbols':
+    specifier: ^1.1.75
+    version: 1.1.75
   '@picocss/pico':
-    specifier: ^2.0.3
-    version: 2.0.3
+    specifier: ^2.0.6
+    version: 2.0.6
   astro:
     specifier: ^4.4.4
     version: 4.4.4(typescript@5.3.3)
@@ -652,6 +655,12 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
+  /@iconify-json/material-symbols@1.1.75:
+    resolution: {integrity: sha512-YMLagGENDw9QNoo4sPDoMX9wO20YptQ2FuTDCf/H/uRH4lGmD08C+z+kYwR4A90qyyo6hYG7yccPEiMOuLow5A==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
   /@iconify/tools@3.0.7:
     resolution: {integrity: sha512-DxfhFLMnooS34dHelpGUnnYrxLZHs0czC1CgrBhAbuL8ddVzBb2VEQm8kh9qGh7A34qeXAB5iSHH3A72rAaFrg==}
     dependencies:
@@ -742,8 +751,8 @@ packages:
       fastq: 1.17.1
     dev: false
 
-  /@picocss/pico@2.0.3:
-    resolution: {integrity: sha512-uIWvDcZnbA+oo4mpz8LeA05huCWbDnUz8Ad2NZXTFn6SrEXBtIdKDu+/bOD4oI8hJHp6dUEEvDLim2+qqSgruQ==}
+  /@picocss/pico@2.0.6:
+    resolution: {integrity: sha512-/d8qsykowelD6g8k8JYgmCagOIulCPHMEc2NC4u7OjmpQLmtSetLhEbt0j1n3fPNJVcrT84dRp0RfJBn3wJROA==}
     engines: {node: '>=18.19.0'}
     dev: false
 

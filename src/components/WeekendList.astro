@@ -1,0 +1,128 @@
+---
+import { Icon } from 'astro-icon/components';
+import type { Race } from '~/types';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import WeekendListDetails from './WeekendListDetails.astro';
+import dayjs from 'dayjs';
+
+type Props = {
+  races: Race[];
+};
+
+const { races } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+function getDayStart(race: Race) {
+  const firstRace = race.events.at(0)?.startAt;
+  if (firstRace === undefined) return null;
+  return dayjs(firstRace).set('hours', 0).set('minutes', 0).set('seconds', 0).unix();
+}
+function getDayEnd(race: Race) {
+  const lastRace = race.events.at(-1)?.startAt;
+  if (lastRace === undefined) return null;
+  return dayjs(lastRace).set('hours', 23).set('minutes', 59).set('seconds', 59).unix();
+}
+---
+
+<script is:inline defer>
+  document.addEventListener('DOMContentLoaded', () => {
+    const details = document.querySelectorAll('.weekend-list details');
+    const today = new Date().getTime() / 1000;
+
+    for (let i = 0; i < details.length; i++) {
+      const d = details[i];
+
+      const start = Number(d.getAttribute('data-day-start'));
+      const end = Number(d.getAttribute('data-day-end'));
+
+      if (today > end) {
+        d.classList.add('past');
+        continue;
+      }
+
+      d.setAttribute('open', '');
+
+      const summary = d.querySelector('summary');
+      if (summary) {
+        summary.classList.remove('outline');
+        summary.classList.remove('secondary');
+        summary.classList.add('primary');
+      }
+
+      d.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      break;
+    }
+  });
+</script>
+
+<div class="weekend-list">
+  {
+    races.map((race) => (
+      <details data-day-start={getDayStart(race)} data-day-end={getDayEnd(race)}>
+        <summary role="button" class="secondary outline">
+          <h5>
+            {race.round}. {race.name.replace('FORMULA 1', '').replace(' 2024', '')}
+          </h5>
+
+          <div class="summary-subtitle">
+            {<Icon name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={32} />}
+            <div>
+              <span>{race.circuit.name}</span>
+              <small>
+                {race.circuit.city},{race.circuit.region && ` ${race.circuit.region}, `}
+                {race.circuit.country}
+              </small>
+            </div>
+          </div>
+        </summary>
+
+        <div class="details-wrapper">
+          <WeekendListDetails {race} />
+        </div>
+      </details>
+    ))
+  }
+</div>
+
+<style>
+  .weekend-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  summary {
+    position: relative;
+    --pico-h5-color: var(--pico-color);
+  }
+
+  summary h5 {
+    margin-bottom: 0.5em;
+  }
+
+  summary::after {
+    position: absolute;
+    top: var(--pico-form-element-spacing-vertical);
+    right: var(--pico-form-element-spacing-horizontal);
+  }
+
+  details.past {
+    filter: opacity(0.5);
+  }
+
+  .summary-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .summary-subtitle > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-wrapper {
+    margin-bottom: 2em;
+  }
+</style>

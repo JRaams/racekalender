@@ -46,4 +46,10 @@ const lang = getLangFromUrl(Astro.url);
   main > .container {
     margin-top: 2em;
   }
+
+  @media screen and (width < 500px) {
+    :root {
+      font-size: 12px;
+    }
+  }
 </style>

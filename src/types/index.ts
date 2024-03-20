@@ -5,11 +5,18 @@ export type Race = {
   kind?: string;
   round: number;
   name: string;
-  raceTimestamp: number;
   circuit: {
-    country: string;
     countryCode: string;
+    country: string;
+    region?: string;
     city: string;
     name: string;
   };
+  events: {
+    name: string;
+    type: string; // 'practice' | 'qualifying' | 'superpole_qualifying' | 'superpole' | 'sprint' | 'race';
+    startAt: number;
+    endAt?: number | null;
+    laps?: number | null;
+  }[];
 };

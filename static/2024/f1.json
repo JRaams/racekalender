@@ -1,266 +1,1130 @@
 [
   {
     "round": 1,
-    "name": "gp.name.f1.bahrain",
-    "raceTimestamp": 1709391600000,
+    "name": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2024",
     "circuit": {
-      "country": "country.bahrain",
-      "countryCode": "bh",
+      "country": "Bahrain",
+      "countryCode": "BH",
       "city": "Sakhir",
       "name": "Bahrain International Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Bahrain Grand Prix",
+        "type": "practice",
+        "startAt": 1709206200000,
+        "endAt": 1709209800000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Bahrain Grand Prix",
+        "type": "practice",
+        "startAt": 1709218800000,
+        "endAt": 1709222400000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Bahrain Grand Prix",
+        "type": "practice",
+        "startAt": 1709296200000,
+        "endAt": 1709299800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Bahrain Grand Prix",
+        "type": "qualifying",
+        "startAt": 1709308800000,
+        "endAt": 1709312400000,
+        "laps": null
+      },
+      {
+        "name": "Race - Bahrain Grand Prix",
+        "type": "race",
+        "startAt": 1709391600000,
+        "endAt": 1709398800000,
+        "laps": 57
+      }
+    ]
   },
   {
     "round": 2,
-    "name": "gp.name.f1.saudiarabian",
-    "raceTimestamp": 1710003600000,
+    "name": "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2024",
     "circuit": {
-      "country": "country.saudiarabia",
-      "countryCode": "sa",
+      "country": "Saudi Arabia",
+      "countryCode": "SA",
       "city": "Jeddah",
       "name": "Jeddah Corniche Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Saudi Arabian Grand Prix",
+        "type": "practice",
+        "startAt": 1709818200000,
+        "endAt": 1709821800000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Saudi Arabian Grand Prix",
+        "type": "practice",
+        "startAt": 1709830800000,
+        "endAt": 1709834400000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Saudi Arabian Grand Prix",
+        "type": "practice",
+        "startAt": 1709904600000,
+        "endAt": 1709908200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Saudi Arabian Grand Prix",
+        "type": "qualifying",
+        "startAt": 1709917200000,
+        "endAt": 1709920800000,
+        "laps": null
+      },
+      {
+        "name": "Race - Saudi Arabian Grand Prix",
+        "type": "race",
+        "startAt": 1710003600000,
+        "endAt": 1710010800000,
+        "laps": 50
+      }
+    ]
   },
   {
     "round": 3,
-    "name": "gp.name.f1.australian",
-    "raceTimestamp": 1711252800000,
+    "name": "FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2024",
     "circuit": {
-      "country": "country.australia",
-      "countryCode": "au",
-      "name": "Albert Park Circuit",
-      "city": "Melbourne"
-    }
+      "country": "Australia",
+      "countryCode": "AU",
+      "city": "Melbourne",
+      "name": "Albert Park Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Australian Grand Prix",
+        "type": "practice",
+        "startAt": 1711071000000,
+        "endAt": 1711074600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Australian Grand Prix",
+        "type": "practice",
+        "startAt": 1711083600000,
+        "endAt": 1711087200000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Australian Grand Prix",
+        "type": "practice",
+        "startAt": 1711157400000,
+        "endAt": 1711161000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Australian Grand Prix",
+        "type": "qualifying",
+        "startAt": 1711170000000,
+        "endAt": 1711173600000,
+        "laps": null
+      },
+      {
+        "name": "Race - Australian Grand Prix",
+        "type": "race",
+        "startAt": 1711252800000,
+        "endAt": 1711260000000,
+        "laps": 58
+      }
+    ]
   },
   {
     "round": 4,
-    "name": "gp.name.f1.japanese",
-    "raceTimestamp": 1712466000000,
+    "name": "FORMULA 1 MSC CRUISES JAPANESE GRAND PRIX 2024",
     "circuit": {
-      "country": "country.japan",
-      "countryCode": "jp",
-      "name": "Suzuka International Racing Course",
-      "city": "Suzuka, Mie"
-    }
+      "country": "Japan",
+      "countryCode": "JP",
+      "city": "Suzuka",
+      "name": "Suzuka International Racing Course"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Japanese Grand Prix",
+        "type": "practice",
+        "startAt": 1712284200000,
+        "endAt": 1712287800000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Japanese Grand Prix",
+        "type": "practice",
+        "startAt": 1712296800000,
+        "endAt": 1712300400000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Japanese Grand Prix",
+        "type": "practice",
+        "startAt": 1712370600000,
+        "endAt": 1712374200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Japanese Grand Prix",
+        "type": "qualifying",
+        "startAt": 1712383200000,
+        "endAt": 1712386800000,
+        "laps": null
+      },
+      {
+        "name": "Race - Japanese Grand Prix",
+        "type": "race",
+        "startAt": 1712466000000,
+        "endAt": 1712473200000,
+        "laps": 53
+      }
+    ]
   },
   {
     "round": 5,
-    "name": "gp.name.f1.chinese",
-    "raceTimestamp": 1713682800000,
+    "name": "FORMULA 1 LENOVO CHINESE GRAND PRIX 2024",
     "circuit": {
-      "country": "country.china",
-      "countryCode": "cn",
-      "name": "Shanghai International Circuit",
-      "city": "Shanghai"
-    }
+      "country": "China",
+      "countryCode": "CN",
+      "city": "Shanghai",
+      "name": "Shanghai International Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Chinese Grand Prix",
+        "type": "practice",
+        "startAt": 1713497400000,
+        "endAt": 1713501000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Chinese Grand Prix",
+        "type": "qualifying",
+        "startAt": 1713596400000,
+        "endAt": 1713600000000,
+        "laps": null
+      },
+      {
+        "name": "Sprint Qualifying - Chinese Grand Prix",
+        "type": "sprint_qualifying",
+        "startAt": 1713511800000,
+        "endAt": 1713514440000,
+        "laps": null
+      },
+      {
+        "name": "Sprint - Chinese Grand Prix",
+        "type": "sprint",
+        "startAt": 1713582000000,
+        "endAt": 1713585600000,
+        "laps": 19
+      },
+      {
+        "name": "Race - Chinese Grand Prix",
+        "type": "race",
+        "startAt": 1713682800000,
+        "endAt": 1713690000000,
+        "laps": 56
+      }
+    ]
   },
   {
     "round": 6,
-    "name": "gp.name.f1.miami",
-    "raceTimestamp": 1714939200000,
+    "name": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2024",
     "circuit": {
-      "country": "country.unitedstates",
-      "countryCode": "us",
-      "name": "Miami International Autodrome",
-      "city": "Miami Gardens, Florida"
-    }
+      "country": "United States",
+      "countryCode": "US",
+      "city": "Miami",
+      "name": "Miami International Autodrome"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Miami Grand Prix",
+        "type": "practice",
+        "startAt": 1714753800000,
+        "endAt": 1714757400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Miami Grand Prix",
+        "type": "qualifying",
+        "startAt": 1714852800000,
+        "endAt": 1714856400000,
+        "laps": null
+      },
+      {
+        "name": "Sprint Qualifying - Miami Grand Prix",
+        "type": "sprint_qualifying",
+        "startAt": 1714768200000,
+        "endAt": 1714770840000,
+        "laps": null
+      },
+      {
+        "name": "Sprint - Miami Grand Prix",
+        "type": "sprint",
+        "startAt": 1714838400000,
+        "endAt": 1714842000000,
+        "laps": 19
+      },
+      {
+        "name": "Race - Miami Grand Prix",
+        "type": "race",
+        "startAt": 1714939200000,
+        "endAt": 1714946400000,
+        "laps": 57
+      }
+    ]
   },
   {
     "round": 7,
-    "name": "gp.name.f1.emiliaromagna",
-    "raceTimestamp": 1716123600000,
+    "name": "FORMULA 1 MSC CRUISES GRAN PREMIO DEL MADE IN ITALY E DELL'EMILIA-ROMAGNA 2024",
     "circuit": {
-      "country": "country.italy",
-      "countryCode": "it",
-      "name": "Imola Circuit",
-      "city": "Imola"
-    }
+      "country": "Italy",
+      "countryCode": "IT",
+      "city": "Imola",
+      "name": "Autodromo Enzo e Dino Ferrari"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Emilia Romagna Grand Prix",
+        "type": "practice",
+        "startAt": 1715945400000,
+        "endAt": 1715949000000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Emilia Romagna Grand Prix",
+        "type": "practice",
+        "startAt": 1715958000000,
+        "endAt": 1715961600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Emilia Romagna Grand Prix",
+        "type": "practice",
+        "startAt": 1716028200000,
+        "endAt": 1716031800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Emilia Romagna Grand Prix",
+        "type": "qualifying",
+        "startAt": 1716040800000,
+        "endAt": 1716044400000,
+        "laps": null
+      },
+      {
+        "name": "Race - Emilia Romagna Grand Prix",
+        "type": "race",
+        "startAt": 1716123600000,
+        "endAt": 1716130800000,
+        "laps": 63
+      }
+    ]
   },
   {
     "round": 8,
-    "name": "gp.name.f1.monaco",
-    "raceTimestamp": 1716728400000,
+    "name": "FORMULA 1 GRAND PRIX DE MONACO 2024",
     "circuit": {
-      "country": "country.monaco",
-      "countryCode": "mc",
-      "name": "Circuit de Monaco",
-      "city": "Municipality of Monaco"
-    }
+      "country": "Monaco",
+      "countryCode": "MC",
+      "city": "Monaco",
+      "name": "Circuit de Monaco"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Monaco Grand Prix",
+        "type": "practice",
+        "startAt": 1716550200000,
+        "endAt": 1716553800000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Monaco Grand Prix",
+        "type": "practice",
+        "startAt": 1716562800000,
+        "endAt": 1716566400000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Monaco Grand Prix",
+        "type": "practice",
+        "startAt": 1716633000000,
+        "endAt": 1716636600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Monaco Grand Prix",
+        "type": "qualifying",
+        "startAt": 1716645600000,
+        "endAt": 1716649200000,
+        "laps": null
+      },
+      {
+        "name": "Race - Monaco Grand Prix",
+        "type": "race",
+        "startAt": 1716728400000,
+        "endAt": 1716735600000,
+        "laps": 78
+      }
+    ]
   },
   {
     "round": 9,
-    "name": "gp.name.f1.canadian",
-    "raceTimestamp": 1717956000000,
+    "name": "FORMULA 1 AWS GRAND PRIX DU CANADA 2024",
     "circuit": {
-      "country": "country.canada",
-      "countryCode": "ca",
-      "name": "Circuit Gilles Villeneuve",
-      "city": "Montreal"
-    }
+      "country": "Canada",
+      "countryCode": "CA",
+      "city": "Montréal",
+      "name": "Circuit Gilles-Villeneuve"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Canadian Grand Prix",
+        "type": "practice",
+        "startAt": 1717781400000,
+        "endAt": 1717785000000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Canadian Grand Prix",
+        "type": "practice",
+        "startAt": 1717794000000,
+        "endAt": 1717797600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Canadian Grand Prix",
+        "type": "practice",
+        "startAt": 1717864200000,
+        "endAt": 1717867800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Canadian Grand Prix",
+        "type": "qualifying",
+        "startAt": 1717876800000,
+        "endAt": 1717880400000,
+        "laps": null
+      },
+      {
+        "name": "Race - Canadian Grand Prix",
+        "type": "race",
+        "startAt": 1717956000000,
+        "endAt": 1717963200000,
+        "laps": 70
+      }
+    ]
   },
   {
     "round": 10,
-    "name": "gp.name.f1.spanish",
-    "raceTimestamp": 1719147600000,
+    "name": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024",
     "circuit": {
-      "country": "country.spain",
-      "countryCode": "es",
-      "name": "Circuit de Barcelona-Catalunya",
-      "city": "Montmeló"
-    }
+      "country": "Spain",
+      "countryCode": "ES",
+      "city": "Barcelona",
+      "name": "Circuit de Barcelona-Catalunya"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Spanish Grand Prix",
+        "type": "practice",
+        "startAt": 1718969400000,
+        "endAt": 1718973000000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Spanish Grand Prix",
+        "type": "practice",
+        "startAt": 1718982000000,
+        "endAt": 1718985600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Spanish Grand Prix",
+        "type": "practice",
+        "startAt": 1719052200000,
+        "endAt": 1719055800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Spanish Grand Prix",
+        "type": "qualifying",
+        "startAt": 1719064800000,
+        "endAt": 1719068400000,
+        "laps": null
+      },
+      {
+        "name": "Race - Spanish Grand Prix",
+        "type": "race",
+        "startAt": 1719147600000,
+        "endAt": 1719154800000,
+        "laps": 66
+      }
+    ]
   },
   {
     "round": 11,
-    "name": "gp.name.f1.austrian",
-    "raceTimestamp": 1719752400000,
+    "name": "FORMULA 1 QATAR AIRWAYS AUSTRIAN GRAND PRIX 2024",
     "circuit": {
-      "country": "country.austria",
-      "countryCode": "at",
-      "name": "Red Bull Ring",
-      "city": "Spielberg, Styria"
-    }
+      "country": "Austria",
+      "countryCode": "AT",
+      "city": "Spielberg",
+      "name": "Red Bull Ring"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Austrian Grand Prix",
+        "type": "practice",
+        "startAt": 1719570600000,
+        "endAt": 1719574200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Austrian Grand Prix",
+        "type": "qualifying",
+        "startAt": 1719669600000,
+        "endAt": 1719673200000,
+        "laps": null
+      },
+      {
+        "name": "Sprint Qualifying - Austrian Grand Prix",
+        "type": "sprint_qualifying",
+        "startAt": 1719585000000,
+        "endAt": 1719587640000,
+        "laps": null
+      },
+      {
+        "name": "Sprint - Austrian Grand Prix",
+        "type": "sprint",
+        "startAt": 1719655200000,
+        "endAt": 1719658800000,
+        "laps": 24
+      },
+      {
+        "name": "Race - Austrian Grand Prix",
+        "type": "race",
+        "startAt": 1719752400000,
+        "endAt": 1719759600000,
+        "laps": 71
+      }
+    ]
   },
   {
     "round": 12,
-    "name": "gp.name.f1.british",
-    "raceTimestamp": 1720360800000,
+    "name": "FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2024",
     "circuit": {
-      "country": "country.england",
-      "countryCode": "gb",
-      "name": "Silverstone Circuit",
-      "city": "Silverstone"
-    }
+      "country": "Great Britain",
+      "countryCode": "GB",
+      "city": "Silverstone",
+      "name": "Silverstone Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - British Grand Prix",
+        "type": "practice",
+        "startAt": 1720179000000,
+        "endAt": 1720182600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - British Grand Prix",
+        "type": "practice",
+        "startAt": 1720191600000,
+        "endAt": 1720195200000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - British Grand Prix",
+        "type": "practice",
+        "startAt": 1720261800000,
+        "endAt": 1720265400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - British Grand Prix",
+        "type": "qualifying",
+        "startAt": 1720274400000,
+        "endAt": 1720278000000,
+        "laps": null
+      },
+      {
+        "name": "Race - British Grand Prix",
+        "type": "race",
+        "startAt": 1720360800000,
+        "endAt": 1720368000000,
+        "laps": 52
+      }
+    ]
   },
   {
     "round": 13,
-    "name": "gp.name.f1.hungarian",
-    "raceTimestamp": 1721566800000,
+    "name": "FORMULA 1 HUNGARIAN GRAND PRIX 2024",
     "circuit": {
-      "country": "country.hungary",
-      "countryCode": "hu",
-      "name": "Hungaroring",
-      "city": "Mogyoród"
-    }
+      "country": "Hungary",
+      "countryCode": "HU",
+      "city": "Budapest",
+      "name": "Hungaroring"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Hungarian Grand Prix",
+        "type": "practice",
+        "startAt": 1721388600000,
+        "endAt": 1721392200000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Hungarian Grand Prix",
+        "type": "practice",
+        "startAt": 1721401200000,
+        "endAt": 1721404800000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Hungarian Grand Prix",
+        "type": "practice",
+        "startAt": 1721471400000,
+        "endAt": 1721475000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Hungarian Grand Prix",
+        "type": "qualifying",
+        "startAt": 1721484000000,
+        "endAt": 1721487600000,
+        "laps": null
+      },
+      {
+        "name": "Race - Hungarian Grand Prix",
+        "type": "race",
+        "startAt": 1721566800000,
+        "endAt": 1721574000000,
+        "laps": 70
+      }
+    ]
   },
   {
     "round": 14,
-    "name": "gp.name.f1.belgian",
-    "raceTimestamp": 1722171600000,
+    "name": "FORMULA 1 ROLEX BELGIAN GRAND PRIX 2024",
     "circuit": {
-      "country": "country.belgium",
-      "countryCode": "be",
-      "name": "Circuit de Spa-Francorchamps",
-      "city": "Stavelot"
-    }
+      "country": "Belgium",
+      "countryCode": "BE",
+      "city": "Spa-Francorchamps",
+      "name": "Circuit de Spa-Francorchamps"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Belgian Grand Prix",
+        "type": "practice",
+        "startAt": 1721993400000,
+        "endAt": 1721997000000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Belgian Grand Prix",
+        "type": "practice",
+        "startAt": 1722006000000,
+        "endAt": 1722009600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Belgian Grand Prix",
+        "type": "practice",
+        "startAt": 1722076200000,
+        "endAt": 1722079800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Belgian Grand Prix",
+        "type": "qualifying",
+        "startAt": 1722088800000,
+        "endAt": 1722092400000,
+        "laps": null
+      },
+      {
+        "name": "Race - Belgian Grand Prix",
+        "type": "race",
+        "startAt": 1722171600000,
+        "endAt": 1722178800000,
+        "laps": 44
+      }
+    ]
   },
   {
     "round": 15,
-    "name": "gp.name.f1.dutch",
-    "raceTimestamp": 1724590800000,
+    "name": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2024",
     "circuit": {
-      "country": "country.netherlands",
-      "countryCode": "nl",
-      "name": "Circuit Zandvoort",
-      "city": "Zandvoort"
-    }
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "city": "Zandvoort",
+      "name": "Circuit Zandvoort"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Dutch Grand Prix",
+        "type": "practice",
+        "startAt": 1724409000000,
+        "endAt": 1724412600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Dutch Grand Prix",
+        "type": "practice",
+        "startAt": 1724421600000,
+        "endAt": 1724425200000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Dutch Grand Prix",
+        "type": "practice",
+        "startAt": 1724491800000,
+        "endAt": 1724495400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Dutch Grand Prix",
+        "type": "qualifying",
+        "startAt": 1724504400000,
+        "endAt": 1724508000000,
+        "laps": null
+      },
+      {
+        "name": "Race - Dutch Grand Prix",
+        "type": "race",
+        "startAt": 1724590800000,
+        "endAt": 1724598000000,
+        "laps": 72
+      }
+    ]
   },
   {
     "round": 16,
-    "name": "gp.name.f1.italian",
-    "raceTimestamp": 1725195600000,
+    "name": "FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2024",
     "circuit": {
-      "country": "country.italy",
-      "countryCode": "it",
-      "name": "Monza Circuit",
-      "city": "Monza"
-    }
+      "country": "Italy",
+      "countryCode": "IT",
+      "city": "Monza",
+      "name": "Autodromo Nazionale Monza"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Italian Grand Prix",
+        "type": "practice",
+        "startAt": 1725017400000,
+        "endAt": 1725021000000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Italian Grand Prix",
+        "type": "practice",
+        "startAt": 1725030000000,
+        "endAt": 1725033600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Italian Grand Prix",
+        "type": "practice",
+        "startAt": 1725100200000,
+        "endAt": 1725103800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Italian Grand Prix",
+        "type": "qualifying",
+        "startAt": 1725112800000,
+        "endAt": 1725116400000,
+        "laps": null
+      },
+      {
+        "name": "Race - Italian Grand Prix",
+        "type": "race",
+        "startAt": 1725195600000,
+        "endAt": 1725202800000,
+        "laps": 53
+      }
+    ]
   },
   {
     "round": 17,
-    "name": "gp.name.f1.azerbaijan",
-    "raceTimestamp": 1726398000000,
+    "name": "FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2024",
     "circuit": {
-      "country": "country.azerbaijan",
-      "countryCode": "az",
-      "name": "Baku City Circuit",
-      "city": "Baku"
-    }
+      "country": "Azerbaijan",
+      "countryCode": "AZ",
+      "city": "Baku",
+      "name": "Baku City Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Azerbaijan Grand Prix",
+        "type": "practice",
+        "startAt": 1726219800000,
+        "endAt": 1726223400000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Azerbaijan Grand Prix",
+        "type": "practice",
+        "startAt": 1726232400000,
+        "endAt": 1726236000000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Azerbaijan Grand Prix",
+        "type": "practice",
+        "startAt": 1726302600000,
+        "endAt": 1726306200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Azerbaijan Grand Prix",
+        "type": "qualifying",
+        "startAt": 1726315200000,
+        "endAt": 1726318800000,
+        "laps": null
+      },
+      {
+        "name": "Race - Azerbaijan Grand Prix",
+        "type": "race",
+        "startAt": 1726398000000,
+        "endAt": 1726405200000,
+        "laps": 51
+      }
+    ]
   },
   {
     "round": 18,
-    "name": "gp.name.f1.singapore",
-    "raceTimestamp": 1727006400000,
+    "name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2024",
     "circuit": {
-      "country": "country.singapore",
-      "countryCode": "sg",
-      "name": "Marina Bay Street Circuit",
-      "city": "Singapore"
-    }
+      "country": "Singapore",
+      "countryCode": "SG",
+      "city": "Marina Bay",
+      "name": "Marina Bay Street Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Singapore Grand Prix",
+        "type": "practice",
+        "startAt": 1726824600000,
+        "endAt": 1726828200000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Singapore Grand Prix",
+        "type": "practice",
+        "startAt": 1726837200000,
+        "endAt": 1726840800000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Singapore Grand Prix",
+        "type": "practice",
+        "startAt": 1726911000000,
+        "endAt": 1726914600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Singapore Grand Prix",
+        "type": "qualifying",
+        "startAt": 1726923600000,
+        "endAt": 1726927200000,
+        "laps": null
+      },
+      {
+        "name": "Race - Singapore Grand Prix",
+        "type": "race",
+        "startAt": 1727006400000,
+        "endAt": 1727013600000,
+        "laps": 62
+      }
+    ]
   },
   {
     "round": 19,
-    "name": "gp.name.f1.unitedstates",
-    "raceTimestamp": 1729450800000,
+    "name": "FORMULA 1 PIRELLI UNITED STATES GRAND PRIX 2024",
     "circuit": {
-      "country": "country.unitedstates",
-      "countryCode": "us",
-      "name": "Circuit of the Americas",
-      "city": "Austin, Texas"
-    }
+      "country": "United States",
+      "countryCode": "US",
+      "city": "Austin",
+      "name": "Circuit of The Americas"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - United States Grand Prix",
+        "type": "practice",
+        "startAt": 1729272600000,
+        "endAt": 1729276200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - United States Grand Prix",
+        "type": "qualifying",
+        "startAt": 1729375200000,
+        "endAt": 1729378800000,
+        "laps": null
+      },
+      {
+        "name": "Sprint Qualifying - United States Grand Prix",
+        "type": "sprint_qualifying",
+        "startAt": 1729287000000,
+        "endAt": 1729289640000,
+        "laps": null
+      },
+      {
+        "name": "Sprint - United States Grand Prix",
+        "type": "sprint",
+        "startAt": 1729360800000,
+        "endAt": 1729364400000,
+        "laps": 19
+      },
+      {
+        "name": "Race - United States Grand Prix",
+        "type": "race",
+        "startAt": 1729450800000,
+        "endAt": 1729458000000,
+        "laps": 56
+      }
+    ]
   },
   {
     "round": 20,
-    "name": "gp.name.f1.mexicocity",
-    "raceTimestamp": 1730059200000,
+    "name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2024",
     "circuit": {
-      "country": "country.mexico",
-      "countryCode": "mx",
-      "name": "Autódromo Hermanos Rodríguez",
-      "city": "Mexico City"
-    }
+      "country": "Mexico",
+      "countryCode": "MX",
+      "city": "Mexico City",
+      "name": "Autódromo Hermanos Rodríguez"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Mexico City Grand Prix",
+        "type": "practice",
+        "startAt": 1729881000000,
+        "endAt": 1729884600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Mexico City Grand Prix",
+        "type": "practice",
+        "startAt": 1729893600000,
+        "endAt": 1729897200000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Mexico City Grand Prix",
+        "type": "practice",
+        "startAt": 1729963800000,
+        "endAt": 1729967400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Mexico City Grand Prix",
+        "type": "qualifying",
+        "startAt": 1729976400000,
+        "endAt": 1729980000000,
+        "laps": null
+      },
+      {
+        "name": "Race - Mexico City Grand Prix",
+        "type": "race",
+        "startAt": 1730059200000,
+        "endAt": 1730066400000,
+        "laps": 71
+      }
+    ]
   },
   {
     "round": 21,
-    "name": "gp.name.f1.saopaulo",
-    "raceTimestamp": 1730653200000,
+    "name": "FORMULA 1 LENOVO GRANDE PRÊMIO DE SÃO PAULO 2024",
     "circuit": {
-      "country": "country.brazil",
-      "countryCode": "br",
-      "name": "Interlagos Circuit",
-      "city": "São Paulo"
-    }
+      "country": "Brazil",
+      "countryCode": "BR",
+      "city": "São Paulo",
+      "name": "Autódromo José Carlos Pace"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - São Paulo Grand Prix",
+        "type": "practice",
+        "startAt": 1730471400000,
+        "endAt": 1730475000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - São Paulo Grand Prix",
+        "type": "qualifying",
+        "startAt": 1730570400000,
+        "endAt": 1730574000000,
+        "laps": null
+      },
+      {
+        "name": "Sprint Qualifying - São Paulo Grand Prix",
+        "type": "sprint_qualifying",
+        "startAt": 1730485800000,
+        "endAt": 1730488440000,
+        "laps": null
+      },
+      {
+        "name": "Sprint - São Paulo Grand Prix",
+        "type": "sprint",
+        "startAt": 1730556000000,
+        "endAt": 1730559600000,
+        "laps": 24
+      },
+      {
+        "name": "Race - São Paulo Grand Prix",
+        "type": "race",
+        "startAt": 1730653200000,
+        "endAt": 1730660400000,
+        "laps": 71
+      }
+    ]
   },
   {
     "round": 22,
-    "name": "gp.name.f1.lasvegas",
-    "raceTimestamp": 1732428000000,
+    "name": "FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024",
     "circuit": {
-      "country": "country.unitedstates",
-      "countryCode": "us",
-      "name": "Las Vegas Strip Circuit",
-      "city": "Paradise, Nevada"
-    }
+      "country": "United States",
+      "countryCode": "US",
+      "city": "Las Vegas",
+      "name": "Las Vegas Strip Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Las Vegas Grand Prix",
+        "type": "practice",
+        "startAt": 1732242600000,
+        "endAt": 1732246200000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Las Vegas Grand Prix",
+        "type": "practice",
+        "startAt": 1732255200000,
+        "endAt": 1732258800000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Las Vegas Grand Prix",
+        "type": "practice",
+        "startAt": 1732329000000,
+        "endAt": 1732332600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Las Vegas Grand Prix",
+        "type": "qualifying",
+        "startAt": 1732341600000,
+        "endAt": 1732345200000,
+        "laps": null
+      },
+      {
+        "name": "Race - Las Vegas Grand Prix",
+        "type": "race",
+        "startAt": 1732428000000,
+        "endAt": 1732435199000,
+        "laps": 50
+      }
+    ]
   },
   {
     "round": 23,
-    "name": "gp.name.f1.qatar",
-    "raceTimestamp": 1733072400000,
+    "name": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024",
     "circuit": {
-      "country": "country.qatar",
-      "countryCode": "qa",
-      "name": "Losail International Circuit",
-      "city": "Lusail"
-    }
+      "country": "Qatar",
+      "countryCode": "QA",
+      "city": "Lusail",
+      "name": "Lusail International Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Qatar Grand Prix",
+        "type": "practice",
+        "startAt": 1732887000000,
+        "endAt": 1732890600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Qatar Grand Prix",
+        "type": "qualifying",
+        "startAt": 1732986000000,
+        "endAt": 1732989600000,
+        "laps": null
+      },
+      {
+        "name": "Sprint Qualifying - Qatar Grand Prix",
+        "type": "sprint_qualifying",
+        "startAt": 1732901400000,
+        "endAt": 1732904040000,
+        "laps": null
+      },
+      {
+        "name": "Sprint - Qatar Grand Prix",
+        "type": "sprint",
+        "startAt": 1732971600000,
+        "endAt": 1732975200000,
+        "laps": 19
+      },
+      {
+        "name": "Race - Qatar Grand Prix",
+        "type": "race",
+        "startAt": 1733072400000,
+        "endAt": 1733079600000,
+        "laps": 57
+      }
+    ]
   },
   {
     "round": 24,
-    "name": "gp.name.f1.abudhabi",
-    "raceTimestamp": 1733662800000,
+    "name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2024",
     "circuit": {
-      "country": "country.emirates",
-      "countryCode": "ae",
-      "name": "Yas Marina Circuit",
-      "city": "Abu Dhabi"
-    }
+      "country": "United Arab Emirates",
+      "countryCode": "AE",
+      "city": "Yas Island",
+      "name": "Yas Marina Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Abu Dhabi Grand Prix",
+        "type": "practice",
+        "startAt": 1733477400000,
+        "endAt": 1733481000000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Abu Dhabi Grand Prix",
+        "type": "practice",
+        "startAt": 1733490000000,
+        "endAt": 1733493600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Abu Dhabi Grand Prix",
+        "type": "practice",
+        "startAt": 1733567400000,
+        "endAt": 1733571000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Abu Dhabi Grand Prix",
+        "type": "qualifying",
+        "startAt": 1733580000000,
+        "endAt": 1733583600000,
+        "laps": null
+      },
+      {
+        "name": "Race - Abu Dhabi Grand Prix",
+        "type": "race",
+        "startAt": 1733662800000,
+        "endAt": 1733670000000,
+        "laps": 58
+      }
+    ]
   }
 ]

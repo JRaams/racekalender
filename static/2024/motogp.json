@@ -1,233 +1,1136 @@
 [
   {
     "round": 1,
-    "name": "gp.name.motogp.qatar",
-    "raceTimestamp": 1710090000000,
+    "name": "Qatar Airways Grand Prix of Qatar",
     "circuit": {
-      "country": "country.qatar",
-      "countryCode": "qa",
+      "country": "Qatar",
+      "countryCode": "QA",
       "city": "Lusail",
       "name": "Lusail International Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1709901900000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1709917800000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1709980800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1709984400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1709985900000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1710000000000,
+        "laps": 11
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1710090000000,
+        "laps": 21
+      }
+    ]
   },
   {
     "round": 2,
-    "name": "gp.name.motogp.portugal",
-    "raceTimestamp": 1711288800000,
+    "name": "Grande Prémio Tissot de Portugal",
     "circuit": {
-      "country": "country.portugal",
-      "countryCode": "pt",
+      "country": "Portugal",
+      "countryCode": "PT",
       "city": "Portimão",
-      "name": "Algarve International Circuit"
-    }
+      "name": "Autódromo Internacional do Algarve"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1711104300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1711119600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1711188600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1",
+        "type": "qualifying",
+        "startAt": 1711191000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2",
+        "type": "qualifying",
+        "startAt": 1711192500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1711206000000,
+        "laps": 12
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1711288800000,
+        "laps": 25
+      }
+    ]
   },
   {
     "round": 3,
-    "name": "gp.name.motogp.america",
-    "raceTimestamp": 1713121200000,
+    "name": "Red Bull Grand Prix of The Americas",
     "circuit": {
-      "country": "country.unitedstates",
-      "countryCode": "us",
-      "city": "Austin",
-      "name": "Circuit of the Americas"
-    }
+      "country": "United States",
+      "countryCode": "US",
+      "city": "Austin, Texas",
+      "name": "Circuit Of The Americas"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1712936700000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1712952000000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1713021000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1713023400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1713024900000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1713038400000,
+        "laps": 10
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1713121200000,
+        "laps": 20
+      }
+    ]
   },
   {
     "round": 4,
-    "name": "gp.name.motogp.spain",
-    "raceTimestamp": 1714305600000,
+    "name": "Gran Premio de España",
     "circuit": {
-      "country": "country.spain",
-      "countryCode": "es",
+      "country": "Spain",
+      "countryCode": "ES",
       "city": "Jerez de la Frontera",
-      "name": "Circuito de Jerez – Ángel Nieto"
-    }
+      "name": "Circuito de Jerez"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1714121100000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1714136400000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1714205400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1",
+        "type": "qualifying",
+        "startAt": 1714207800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2",
+        "type": "qualifying",
+        "startAt": 1714209300000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1714222800000,
+        "laps": 12
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1714305600000,
+        "laps": 25
+      }
+    ]
   },
   {
     "round": 5,
-    "name": "gp.name.motogp.france",
-    "raceTimestamp": 1715515200000,
+    "name": "Grand Prix de France",
     "circuit": {
-      "country": "country.france",
-      "countryCode": "fr",
+      "country": "France",
+      "countryCode": "FR",
       "city": "Le Mans",
-      "name": "Bugatti Circuit"
-    }
+      "name": "Le Mans"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1715330700000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1715346000000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1715415000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1",
+        "type": "qualifying",
+        "startAt": 1715417400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2",
+        "type": "qualifying",
+        "startAt": 1715418900000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1715432400000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1715515200000,
+        "laps": 27
+      }
+    ]
   },
   {
     "round": 6,
-    "name": "gp.name.motogp.catalonia",
-    "raceTimestamp": 1716724800000,
+    "name": "Gran Premi Monster Energy de Catalunya",
     "circuit": {
-      "country": "country.spain",
-      "countryCode": "es",
-      "city": "Montmeló",
+      "country": "Spain",
+      "countryCode": "ES",
+      "city": "Montmeló, Barcelona",
       "name": "Circuit de Barcelona-Catalunya"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1716540300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1716555600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1716624600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1716627000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1716628500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1716642000000,
+        "laps": 12
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1716724800000,
+        "laps": 24
+      }
+    ]
   },
   {
     "round": 7,
-    "name": "gp.name.motogp.italy",
-    "raceTimestamp": 1717329600000,
+    "name": "Gran Premio d'Italia",
     "circuit": {
-      "country": "country.italy",
-      "countryCode": "it",
+      "country": "Italy",
+      "countryCode": "IT",
       "city": "Scarperia e San Piero",
       "name": "Autodromo Internazionale del Mugello"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1717145100000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1717160400000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1717229400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1717231800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1717233300000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1717246800000,
+        "laps": 11
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1717329600000,
+        "laps": 23
+      }
+    ]
   },
   {
     "round": 8,
-    "name": "gp.name.motogp.kazakhstan",
-    "raceTimestamp": 1718524800000,
+    "name": "Grand Prix of Kazakhstan",
     "circuit": {
-      "country": "country.kazakhstan",
-      "countryCode": "kz",
+      "country": "Kazakhstan",
+      "countryCode": "KZ",
       "city": "Almaty",
       "name": "Sokol International Racetrack"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1718342100000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1718357400000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1718424600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1718427000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1718428500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1718442000000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1718524800000,
+        "laps": 26
+      }
+    ]
   },
   {
     "round": 9,
-    "name": "gp.name.motogp.netherlands",
-    "raceTimestamp": 1719748800000,
+    "name": "Motul TT Assen",
     "circuit": {
-      "country": "country.netherlands",
-      "countryCode": "nl",
+      "country": "Netherlands",
+      "countryCode": "NL",
       "city": "Assen",
       "name": "TT Circuit Assen"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1719564300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1719579600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1719648600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1719651000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1719652500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1719666000000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1719748800000,
+        "laps": 26
+      }
+    ]
   },
   {
     "round": 10,
-    "name": "gp.name.motogp.germany",
-    "raceTimestamp": 1720353600000,
+    "name": "Liqui Moly Motorrad Grand Prix Deutschland",
     "circuit": {
-      "country": "country.germany",
-      "countryCode": "de",
+      "country": "Germany",
+      "countryCode": "DE",
       "city": "Hohenstein-Ernstthal",
       "name": "Sachsenring"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1720169100000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1720184400000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1720253400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1720255800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1720257300000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1720270800000,
+        "laps": 15
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1720353600000,
+        "laps": 30
+      }
+    ]
   },
   {
     "round": 11,
-    "name": "gp.name.motogp.england",
-    "raceTimestamp": 1722772800000,
+    "name": "Monster Energy British Grand Prix",
     "circuit": {
-      "country": "country.england",
-      "countryCode": "gb",
+      "country": "Great Britain",
+      "countryCode": "GB",
       "city": "Silverstone",
       "name": "Silverstone Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1722591900000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1722607200000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1722676200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1722678600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1722680100000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1722693600000,
+        "laps": 10
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1722772800000,
+        "laps": 20
+      }
+    ]
   },
   {
     "round": 12,
-    "name": "gp.name.motogp.austria",
-    "raceTimestamp": 1723982400000,
+    "name": "Motorrad Grand Prix von Österreich",
     "circuit": {
-      "country": "country.austria",
-      "countryCode": "at",
+      "country": "Austria",
+      "countryCode": "AT",
       "city": "Spielberg",
       "name": "Red Bull Ring"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1723797900000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1723813200000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1723882200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1723884600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1723886100000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1723899600000,
+        "laps": 14
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1723982400000,
+        "laps": 28
+      }
+    ]
   },
   {
     "round": 13,
-    "name": "gp.name.motogp.aragon",
-    "raceTimestamp": 1725192000000,
+    "name": "Gran Premio de Aragón",
     "circuit": {
-      "country": "country.spain",
-      "countryCode": "es",
+      "country": "Spain",
+      "countryCode": "ES",
       "city": "Alcañiz",
       "name": "MotorLand Aragón"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1725007500000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1725022800000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1725091800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1725094200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1725095700000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1725109200000,
+        "laps": 11
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1725192000000,
+        "laps": 23
+      }
+    ]
   },
   {
     "round": 14,
-    "name": "gp.name.motogp.sanmarino",
-    "raceTimestamp": 1725796800000,
+    "name": "Gran Premio Red Bull di San Marino e della Riviera di Rimini",
     "circuit": {
-      "country": "country.sanmarino",
-      "countryCode": "sm",
+      "country": "San Marino",
+      "countryCode": "SM",
       "city": "Misano Adriatico",
       "name": "Misano World Circuit Marco Simoncelli"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1725612300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1725627600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1725696600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1725699000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1725700500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1725714000000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1725796800000,
+        "laps": 27
+      }
+    ]
   },
   {
     "round": 15,
-    "name": "gp.name.motogp.india",
-    "raceTimestamp": 1726999200000,
+    "name": "Grand Prix of India",
     "circuit": {
-      "country": "country.india",
-      "countryCode": "in",
+      "country": "India",
+      "countryCode": "IN",
       "city": "Greater Noida",
       "name": "Buddh International Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1726812900000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1726828200000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1726895400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1",
+        "type": "qualifying",
+        "startAt": 1726897500000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2",
+        "type": "qualifying",
+        "startAt": 1726899300000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1726912800000,
+        "laps": 11
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1726999200000,
+        "laps": 22
+      }
+    ]
   },
   {
     "round": 16,
-    "name": "gp.name.motogp.indonesia",
-    "raceTimestamp": 1727593200000,
+    "name": "Pertamina Grand Prix of Indonesia",
     "circuit": {
-      "country": "country.indonesia",
-      "countryCode": "id",
-      "city": "Central Lombok",
-      "name": "Pertamina Mandalika International Street Circuit"
-    }
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "city": "Lombok",
+      "name": "Pertamina Mandalika Circuit"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1727405100000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1727420400000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1727489400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1727491800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1727493300000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1727506800000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1727593200000,
+        "laps": 27
+      }
+    ]
   },
   {
     "round": 17,
-    "name": "gp.name.motogp.japan",
-    "raceTimestamp": 1728190800000,
+    "name": "Motul Grand Prix of Japan",
     "circuit": {
-      "country": "country.japan",
-      "countryCode": "jp",
+      "country": "Japan",
+      "countryCode": "JP",
       "city": "Motegi",
       "name": "Mobility Resort Motegi"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1728006300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1728021600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1728090600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1728093000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1728094500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1728108000000,
+        "laps": 12
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1728190800000,
+        "laps": 24
+      }
+    ]
   },
   {
     "round": 18,
-    "name": "gp.name.motogp.australia",
-    "raceTimestamp": 1729393200000,
+    "name": "Australian Motorcycle Grand Prix",
     "circuit": {
-      "country": "country.australia",
-      "countryCode": "au",
-      "city": "Phillip Island",
-      "name": "Phillip Island Grand Prix Circuit"
-    }
+      "country": "Australia",
+      "countryCode": "AU",
+      "city": "Ventnor",
+      "name": "Phillip Island"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1729208700000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1729224000000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1729293000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1729295400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1729296900000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1729310400000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1729393200000,
+        "laps": 27
+      }
+    ]
   },
   {
     "round": 19,
-    "name": "gp.name.motogp.thailand",
-    "raceTimestamp": 1730016000000,
+    "name": "OR Thailand Grand Prix",
     "circuit": {
-      "country": "country.thailand",
-      "countryCode": "th",
+      "country": "Thailand",
+      "countryCode": "TH",
       "city": "Buriram",
       "name": "Chang International Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1729827900000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1729843200000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1729912200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1729914600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1729916100000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1729929600000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1730016000000,
+        "laps": 26
+      }
+    ]
   },
   {
     "round": 20,
-    "name": "gp.name.motogp.malaysia",
-    "raceTimestamp": 1730617200000,
+    "name": "PETRONAS Grand Prix of Malaysia",
     "circuit": {
-      "country": "country.malaysia",
-      "countryCode": "my",
+      "country": "Malaysia",
+      "countryCode": "MY",
       "city": "Sepang",
       "name": "Petronas Sepang International Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1730429100000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1730444400000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1730513400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1730515800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1730517300000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1730530800000,
+        "laps": 10
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1730617200000,
+        "laps": 20
+      }
+    ]
   },
   {
     "round": 21,
-    "name": "gp.name.motogp.valencia",
-    "raceTimestamp": 1731848400000,
+    "name": "Gran Premio Motul de la Comunitat Valenciana",
     "circuit": {
-      "country": "country.spain",
-      "countryCode": "es",
-      "city": "Valencia",
+      "country": "Spain",
+      "countryCode": "ES",
+      "city": "Cheste",
       "name": "Circuit Ricardo Tormo"
-    }
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1731663900000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1731679200000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1731748200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1731750600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1731752100000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1731765600000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1731848400000,
+        "laps": 27
+      }
+    ]
   }
 ]

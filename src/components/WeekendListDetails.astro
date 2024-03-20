@@ -1,0 +1,43 @@
+---
+import { Icon } from 'astro-icon/components';
+import { getLangFromUrl } from '~/i18n/utils';
+import type { Race } from '~/types';
+import { TypeToIconMap } from '~/types/eventtype';
+import TimeDisplay from './TimeDisplay.svelte';
+
+type Props = {
+  race: Race;
+};
+
+const { race } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+---
+
+<table>
+  <thead>
+    <tr>
+      <!-- TODO: Translations -->
+      <th scope="col">Type</th>
+      <th scope="col">Time</th>
+      <th scope="col">Laps</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      race.events.map((e) => (
+        <tr>
+          <td>
+            <Icon name={TypeToIconMap[e.type] ?? 'material-symbols:brightness-empty'} size={16} />
+            {e.name.split(' - ')[0]}
+          </td>
+          <td>
+            <TimeDisplay {lang} timestamp={e.startAt} />
+          </td>
+          <td>
+            <small>{!!e.laps ? `${e.laps} laps` : '-'}</small>
+          </td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>

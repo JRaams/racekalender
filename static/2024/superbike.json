@@ -1,134 +1,746 @@
 [
   {
     "round": 1,
-    "name": "gp.name.sbk.australian",
-    "raceTimestamp": 1708826400000,
+    "name": "Grand Ridge Brewery Australian Round",
     "circuit": {
-      "country": "country.australia",
-      "countryCode": "au",
-      "city": "Phillip Island, Victoria",
+      "countryCode": "AU",
+      "country": "Australia",
+      "region": "Victoria",
+      "city": "Ventnor",
       "name": "Phillip Island Grand Prix Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1708647600000,
+        "endAt": 1708650427000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1708664400000,
+        "endAt": 1708667540000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1708729200000,
+        "endAt": 1708730530000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1708740000000,
+        "endAt": 1708741070000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1708750800000,
+        "endAt": 1708752827000,
+        "laps": 21
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1708826400000,
+        "endAt": 1708827475000,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1708840800000,
+        "endAt": 1708842218000,
+        "laps": 21
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.catalunya",
-    "raceTimestamp": 1711274400000,
+    "round": 2,
+    "name": "Pirelli Catalunya Round",
     "circuit": {
-      "country": "country.spain",
-      "countryCode": "es",
-      "city": "Barcelona, Catalonia",
+      "countryCode": "ES",
+      "country": "Spain",
+      "region": "Catalonia",
+      "city": "Montmeló",
       "name": "Circuit de Barcelona-Catalunya"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1711099200000,
+        "endAt": 1711101900000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1711116000000,
+        "endAt": 1711118700000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1711180800000,
+        "endAt": 1711182000000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1711188000000,
+        "endAt": 1711188900000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1711198800000,
+        "endAt": null,
+        "laps": 20
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1711274400000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1711285200000,
+        "endAt": null,
+        "laps": 20
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.dutch",
-    "raceTimestamp": 1713690000000,
+    "round": 3,
+    "name": "Pirelli Dutch Round",
     "circuit": {
-      "country": "country.netherlands",
-      "countryCode": "nl",
+      "countryCode": "NL",
+      "country": "Netherlands",
+      "region": "Drenthe",
       "city": "Assen",
       "name": "TT Circuit Assen"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1713514800000,
+        "endAt": 1713517500000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1713531600000,
+        "endAt": 1713534300000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1713596400000,
+        "endAt": 1713597600000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1713603600000,
+        "endAt": 1713604500000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1713614400000,
+        "endAt": null,
+        "laps": 20
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1713690000000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1713700800000,
+        "endAt": null,
+        "laps": 20
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.emiliaromagna",
-    "raceTimestamp": 1718528400000,
+    "round": 4,
+    "name": "Pirelli Emilia-Romagna Round",
     "circuit": {
-      "country": "country.italy",
-      "countryCode": "it",
-      "city": "Misano Adriatico, Rimini",
+      "countryCode": "IT",
+      "country": "Italy",
+      "region": "Emilia-Romagna",
+      "city": "Misano Adriatico",
       "name": "Misano World Circuit Marco Simoncelli"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1718353200000,
+        "endAt": 1718355900000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1718370000000,
+        "endAt": 1718372700000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1718434800000,
+        "endAt": 1718436000000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1718442000000,
+        "endAt": 1718442900000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1718452800000,
+        "endAt": null,
+        "laps": 22
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1718528400000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1718539200000,
+        "endAt": null,
+        "laps": 22
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.uk",
-    "raceTimestamp": 1720951200000,
+    "round": 5,
+    "name": "Prosecco DOC UK Round",
     "circuit": {
-      "country": "country.england",
-      "countryCode": "gb",
-      "city": "Leicestershire",
+      "countryCode": "GB",
+      "country": "England",
+      "region": "Leicestershire",
+      "city": "Castle Donington",
       "name": "Donington Park"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1720776000000,
+        "endAt": 1720778700000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1720792800000,
+        "endAt": 1720795500000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1720857600000,
+        "endAt": 1720858800000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1720864800000,
+        "endAt": 1720865700000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1720875600000,
+        "endAt": null,
+        "laps": 23
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1720951200000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1720962000000,
+        "endAt": null,
+        "laps": 23
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.czech",
-    "raceTimestamp": 1721552400000,
+    "round": 6,
+    "name": "Czech Round",
     "circuit": {
-      "country": "country.czech",
-      "countryCode": "cz",
+      "countryCode": "CZ",
+      "country": "Czech Republic",
+      "region": "Ústí nad Labem",
       "city": "Most",
       "name": "Autodrom Most"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1721377200000,
+        "endAt": 1721379900000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1721394000000,
+        "endAt": 1721396700000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1721458800000,
+        "endAt": 1721460000000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1721466000000,
+        "endAt": 1721466900000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1721476800000,
+        "endAt": null,
+        "laps": 22
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1721552400000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1721563200000,
+        "endAt": null,
+        "laps": 22
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.portuguese",
-    "raceTimestamp": 1723387500000,
+    "round": 7,
+    "name": "Pirelli Portuguese Round",
     "circuit": {
-      "country": "country.portugal",
-      "countryCode": "pt",
+      "countryCode": "PT",
+      "country": "Portugal",
+      "region": "Algarve",
       "city": "Portimão",
       "name": "Algarve International Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1723212900000,
+        "endAt": 1723215600000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1723226400000,
+        "endAt": 1723229100000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1723291800000,
+        "endAt": 1723293000000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1723301100000,
+        "endAt": 1723302000000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1723312800000,
+        "endAt": null,
+        "laps": 20
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1723387500000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1723399200000,
+        "endAt": null,
+        "laps": 20
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.hungarian",
-    "raceTimestamp": 1724579100000,
+    "round": 8,
+    "name": "Hungarian Round",
     "circuit": {
-      "country": "country.hungary",
-      "countryCode": "hu",
+      "countryCode": "HU",
+      "country": "Hungary",
+      "region": "Veszprém",
       "city": "Balatonfőkajár",
       "name": "Balaton Park Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1724401200000,
+        "endAt": 1724403900000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1724418000000,
+        "endAt": 1724420700000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1724482800000,
+        "endAt": 1724484000000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1724490000000,
+        "endAt": 1724490900000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1724500800000,
+        "endAt": null,
+        "laps": 22
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1724576400000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1724587200000,
+        "endAt": null,
+        "laps": 22
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.french",
-    "raceTimestamp": 1725786000000,
+    "round": 9,
+    "name": "Motul French Round",
     "circuit": {
-      "country": "country.france",
-      "countryCode": "fr",
+      "countryCode": "FR",
+      "country": "France",
+      "region": "Bourgogne-Franche-Comté",
       "city": "Magny-Cours",
       "name": "Circuit de Nevers Magny-Cours"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1725610800000,
+        "endAt": 1725613500000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1725627600000,
+        "endAt": 1725630300000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1725692400000,
+        "endAt": 1725693600000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1725699600000,
+        "endAt": 1725700500000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1725715800000,
+        "endAt": null,
+        "laps": 21
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1725786000000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1725802200000,
+        "endAt": null,
+        "laps": 21
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.italian",
-    "raceTimestamp": 1726995600000,
+    "round": 10,
+    "name": "Acerbis Italian Round",
     "circuit": {
-      "country": "country.italy",
-      "countryCode": "it",
+      "countryCode": "IT",
+      "country": "Italy",
+      "region": "Lombardy",
       "city": "San Martino del Lago",
       "name": "Cremona Circuit"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1726820400000,
+        "endAt": 1726823100000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1726837200000,
+        "endAt": 1726839900000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1726902000000,
+        "endAt": 1726903200000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1726909200000,
+        "endAt": 1726910100000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1726920000000,
+        "endAt": null,
+        "laps": 24
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1726995600000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1727006400000,
+        "endAt": null,
+        "laps": 24
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.aragon",
-    "raceTimestamp": 1727600400000,
+    "round": 11,
+    "name": "Tissot Aragon Round",
     "circuit": {
-      "country": "country.spain",
-      "countryCode": "es",
+      "countryCode": "ES",
+      "country": "Spain",
+      "region": "Aragon",
       "city": "Alcañiz",
       "name": "MotorLand Aragón"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1727425200000,
+        "endAt": 1727427900000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1727442000000,
+        "endAt": 1727444700000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1727506800000,
+        "endAt": 1727508000000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1727514000000,
+        "endAt": 1727514900000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1727524800000,
+        "endAt": null,
+        "laps": 18
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1727600400000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1727611200000,
+        "endAt": null,
+        "laps": 18
+      }
+    ]
   },
   {
-    "round": 1,
-    "name": "gp.name.sbk.spanish",
-    "raceTimestamp": 1729414800000,
+    "round": 12,
+    "name": "Prometeon Spanish Round",
     "circuit": {
-      "country": "country.spain",
-      "countryCode": "es",
+      "countryCode": "ES",
+      "country": "Spain",
+      "region": "Andalusia",
       "city": "Jerez de la Frontera",
       "name": "Circuito de Jerez"
-    }
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1729240500000,
+        "endAt": 1729243200000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1729256400000,
+        "endAt": 1729259100000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1729322100000,
+        "endAt": 1729323300000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1729328400000,
+        "endAt": 1729329300000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1729339200000,
+        "endAt": null,
+        "laps": 21
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1729414800000,
+        "endAt": null,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1729425600000,
+        "endAt": null,
+        "laps": 21
+      }
+    ]
   }
 ]
