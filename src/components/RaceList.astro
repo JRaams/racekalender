@@ -3,7 +3,6 @@ import { Icon } from 'astro-icon/components';
 import type { Race } from '~/types';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import TimeDisplay from './TimeDisplay.svelte';
-import TimeDistanceDisplay from './TimeDistanceDisplay.svelte';
 import { TypeToIconMap } from '~/types/eventtype';
 
 type Props = {
@@ -18,7 +17,7 @@ const t = useTranslations(lang);
 ---
 
 <script>
-  import dayjs from 'dayjs';
+  // import dayjs from 'dayjs';
 
   // window.addEventListener('DOMContentLoaded', () => {
   //   document.querySelectorAll('.race-list-row').forEach((tr) => {

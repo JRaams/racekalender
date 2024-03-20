@@ -1,6 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { getLangFromUrl } from '~/i18n/utils';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import type { Race } from '~/types';
 import { TypeToIconMap } from '~/types/eventtype';
 import TimeDisplay from './TimeDisplay.svelte';
@@ -11,15 +11,15 @@ type Props = {
 
 const { race } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <table>
   <thead>
     <tr>
-      <!-- TODO: Translations -->
-      <th scope="col">Type</th>
-      <th scope="col">Time</th>
-      <th scope="col">Laps</th>
+      <th scope="col">{t('list.table.type')}</th>
+      <th scope="col">{t('list.table.time')}</th>
+      <th scope="col" class="lap-column">{t('list.table.laps')}</th>
     </tr>
   </thead>
   <tbody>
@@ -34,10 +34,18 @@ const lang = getLangFromUrl(Astro.url);
             <TimeDisplay {lang} timestamp={e.startAt} />
           </td>
           <td>
-            <small>{!!e.laps ? `${e.laps} laps` : '-'}</small>
+            <small>{e.laps ?? '-'}</small>
           </td>
         </tr>
       ))
     }
   </tbody>
 </table>
+
+<style>
+  @media screen and (max-width: 500px) {
+    .lap-column {
+      width: 0;
+    }
+  }
+</style>

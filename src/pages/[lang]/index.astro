@@ -16,7 +16,7 @@ const races = [
   ...f1.map<Race>((x) => ({ ...x, kind: 'F1' })),
   ...motogp.map<Race>((x) => ({ ...x, kind: 'MotoGP' })),
   ...superbike.map<Race>((x) => ({ ...x, kind: 'SBK' })),
-].sort((a, b) => a.raceTimestamp - b.raceTimestamp);
+]; //.sort((a, b) => a.raceTimestamp - b.raceTimestamp);
 
 export function getStaticPaths() {
   return Object.keys(languages).map((x) => ({ params: { lang: x } }));

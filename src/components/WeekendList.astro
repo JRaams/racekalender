@@ -26,13 +26,13 @@ function getDayEnd(race: Race) {
 }
 ---
 
-<script is:inline defer>
+<script>
   document.addEventListener('DOMContentLoaded', () => {
     const details = document.querySelectorAll('.weekend-list details');
     const today = new Date().getTime() / 1000;
 
     for (let i = 0; i < details.length; i++) {
-      const d = details[i];
+      const d = details[i]!;
 
       const start = Number(d.getAttribute('data-day-start'));
       const end = Number(d.getAttribute('data-day-end'));
@@ -46,7 +46,9 @@ function getDayEnd(race: Race) {
 
       const summary = d.querySelector('summary');
       if (summary) {
-        summary.classList.remove('outline');
+        if (start <= today && today <= end) {
+          summary.classList.remove('outline');
+        }
         summary.classList.remove('secondary');
         summary.classList.add('primary');
       }
@@ -72,7 +74,7 @@ function getDayEnd(race: Race) {
               <span>{race.circuit.name}</span>
               <small>
                 {race.circuit.city},{race.circuit.region && ` ${race.circuit.region}, `}
-                {race.circuit.country}
+                {t(`country.${race.circuit.countryCode}` as any)}
               </small>
             </div>
           </div>
