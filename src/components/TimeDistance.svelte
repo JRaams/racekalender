@@ -20,7 +20,7 @@
 </script>
 
 <div class="date-wrapper">
-  <span>{formattedDate}</span>
+  <span class:strikethrough={!dateDistance}>{formattedDate}</span>
 
   {#if dateDistance}
     <small>{dateDistance}</small>

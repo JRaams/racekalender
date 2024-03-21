@@ -2,10 +2,7 @@
   type Theme = 'dark' | 'light';
   const STORAGE_KEY = 'THEME';
 
-  let storedTheme = localStorage.getItem(STORAGE_KEY) as Theme;
-  if (!storedTheme) {
-    storedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
+  let storedTheme = (localStorage.getItem(STORAGE_KEY) as Theme) ?? 'dark';
   changeTheme(storedTheme);
 
   const checkbox = document.querySelector('#theme-toggle-state') as HTMLInputElement | undefined;

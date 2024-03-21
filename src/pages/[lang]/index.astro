@@ -4,74 +4,13 @@ import TimeDistance from '~/components/TimeDistance.svelte';
 import { languages, type Language } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/Layout.astro';
-import f1 from '~/static/2024/f1.json';
-import superbike from '~/static/2024/superbike.json';
-import motogp from '~/static/2024/motogp.json';
-import type { RaceRow } from '~/types';
 import { TypeToIconMap } from '~/types/eventtype';
+import { CreateGroupedRaceRows } from '~/utils/racegrouper';
 
 const params = Astro.params;
 const lang = params.lang as Language;
 const t = useTranslations(lang);
-
-const races: RaceRow[] = [];
-
-f1.forEach((raceWeek) => {
-  raceWeek.events.forEach((event) => {
-    if (event.type !== 'race' && event.type !== 'sprint') return;
-    races.push({
-      kind: 'F1',
-      name: raceWeek.name.replace(/^formula 1/i, '').replace(/ \d+$/, ''),
-      date: event.startAt,
-      circuit: {
-        name: raceWeek.circuit.name,
-        city: raceWeek.circuit.city,
-        countryCode: raceWeek.circuit.countryCode,
-        country: t(`country.${raceWeek.circuit.countryCode}` as any),
-      },
-      type: event.type,
-    });
-  });
-});
-
-motogp.forEach((raceWeek) => {
-  raceWeek.events.forEach((event) => {
-    if (event.type !== 'sprint' && event.type !== 'race') return;
-    races.push({
-      kind: 'MotoGP',
-      name: raceWeek.name,
-      date: event.startAt,
-      circuit: {
-        name: raceWeek.circuit.name,
-        city: raceWeek.circuit.city,
-        countryCode: raceWeek.circuit.countryCode,
-        country: t(`country.${raceWeek.circuit.countryCode}` as any),
-      },
-      type: event.type,
-    });
-  });
-});
-
-superbike.forEach((raceWeek) => {
-  raceWeek.events.forEach((event) => {
-    if (event.type !== 'superpole_race' && event.type !== 'race') return;
-
-    races.push({
-      kind: 'SBK',
-      name: raceWeek.name,
-      date: event.startAt,
-      circuit: {
-        name: raceWeek.circuit.name,
-        city: raceWeek.circuit.city,
-        countryCode: raceWeek.circuit.countryCode,
-        country: t(`country.${raceWeek.circuit.countryCode}` as any),
-      },
-      type: event.type,
-    });
-  });
-});
-
-races.sort((a, b) => a.date - b.date);
+const races = CreateGroupedRaceRows(lang);
 
 export function getStaticPaths() {
   return Object.keys(languages).map((x) => ({ params: { lang: x } }));
@@ -82,16 +21,30 @@ export function getStaticPaths() {
   import dayjs from 'dayjs';
 
   import isoWeek from 'dayjs/plugin/isoWeek';
-  import weekOfYear from 'dayjs/plugin/weekOfYear';
-  dayjs.extend(weekOfYear);
   dayjs.extend(isoWeek);
 
   window.addEventListener('DOMContentLoaded', () => {
     let nextWeekNumber: number | undefined;
-    let foundScrollTarget = false;
     const now = new Date();
     // const now = new Date(1711240000000);
     // const now = new Date(1713288700000);
+
+    document.querySelectorAll('.race-week-row').forEach((tr) => {
+      const timestamp = Number(tr.getAttribute('data-timestamp'));
+      const date = dayjs(timestamp);
+
+      if (date.isBefore(now, 'days')) {
+        tr.classList.add('past');
+        tr.classList.add('strikethrough');
+      }
+
+      const weekNumber = date.isoWeek();
+      const currentWeek = dayjs().isoWeek();
+      if (weekNumber === currentWeek) {
+        tr.classList.add('current');
+        tr.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
 
     document.querySelectorAll('.race-list-row').forEach((tr) => {
       const timestamp = Number(tr.getAttribute('data-timestamp'));
@@ -104,13 +57,8 @@ export function getStaticPaths() {
       }
 
       nextWeekNumber ??= weekNumber;
-
-      if (weekNumber !== nextWeekNumber) return;
-      tr.classList.add('current');
-
-      if (date.isAfter(now) && !foundScrollTarget) {
-        foundScrollTarget = true;
-        tr.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (nextWeekNumber === weekNumber) {
+        tr.classList.add('current');
       }
     });
   });
@@ -129,50 +77,58 @@ export function getStaticPaths() {
       </thead>
       <tbody>
         {
-          races.map((race) => (
-            <tr class="race-list-row" data-timestamp={race.date}>
-              <td>{race.kind}</td>
-              <td data-col={t('list.table.name')}>
-                <div class="name-cell">
-                  {race.name}
+          Object.entries(races).map(([week, races]) => (
+            <>
+              <tr class="race-week-row" data-timestamp={races.at(-1)?.date}>
+                <td colspan="1000">Week {week}</td>
+              </tr>
 
-                  {race.type === 'race' && (
-                    <small>
-                      <Icon name={TypeToIconMap[race.type]} size={16} />
-                      Race
-                    </small>
-                  )}
+              {races.map((race) => (
+                <tr class="race-list-row" data-timestamp={race.date}>
+                  <td>{race.kind}</td>
+                  <td data-col={t('list.table.name')}>
+                    <div class="name-cell">
+                      {race.name}
 
-                  {race.type === 'sprint' && (
-                    <small>
-                      <Icon name={TypeToIconMap[race.type]} size={16} />
-                      Sprint
-                    </small>
-                  )}
+                      {race.type === 'race' && (
+                        <small>
+                          <Icon name={TypeToIconMap[race.type]} size={16} />
+                          Race
+                        </small>
+                      )}
 
-                  {race.type === 'superpole_race' && (
-                    <small>
-                      <Icon name={TypeToIconMap[race.type]} size={16} />
-                      Superpole
-                    </small>
-                  )}
-                </div>
-              </td>
-              <td class="date-cell" data-col={t('list.table.date')}>
-                <TimeDistance client:only="svelte" timestamp={race.date} lang={lang} />
-              </td>
-              <td data-col={t('list.table.circuit')}>
-                <div class="flex-row">
-                  {<Icon name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={32} />}
-                  <div class="flex-col">
-                    <span class="no-wrap">{race.circuit.name}</span>
-                    <small>
-                      {race.circuit.city}, {t(('country.' + race.circuit.countryCode) as any)}
-                    </small>
-                  </div>
-                </div>
-              </td>
-            </tr>
+                      {race.type === 'sprint' && (
+                        <small>
+                          <Icon name={TypeToIconMap[race.type]} size={16} />
+                          Sprint
+                        </small>
+                      )}
+
+                      {race.type === 'superpole_race' && (
+                        <small>
+                          <Icon name={TypeToIconMap[race.type]} size={16} />
+                          Superpole
+                        </small>
+                      )}
+                    </div>
+                  </td>
+                  <td class="date-cell" data-col={t('list.table.date')}>
+                    <TimeDistance client:only="svelte" timestamp={race.date} lang={lang} />
+                  </td>
+                  <td data-col={t('list.table.circuit')}>
+                    <div class="flex-row">
+                      {<Icon name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={32} />}
+                      <div class="flex-col">
+                        <span class="no-wrap">{race.circuit.name}</span>
+                        <small>
+                          {race.circuit.city}, {t(('country.' + race.circuit.countryCode) as any)}
+                        </small>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </>
           ))
         }
       </tbody>
@@ -185,18 +141,23 @@ export function getStaticPaths() {
     font-size: 16px;
   }
 
+  .race-week-row {
+    --pico-background-color: var(--pico-code-background-color);
+  }
+  .race-week-row.current {
+    --pico-background-color: var(--pico-primary-background);
+    --pico-color: #fff;
+  }
+
   .no-wrap {
     white-space: nowrap;
   }
   tr.past {
-    filter: opacity(0.33);
+    filter: opacity(0.5);
   }
   tr.current {
-    --pico-background-color: var(--pico-primary-background);
-    --pico-color: var(--pico-color-light);
-  }
-  tr.current:hover {
-    --pico-background-color: var(--pico-primary-hover-background);
+    --pico-background-color: color-mix(in srgb, var(--pico-primary-background), transparent 80%);
+    /* --pico-background-color: #346cdb3b; */
   }
 
   .name-cell {
@@ -231,9 +192,9 @@ export function getStaticPaths() {
   }
 
   @media screen and (width < 1400px) {
-    :global(.container) {
+    /* :global(.container) {
       max-width: 90%;
-    }
+    } */
 
     table {
       font-size: 14px;
