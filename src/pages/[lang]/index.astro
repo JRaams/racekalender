@@ -5,6 +5,8 @@ import { languages, type Language } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/Layout.astro';
 import f1 from '~/static/2024/f1.json';
+import superbike from '~/static/2024/superbike.json';
+import motogp from '~/static/2024/motogp.json';
 import type { RaceRow } from '~/types';
 import { TypeToIconMap } from '~/types/eventtype';
 
@@ -17,10 +19,9 @@ const races: RaceRow[] = [];
 f1.forEach((raceWeek) => {
   raceWeek.events.forEach((event) => {
     if (event.type !== 'race' && event.type !== 'sprint') return;
-
     races.push({
       kind: 'F1',
-      name: event.name.split(' - ')[1]!,
+      name: raceWeek.name.replace(/^formula 1/i, '').replace(/ \d+$/, ''),
       date: event.startAt,
       circuit: {
         name: raceWeek.circuit.name,
@@ -33,6 +34,45 @@ f1.forEach((raceWeek) => {
   });
 });
 
+motogp.forEach((raceWeek) => {
+  raceWeek.events.forEach((event) => {
+    if (event.type !== 'sprint' && event.type !== 'race') return;
+    races.push({
+      kind: 'MotoGP',
+      name: raceWeek.name,
+      date: event.startAt,
+      circuit: {
+        name: raceWeek.circuit.name,
+        city: raceWeek.circuit.city,
+        countryCode: raceWeek.circuit.countryCode,
+        country: t(`country.${raceWeek.circuit.countryCode}` as any),
+      },
+      type: event.type,
+    });
+  });
+});
+
+superbike.forEach((raceWeek) => {
+  raceWeek.events.forEach((event) => {
+    if (event.type !== 'superpole_race' && event.type !== 'race') return;
+
+    races.push({
+      kind: 'SBK',
+      name: raceWeek.name,
+      date: event.startAt,
+      circuit: {
+        name: raceWeek.circuit.name,
+        city: raceWeek.circuit.city,
+        countryCode: raceWeek.circuit.countryCode,
+        country: t(`country.${raceWeek.circuit.countryCode}` as any),
+      },
+      type: event.type,
+    });
+  });
+});
+
+races.sort((a, b) => a.date - b.date);
+
 export function getStaticPaths() {
   return Object.keys(languages).map((x) => ({ params: { lang: x } }));
 }
@@ -41,25 +81,36 @@ export function getStaticPaths() {
 <script>
   import dayjs from 'dayjs';
 
+  import isoWeek from 'dayjs/plugin/isoWeek';
+  import weekOfYear from 'dayjs/plugin/weekOfYear';
+  dayjs.extend(weekOfYear);
+  dayjs.extend(isoWeek);
+
   window.addEventListener('DOMContentLoaded', () => {
-    let foundFirstDay = false;
+    let nextWeekNumber: number | undefined;
+    let foundScrollTarget = false;
+    const now = new Date();
+    // const now = new Date(1711240000000);
+    // const now = new Date(1713288700000);
+
     document.querySelectorAll('.race-list-row').forEach((tr) => {
       const timestamp = Number(tr.getAttribute('data-timestamp'));
       const date = dayjs(timestamp);
+      const weekNumber = date.isoWeek();
 
-      if (date.isBefore(new Date(), 'days')) {
+      if (date.isBefore(now, 'days')) {
         tr.classList.add('past');
         return;
       }
 
-      if (date.isSame(new Date(), 'days')) {
-        tr.classList.add('today');
-      }
+      nextWeekNumber ??= weekNumber;
 
-      if (!foundFirstDay) {
-        foundFirstDay = true;
-        tr.classList.add('current');
-        tr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (weekNumber !== nextWeekNumber) return;
+      tr.classList.add('current');
+
+      if (date.isAfter(now) && !foundScrollTarget) {
+        foundScrollTarget = true;
+        tr.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
   });
@@ -98,6 +149,13 @@ export function getStaticPaths() {
                       Sprint
                     </small>
                   )}
+
+                  {race.type === 'superpole_race' && (
+                    <small>
+                      <Icon name={TypeToIconMap[race.type]} size={16} />
+                      Superpole
+                    </small>
+                  )}
                 </div>
               </td>
               <td class="date-cell" data-col={t('list.table.date')}>
@@ -123,30 +181,22 @@ export function getStaticPaths() {
 </Layout>
 
 <style>
+  table {
+    font-size: 16px;
+  }
+
   .no-wrap {
     white-space: nowrap;
   }
   tr.past {
     filter: opacity(0.33);
   }
-  tr.today {
-    background: linear-gradient(
-      -45deg,
-      var(--pico-color-jade-200),
-      var(--pico-color-green-200),
-      var(--pico-color-lime-200),
-      var(--pico-color-amber-250)
-    );
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  tr.current {
+    --pico-background-color: var(--pico-primary-background);
+    --pico-color: var(--pico-color-light);
   }
-  tr.today td {
-    background: transparent;
-    --pico-color: var(--pico-color-slate-800);
-  }
-
-  .current {
-    --pico-color: var(--pico-primary);
+  tr.current:hover {
+    --pico-background-color: var(--pico-primary-hover-background);
   }
 
   .name-cell {
@@ -180,22 +230,17 @@ export function getStaticPaths() {
     filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
   }
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
+  @media screen and (width < 1400px) {
+    :global(.container) {
+      max-width: 90%;
     }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
+
+    table {
+      font-size: 14px;
     }
   }
 
-  @media screen and (max-width: 1024px) {
-    .no-wrap {
-      /* white-space: initial; */
-    }
+  @media screen and (max-width: 1100px) {
     table {
       thead {
         display: none;

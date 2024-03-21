@@ -23,7 +23,7 @@ export type RaceWeek = {
 
 export type RaceRow = {
   kind: 'F1' | 'MotoGP' | 'SBK';
-  type: 'sprint' | 'race';
+  type: 'sprint' | 'race' | 'superpole_race';
   name: string;
   date: number;
   circuit: {
