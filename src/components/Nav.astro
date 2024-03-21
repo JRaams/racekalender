@@ -39,8 +39,8 @@ const t = useTranslations(lang);
     }
   </ul>
 
-  <ul>
-    <li style="display: flex; align-items: center;"><LangSwitcher /></li>
+  <ul class="nav-icons">
+    <li><LangSwitcher /></li>
     <li><ThemeSwitcher /></li>
   </ul>
 </nav>
@@ -110,5 +110,10 @@ const t = useTranslations(lang);
     .desktop {
       display: initial;
     }
+  }
+
+  .nav-icons li {
+    display: flex;
+    align-items: center;
   }
 </style>

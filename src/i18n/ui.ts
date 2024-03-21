@@ -17,6 +17,7 @@ export const ui = {
   en: {
     'nav.title': 'Racecalendar 2024',
     'list.table.name': 'Name',
+    'list.table.date': 'Date',
     'list.table.circuit': 'Circuit',
     'list.table.type': 'Type',
     'list.table.time': 'Time',
@@ -61,6 +62,7 @@ export const ui = {
   nl: {
     'nav.title': 'Racekalender 2024',
     'list.table.name': 'Naam',
+    'list.table.date': 'Datum',
     'list.table.circuit': 'Circuit',
     'list.table.type': 'Soort',
     'list.table.time': 'Datum, tijd',

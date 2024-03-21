@@ -1,28 +1,230 @@
 ---
-import RaceList from '~/components/RaceList.astro';
+import { Icon } from 'astro-icon/components';
+import TimeDistance from '~/components/TimeDistance.svelte';
 import { languages, type Language } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/Layout.astro';
 import f1 from '~/static/2024/f1.json';
-import motogp from '~/static/2024/motogp.json';
-import superbike from '~/static/2024/superbike.json';
-import type { Race } from '~/types';
+import type { RaceRow } from '~/types';
+import { TypeToIconMap } from '~/types/eventtype';
 
 const params = Astro.params;
 const lang = params.lang as Language;
 const t = useTranslations(lang);
 
-const races = [
-  ...f1.map<Race>((x) => ({ ...x, kind: 'F1' })),
-  ...motogp.map<Race>((x) => ({ ...x, kind: 'MotoGP' })),
-  ...superbike.map<Race>((x) => ({ ...x, kind: 'SBK' })),
-]; //.sort((a, b) => a.raceTimestamp - b.raceTimestamp);
+const races: RaceRow[] = [];
+
+f1.forEach((raceWeek) => {
+  raceWeek.events.forEach((event) => {
+    if (event.type !== 'race' && event.type !== 'sprint') return;
+
+    races.push({
+      kind: 'F1',
+      name: event.name.split(' - ')[1]!,
+      date: event.startAt,
+      circuit: {
+        name: raceWeek.circuit.name,
+        city: raceWeek.circuit.city,
+        countryCode: raceWeek.circuit.countryCode,
+        country: t(`country.${raceWeek.circuit.countryCode}` as any),
+      },
+      type: event.type,
+    });
+  });
+});
 
 export function getStaticPaths() {
   return Object.keys(languages).map((x) => ({ params: { lang: x } }));
 }
 ---
 
+<script>
+  import dayjs from 'dayjs';
+
+  window.addEventListener('DOMContentLoaded', () => {
+    let foundFirstDay = false;
+    document.querySelectorAll('.race-list-row').forEach((tr) => {
+      const timestamp = Number(tr.getAttribute('data-timestamp'));
+      const date = dayjs(timestamp);
+
+      if (date.isBefore(new Date(), 'days')) {
+        tr.classList.add('past');
+        return;
+      }
+
+      if (date.isSame(new Date(), 'days')) {
+        tr.classList.add('today');
+      }
+
+      if (!foundFirstDay) {
+        foundFirstDay = true;
+        tr.classList.add('current');
+        tr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  });
+</script>
+
 <Layout title={t('nav.title')}>
-  <RaceList showKind={true} races={races} />
+  <div class="overflow-auto">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">{t('list.table.name')}</th>
+          <th scope="col">{t('list.table.date')}</th>
+          <th scope="col">{t('list.table.circuit')}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          races.map((race) => (
+            <tr class="race-list-row" data-timestamp={race.date}>
+              <td>{race.kind}</td>
+              <td data-col={t('list.table.name')}>
+                <div class="name-cell">
+                  {race.name}
+
+                  {race.type === 'race' && (
+                    <small>
+                      <Icon name={TypeToIconMap[race.type]} size={16} />
+                      Race
+                    </small>
+                  )}
+
+                  {race.type === 'sprint' && (
+                    <small>
+                      <Icon name={TypeToIconMap[race.type]} size={16} />
+                      Sprint
+                    </small>
+                  )}
+                </div>
+              </td>
+              <td class="date-cell" data-col={t('list.table.date')}>
+                <TimeDistance client:only="svelte" timestamp={race.date} lang={lang} />
+              </td>
+              <td data-col={t('list.table.circuit')}>
+                <div class="flex-row">
+                  {<Icon name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={32} />}
+                  <div class="flex-col">
+                    <span class="no-wrap">{race.circuit.name}</span>
+                    <small>
+                      {race.circuit.city}, {t(('country.' + race.circuit.countryCode) as any)}
+                    </small>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
 </Layout>
+
+<style>
+  .no-wrap {
+    white-space: nowrap;
+  }
+  tr.past {
+    filter: opacity(0.33);
+  }
+  tr.today {
+    background: linear-gradient(
+      -45deg,
+      var(--pico-color-jade-200),
+      var(--pico-color-green-200),
+      var(--pico-color-lime-200),
+      var(--pico-color-amber-250)
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  tr.today td {
+    background: transparent;
+    --pico-color: var(--pico-color-slate-800);
+  }
+
+  .current {
+    --pico-color: var(--pico-primary);
+  }
+
+  .name-cell {
+    display: flex;
+    flex-direction: column;
+  }
+  .name-cell small {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+  }
+
+  .date-cell {
+    min-width: 250px;
+    min-height: 46px;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75em;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  svg {
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .no-wrap {
+      /* white-space: initial; */
+    }
+    table {
+      thead {
+        display: none;
+      }
+    }
+
+    tbody {
+      tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        border-radius: 4px;
+        border: 2px solid var(--pico-contrast-focus);
+
+        td[data-col] {
+          display: grid;
+          grid-template-columns: 70px 1fr;
+          place-items: center start;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          &::before {
+            content: attr(data-col);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+</style>

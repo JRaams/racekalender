@@ -1,15 +1,15 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
-import type { Race } from '~/types';
+import type { RaceWeek } from '~/types';
 import { TypeToIconMap } from '~/types/eventtype';
 import TimeDisplay from './TimeDisplay.svelte';
 
 type Props = {
-  race: Race;
+  raceWeek: RaceWeek;
 };
 
-const { race } = Astro.props;
+const { raceWeek } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -24,17 +24,17 @@ const t = useTranslations(lang);
   </thead>
   <tbody>
     {
-      race.events.map((e) => (
+      raceWeek.events.map((event) => (
         <tr>
-          <td>
-            <Icon name={TypeToIconMap[e.type] ?? 'material-symbols:brightness-empty'} size={16} />
-            {e.name.split(' - ')[0]}
+          <td class="type-cell">
+            <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
+            {event.name.split(' - ')[0]}
           </td>
           <td>
-            <TimeDisplay {lang} timestamp={e.startAt} />
+            <TimeDisplay {lang} timestamp={event.startAt} />
           </td>
           <td>
-            <small>{e.laps ?? '-'}</small>
+            <small>{event.laps ?? '-'}</small>
           </td>
         </tr>
       ))
@@ -47,5 +47,11 @@ const t = useTranslations(lang);
     .lap-column {
       width: 0;
     }
+  }
+
+  .type-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
   }
 </style>

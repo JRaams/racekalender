@@ -16,17 +16,19 @@
   const today = date.isSame(new Date(), 'days');
 
   const formattedDate = date.format('dd DD MMMM, HH:mm');
-  const dateDistance = today ? t('time.today') : date.fromNow();
+  const dateDistance = today ? t('time.today') : date.isBefore(dayjs()) ? null : date.fromNow();
 </script>
 
 <div class="date-wrapper">
   <span>{formattedDate}</span>
-  <small>{dateDistance}</small>
+
+  {#if dateDistance}
+    <small>{dateDistance}</small>
+  {/if}
 </div>
 
 <style scoped>
   .date-wrapper {
     display: grid;
-    grid-template-rows: 1fr 1fr;
   }
 </style>

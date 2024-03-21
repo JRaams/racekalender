@@ -1,7 +1,7 @@
 export const kinds = ['formula1', 'motogp', 'superbike'] as const;
 export type Kind = (typeof kinds)[number];
 
-export type Race = {
+export type RaceWeek = {
   kind?: string;
   round: number;
   name: string;
@@ -19,4 +19,17 @@ export type Race = {
     endAt?: number | null;
     laps?: number | null;
   }[];
+};
+
+export type RaceRow = {
+  kind: 'F1' | 'MotoGP' | 'SBK';
+  type: 'sprint' | 'race';
+  name: string;
+  date: number;
+  circuit: {
+    countryCode: string;
+    country: string;
+    city: string;
+    name: string;
+  };
 };

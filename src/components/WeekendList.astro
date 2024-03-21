@@ -1,26 +1,26 @@
 ---
 import { Icon } from 'astro-icon/components';
-import type { Race } from '~/types';
+import type { RaceWeek } from '~/types';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import WeekendListDetails from './WeekendListDetails.astro';
 import dayjs from 'dayjs';
 
 type Props = {
-  races: Race[];
+  raceWeeks: RaceWeek[];
 };
 
-const { races } = Astro.props;
+const { raceWeeks } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-function getDayStart(race: Race) {
-  const firstRace = race.events.at(0)?.startAt;
+function getDayStart(raceWeek: RaceWeek) {
+  const firstRace = raceWeek.events.at(0)?.startAt;
   if (firstRace === undefined) return null;
   return dayjs(firstRace).set('hours', 0).set('minutes', 0).set('seconds', 0).unix();
 }
-function getDayEnd(race: Race) {
-  const lastRace = race.events.at(-1)?.startAt;
+function getDayEnd(raceWeek: RaceWeek) {
+  const lastRace = raceWeek.events.at(-1)?.startAt;
   if (lastRace === undefined) return null;
   return dayjs(lastRace).set('hours', 23).set('minutes', 59).set('seconds', 59).unix();
 }
@@ -61,27 +61,27 @@ function getDayEnd(race: Race) {
 
 <div class="weekend-list">
   {
-    races.map((race) => (
-      <details data-day-start={getDayStart(race)} data-day-end={getDayEnd(race)}>
+    raceWeeks.map((raceWeek) => (
+      <details data-day-start={getDayStart(raceWeek)} data-day-end={getDayEnd(raceWeek)}>
         <summary role="button" class="secondary outline">
           <h5>
-            {race.round}. {race.name.replace('FORMULA 1', '').replace(' 2024', '')}
+            {raceWeek.round}. {raceWeek.name.replace('FORMULA 1', '').replace(' 2024', '')}
           </h5>
 
           <div class="summary-subtitle">
-            {<Icon name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={32} />}
+            {<Icon name={'flagpack:' + raceWeek.circuit.countryCode.toLowerCase()} size={32} />}
             <div>
-              <span>{race.circuit.name}</span>
+              <span>{raceWeek.circuit.name}</span>
               <small>
-                {race.circuit.city},{race.circuit.region && ` ${race.circuit.region}, `}
-                {t(`country.${race.circuit.countryCode}` as any)}
+                {raceWeek.circuit.city},{raceWeek.circuit.region && ` ${raceWeek.circuit.region}, `}
+                {t(`country.${raceWeek.circuit.countryCode}` as any)}
               </small>
             </div>
           </div>
         </summary>
 
         <div class="details-wrapper">
-          <WeekendListDetails {race} />
+          <WeekendListDetails {raceWeek} />
         </div>
       </details>
     ))

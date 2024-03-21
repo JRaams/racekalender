@@ -6,7 +6,7 @@ import Layout from '~/layouts/Layout.astro';
 import f1 from '~/static/2024/f1.json';
 import motogp from '~/static/2024/motogp.json';
 import superbike from '~/static/2024/superbike.json';
-import type { Race } from '~/types';
+import type { RaceWeek } from '~/types';
 import { kinds, type Kind } from '~/types';
 
 const params = Astro.params;
@@ -14,16 +14,16 @@ const lang = params.lang as Language;
 const kind = params.kind as Kind;
 const t = useTranslations(lang);
 
-let races: Race[] = [];
+let raceWeeks: RaceWeek[] = [];
 switch (kind) {
   case 'formula1':
-    races = f1;
+    raceWeeks = f1;
     break;
   case 'motogp':
-    races = motogp;
+    raceWeeks = motogp;
     break;
   case 'superbike':
-    races = superbike;
+    raceWeeks = superbike;
     break;
   default:
     break;
@@ -45,6 +45,5 @@ export function getStaticPaths() {
 ---
 
 <Layout title={t('nav.title')}>
-  <WeekendList {races} />
-  <!-- <RaceList showKind={false} races={races} /> -->
+  <WeekendList {raceWeeks} />
 </Layout>
