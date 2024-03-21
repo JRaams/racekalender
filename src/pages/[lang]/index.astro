@@ -26,8 +26,6 @@ export function getStaticPaths() {
   window.addEventListener('DOMContentLoaded', () => {
     let nextWeekNumber: number | undefined;
     const now = new Date();
-    // const now = new Date(1711240000000);
-    // const now = new Date(1713288700000);
 
     document.querySelectorAll('.race-week-row').forEach((tr) => {
       const timestamp = Number(tr.getAttribute('data-timestamp'));
@@ -157,7 +155,6 @@ export function getStaticPaths() {
   }
   tr.current {
     --pico-background-color: color-mix(in srgb, var(--pico-primary-background), transparent 80%);
-    /* --pico-background-color: #346cdb3b; */
   }
 
   .name-cell {
@@ -202,6 +199,10 @@ export function getStaticPaths() {
   }
 
   @media screen and (max-width: 1100px) {
+    .no-wrap {
+      white-space: inherit;
+    }
+
     table {
       thead {
         display: none;
