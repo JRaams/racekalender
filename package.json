@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.5",
+    "@astrojs/sitemap": "^3.1.1",
     "@astrojs/svelte": "^5.0.3",
     "@iconify-json/flagpack": "^1.1.14",
     "@iconify-json/material-symbols": "^1.1.75",
@@ -18,6 +19,7 @@
     "astro": "^4.4.4",
     "astro-icon": "^1.1.0",
     "astro-purgecss": "^4.1.0",
+    "astro-robots-txt": "^1.0.0",
     "autoprefixer": "^10.4.17",
     "cssnano": "^6.0.5",
     "dayjs": "^1.11.10",
