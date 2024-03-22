@@ -31,7 +31,7 @@ const t = useTranslations(lang);
             {event.name.split(' - ')[0]}
           </td>
           <td>
-            <TimeDisplay {lang} timestamp={event.startAt} />
+            <TimeDisplay client:only="svelte" {lang} timestamp={event.startAt} />
           </td>
           <td>
             <small>{event.laps ?? '-'}</small>

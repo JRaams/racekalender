@@ -78,7 +78,9 @@ export function getStaticPaths() {
           Object.entries(races).map(([week, races]) => (
             <>
               <tr class="race-week-row" data-timestamp={races.at(-1)?.date}>
-                <td colspan="1000">Week {week}</td>
+                <td colspan="1000">
+                  <strong>Week {week}</strong>
+                </td>
               </tr>
 
               {races.map((race) => (
@@ -141,10 +143,11 @@ export function getStaticPaths() {
 
   .race-week-row {
     --pico-background-color: var(--pico-code-background-color);
-  }
-  .race-week-row.current {
-    --pico-background-color: var(--pico-primary-background);
-    --pico-color: #fff;
+
+    &.current {
+      --pico-background-color: color-mix(in srgb, var(--pico-primary-background), transparent 60%);
+      --pico-contrast-focus: var(--pico-primary-background);
+    }
   }
 
   .no-wrap {
@@ -154,7 +157,9 @@ export function getStaticPaths() {
     filter: opacity(0.5);
   }
   tr.current {
-    --pico-background-color: color-mix(in srgb, var(--pico-primary-background), transparent 80%);
+    --pico-contrast-focus: var(--pico-primary-underline);
+    --pico-table-border-color: var(--pico-primary-underline);
+    --pico-background-color: color-mix(in srgb, var(--pico-primary-background), transparent 90%);
   }
 
   .name-cell {
@@ -189,16 +194,12 @@ export function getStaticPaths() {
   }
 
   @media screen and (width < 1400px) {
-    /* :global(.container) {
-      max-width: 90%;
-    } */
-
     table {
       font-size: 14px;
     }
   }
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (width < 1100px) {
     .no-wrap {
       white-space: inherit;
     }
@@ -206,6 +207,12 @@ export function getStaticPaths() {
     table {
       thead {
         display: none;
+      }
+    }
+
+    .race-week-row {
+      td {
+        border-bottom: none;
       }
     }
 
@@ -230,6 +237,16 @@ export function getStaticPaths() {
             content: attr(data-col);
             font-weight: bold;
           }
+        }
+      }
+    }
+  }
+
+  @media screen and (width < 400px) {
+    tbody {
+      tr {
+        td[data-col] {
+          grid-template-columns: auto;
         }
       }
     }
