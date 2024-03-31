@@ -34,13 +34,15 @@ export function getStaticPaths() {
       if (date.isBefore(now, 'days')) {
         tr.classList.add('past');
         tr.classList.add('strikethrough');
+        return;
       }
 
       const weekNumber = date.isoWeek();
-      const currentWeek = dayjs().isoWeek();
-      if (weekNumber === currentWeek) {
+
+      if (nextWeekNumber === undefined) {
+        nextWeekNumber = weekNumber;
         tr.classList.add('current');
-        tr.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollTo({ top: tr.getBoundingClientRect().top + window.scrollY - 50, behavior: 'instant' });
       }
     });
 
@@ -54,7 +56,6 @@ export function getStaticPaths() {
         return;
       }
 
-      nextWeekNumber ??= weekNumber;
       if (nextWeekNumber === weekNumber) {
         tr.classList.add('current');
       }
