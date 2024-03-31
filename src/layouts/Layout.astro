@@ -18,8 +18,13 @@ const lang = getLangFromUrl(Astro.url);
 
   const paddingTop = `${header?.getBoundingClientRect()?.height}px`;
   let previousY = 0;
+  let previousTime = new Date().getTime();
 
   window.addEventListener('scroll', () => {
+    let now = new Date().getTime();
+    if (now - previousTime < 100) return;
+    previousTime = now;
+
     if (!header || !main) return;
     const scrollPos = window.scrollY;
 
