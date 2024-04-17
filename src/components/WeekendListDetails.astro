@@ -24,20 +24,22 @@ const t = useTranslations(lang);
   </thead>
   <tbody>
     {
-      raceWeek.events.map((event) => (
-        <tr>
-          <td class="type-cell">
-            <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
-            {event.name.split(' - ')[0]}
-          </td>
-          <td>
-            <TimeDisplay client:only="svelte" {lang} timestamp={event.startAt} />
-          </td>
-          <td>
-            <small>{event.laps ?? '-'}</small>
-          </td>
-        </tr>
-      ))
+      raceWeek.events
+        .toSorted((a, b) => a.startAt - b.startAt)
+        .map((event) => (
+          <tr>
+            <td class="type-cell">
+              <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
+              {event.name.split(' - ')[0]}
+            </td>
+            <td>
+              <TimeDisplay client:only="svelte" {lang} timestamp={event.startAt} />
+            </td>
+            <td>
+              <small>{event.laps ?? '-'}</small>
+            </td>
+          </tr>
+        ))
     }
   </tbody>
 </table>
