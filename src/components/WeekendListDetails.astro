@@ -25,7 +25,7 @@ const t = useTranslations(lang);
   <tbody>
     {
       raceWeek.events
-        .toSorted((a, b) => a.startAt - b.startAt)
+        .sort((a, b) => a.startAt - b.startAt)
         .map((event) => (
           <tr>
             <td class="type-cell">
