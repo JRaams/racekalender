@@ -76,49 +76,49 @@
         "name": "FP1",
         "type": "practice",
         "startAt": 1711099200000,
-        "endAt": 1711101900000,
+        "endAt": 1711102059000,
         "laps": null
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1711116000000,
-        "endAt": 1711118700000,
+        "endAt": 1711118855000,
         "laps": null
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1711180800000,
-        "endAt": 1711182000000,
+        "endAt": 1711182205000,
         "laps": null
       },
       {
         "name": "Superpole",
         "type": "superpole_qualifying",
         "startAt": 1711188000000,
-        "endAt": 1711188900000,
+        "endAt": 1711189243000,
         "laps": null
       },
       {
         "name": "Race 1",
         "type": "race",
         "startAt": 1711198800000,
-        "endAt": null,
+        "endAt": 1711201325000,
         "laps": 20
       },
       {
         "name": "Superpole Race",
         "type": "superpole_race",
         "startAt": 1711274400000,
-        "endAt": null,
+        "endAt": 1711275909000,
         "laps": 10
       },
       {
         "name": "Race 2",
         "type": "race",
         "startAt": 1711285200000,
-        "endAt": null,
+        "endAt": 1711287521000,
         "laps": 20
       }
     ]
@@ -138,49 +138,49 @@
         "name": "FP1",
         "type": "practice",
         "startAt": 1713514800000,
-        "endAt": 1713517500000,
+        "endAt": 1713517768000,
         "laps": null
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1713531600000,
-        "endAt": 1713534300000,
+        "endAt": 1713535117000,
         "laps": null
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1713596400000,
-        "endAt": 1713597600000,
+        "endAt": 1713597840000,
         "laps": null
       },
       {
         "name": "Superpole",
         "type": "superpole_qualifying",
         "startAt": 1713603600000,
-        "endAt": 1713604500000,
+        "endAt": 1713604824000,
         "laps": null
       },
       {
         "name": "Race 1",
         "type": "race",
         "startAt": 1713614400000,
-        "endAt": null,
+        "endAt": 1713616080000,
         "laps": 20
       },
       {
         "name": "Superpole Race",
         "type": "superpole_race",
         "startAt": 1713690000000,
-        "endAt": null,
+        "endAt": 1713691304000,
         "laps": 10
       },
       {
         "name": "Race 2",
         "type": "race",
         "startAt": 1713700800000,
-        "endAt": null,
+        "endAt": 1713703080000,
         "laps": 20
       }
     ]
@@ -385,49 +385,49 @@
       {
         "name": "FP1",
         "type": "practice",
-        "startAt": 1723212900000,
-        "endAt": 1723215600000,
+        "startAt": 1723205700000,
+        "endAt": 1723208400000,
         "laps": null
       },
       {
         "name": "FP2",
         "type": "practice",
-        "startAt": 1723226400000,
-        "endAt": 1723229100000,
+        "startAt": 1723222800000,
+        "endAt": 1723225500000,
         "laps": null
       },
       {
         "name": "FP3",
         "type": "practice",
-        "startAt": 1723291800000,
-        "endAt": 1723293000000,
+        "startAt": 1723288200000,
+        "endAt": 1723289400000,
         "laps": null
       },
       {
         "name": "Superpole",
         "type": "superpole_qualifying",
-        "startAt": 1723301100000,
-        "endAt": 1723302000000,
+        "startAt": 1723297500000,
+        "endAt": 1723298400000,
         "laps": null
       },
       {
         "name": "Race 1",
         "type": "race",
-        "startAt": 1723312800000,
+        "startAt": 1723309200000,
         "endAt": null,
         "laps": 20
       },
       {
         "name": "Superpole Race",
         "type": "superpole_race",
-        "startAt": 1723387500000,
+        "startAt": 1723383900000,
         "endAt": null,
         "laps": 10
       },
       {
         "name": "Race 2",
         "type": "race",
-        "startAt": 1723399200000,
+        "startAt": 1723395600000,
         "endAt": null,
         "laps": 20
       }

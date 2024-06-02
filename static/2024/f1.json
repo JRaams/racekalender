@@ -66,8 +66,8 @@
       {
         "name": "Practice 2 - Saudi Arabian Grand Prix",
         "type": "practice",
-        "startAt": 1709830800000,
-        "endAt": 1709834400000,
+        "startAt": 1709831400000,
+        "endAt": 1709835000000,
         "laps": null
       },
       {
@@ -100,7 +100,7 @@
       "country": "Australia",
       "countryCode": "AU",
       "city": "Melbourne",
-      "name": "Albert Park Circuit"
+      "name": "Albert Park Grand Prix Circuit"
     },
     "events": [
       {
@@ -147,7 +147,7 @@
       "country": "Japan",
       "countryCode": "JP",
       "city": "Suzuka",
-      "name": "Suzuka International Racing Course"
+      "name": "Suzuka Circuit"
     },
     "events": [
       {
@@ -288,7 +288,7 @@
       "country": "Italy",
       "countryCode": "IT",
       "city": "Imola",
-      "name": "Autodromo Enzo e Dino Ferrari"
+      "name": "Autodromo Internazionale Enzo e Dino Ferrari"
     },
     "events": [
       {

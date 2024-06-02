@@ -136,13 +136,13 @@
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 1 ",
+        "name": "Qualifying Nr. 1",
         "type": "qualifying",
         "startAt": 1713023400000,
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 2 ",
+        "name": "Qualifying Nr. 2",
         "type": "qualifying",
         "startAt": 1713024900000,
         "laps": null
@@ -163,7 +163,7 @@
   },
   {
     "round": 4,
-    "name": "Gran Premio de España",
+    "name": "Gran Premio Estrella Galicia 0,0 de España",
     "circuit": {
       "country": "Spain",
       "countryCode": "ES",
@@ -217,7 +217,7 @@
   },
   {
     "round": 5,
-    "name": "Grand Prix de France",
+    "name": "Michelin® Grand Prix de France",
     "circuit": {
       "country": "France",
       "countryCode": "FR",
@@ -298,13 +298,13 @@
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 1 ",
+        "name": "Qualifying Nr. 1",
         "type": "qualifying",
         "startAt": 1716627000000,
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 2 ",
+        "name": "Qualifying Nr. 2",
         "type": "qualifying",
         "startAt": 1716628500000,
         "laps": null
@@ -325,7 +325,7 @@
   },
   {
     "round": 7,
-    "name": "Gran Premio d'Italia",
+    "name": "Gran Premio d’Italia Brembo",
     "circuit": {
       "country": "Italy",
       "countryCode": "IT",
@@ -352,13 +352,13 @@
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 1 ",
+        "name": "Qualifying Nr. 1",
         "type": "qualifying",
         "startAt": 1717231800000,
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 2 ",
+        "name": "Qualifying Nr. 2",
         "type": "qualifying",
         "startAt": 1717233300000,
         "laps": null
@@ -379,60 +379,6 @@
   },
   {
     "round": 8,
-    "name": "Grand Prix of Kazakhstan",
-    "circuit": {
-      "country": "Kazakhstan",
-      "countryCode": "KZ",
-      "city": "Almaty",
-      "name": "Sokol International Racetrack"
-    },
-    "events": [
-      {
-        "name": "Free Practice Nr. 1",
-        "type": "practice",
-        "startAt": 1718342100000,
-        "laps": null
-      },
-      {
-        "name": "Practice",
-        "type": "practice",
-        "startAt": 1718357400000,
-        "laps": null
-      },
-      {
-        "name": "Free Practice Nr. 2",
-        "type": "practice",
-        "startAt": 1718424600000,
-        "laps": null
-      },
-      {
-        "name": "Qualifying Nr. 1 ",
-        "type": "qualifying",
-        "startAt": 1718427000000,
-        "laps": null
-      },
-      {
-        "name": "Qualifying Nr. 2 ",
-        "type": "qualifying",
-        "startAt": 1718428500000,
-        "laps": null
-      },
-      {
-        "name": "Sprint",
-        "type": "sprint",
-        "startAt": 1718442000000,
-        "laps": 13
-      },
-      {
-        "name": "Race",
-        "type": "race",
-        "startAt": 1718524800000,
-        "laps": 26
-      }
-    ]
-  },
-  {
-    "round": 9,
     "name": "Motul TT Assen",
     "circuit": {
       "country": "Netherlands",
@@ -486,7 +432,7 @@
     ]
   },
   {
-    "round": 10,
+    "round": 9,
     "name": "Liqui Moly Motorrad Grand Prix Deutschland",
     "circuit": {
       "country": "Germany",
@@ -514,13 +460,13 @@
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 1 ",
+        "name": "Qualifying Nr. 1",
         "type": "qualifying",
         "startAt": 1720255800000,
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 2 ",
+        "name": "Qualifying Nr. 2",
         "type": "qualifying",
         "startAt": 1720257300000,
         "laps": null
@@ -540,7 +486,7 @@
     ]
   },
   {
-    "round": 11,
+    "round": 10,
     "name": "Monster Energy British Grand Prix",
     "circuit": {
       "country": "Great Britain",
@@ -594,7 +540,7 @@
     ]
   },
   {
-    "round": 12,
+    "round": 11,
     "name": "Motorrad Grand Prix von Österreich",
     "circuit": {
       "country": "Austria",
@@ -622,13 +568,13 @@
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 1 ",
+        "name": "Qualifying Nr. 1",
         "type": "qualifying",
         "startAt": 1723884600000,
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 2 ",
+        "name": "Qualifying Nr. 2",
         "type": "qualifying",
         "startAt": 1723886100000,
         "laps": null
@@ -648,8 +594,8 @@
     ]
   },
   {
-    "round": 13,
-    "name": "Gran Premio de Aragón",
+    "round": 12,
+    "name": "Gran Premio GoPro de Aragón",
     "circuit": {
       "country": "Spain",
       "countryCode": "ES",
@@ -702,7 +648,7 @@
     ]
   },
   {
-    "round": 14,
+    "round": 13,
     "name": "Gran Premio Red Bull di San Marino e della Riviera di Rimini",
     "circuit": {
       "country": "San Marino",
@@ -730,13 +676,13 @@
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 1 ",
+        "name": "Qualifying Nr. 1",
         "type": "qualifying",
         "startAt": 1725699000000,
         "laps": null
       },
       {
-        "name": "Qualifying Nr. 2 ",
+        "name": "Qualifying Nr. 2",
         "type": "qualifying",
         "startAt": 1725700500000,
         "laps": null
@@ -756,13 +702,13 @@
     ]
   },
   {
-    "round": 15,
-    "name": "Grand Prix of India",
+    "round": 14,
+    "name": "Grand Prix of Kazakhstan",
     "circuit": {
-      "country": "India",
-      "countryCode": "IN",
-      "city": "Greater Noida",
-      "name": "Buddh International Circuit"
+      "country": "Kazakhstan",
+      "countryCode": "KZ",
+      "city": "Almaty",
+      "name": "Sokol International Racetrack"
     },
     "events": [
       {
@@ -810,7 +756,7 @@
     ]
   },
   {
-    "round": 16,
+    "round": 15,
     "name": "Pertamina Grand Prix of Indonesia",
     "circuit": {
       "country": "Indonesia",
@@ -864,7 +810,7 @@
     ]
   },
   {
-    "round": 17,
+    "round": 16,
     "name": "Motul Grand Prix of Japan",
     "circuit": {
       "country": "Japan",
@@ -918,8 +864,8 @@
     ]
   },
   {
-    "round": 18,
-    "name": "Australian Motorcycle Grand Prix",
+    "round": 17,
+    "name": "Qatar Airways Australian Motorcycle Grand Prix",
     "circuit": {
       "country": "Australia",
       "countryCode": "AU",
@@ -972,7 +918,7 @@
     ]
   },
   {
-    "round": 19,
+    "round": 18,
     "name": "OR Thailand Grand Prix",
     "circuit": {
       "country": "Thailand",
@@ -1026,7 +972,7 @@
     ]
   },
   {
-    "round": 20,
+    "round": 19,
     "name": "PETRONAS Grand Prix of Malaysia",
     "circuit": {
       "country": "Malaysia",
@@ -1080,7 +1026,7 @@
     ]
   },
   {
-    "round": 21,
+    "round": 20,
     "name": "Gran Premio Motul de la Comunitat Valenciana",
     "circuit": {
       "country": "Spain",
