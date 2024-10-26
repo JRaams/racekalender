@@ -14,12 +14,12 @@ export default defineConfig({
   integrations: [
     svelte(),
     icon(),
+    robotsTxt(),
+    sitemap(),
     purgecss({
       safelist: {
         standard: [':hover', ':focus', ':where', ':is', 'button', '.past'],
       },
     }),
-    robotsTxt(),
-    sitemap(),
   ],
 });
