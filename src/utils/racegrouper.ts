@@ -7,7 +7,21 @@ import motogp from '~/static/2024/motogp.json';
 import superbike from '~/static/2024/superbike.json';
 import type { RaceRow } from '~/types';
 
-export function CreateGroupedRaceRows(lang: Language) {
+type WeeklyGroupedRaces = Record<
+  number,
+  {
+    lastRaceDate: number;
+    days: Record<
+      number,
+      {
+        timeStamp: number;
+        races: RaceRow[];
+      }
+    >;
+  }
+>;
+
+export function CreateGroupedRaceRows(lang: Language): WeeklyGroupedRaces {
   dayjs.extend(isoWeek);
   const t = useTranslations(lang);
   const races: RaceRow[] = [];
@@ -69,12 +83,34 @@ export function CreateGroupedRaceRows(lang: Language) {
 
   races.sort((a, b) => a.date - b.date);
 
-  const weeks: Record<number, RaceRow[]> = {};
+  const weeks: WeeklyGroupedRaces = {};
 
   races.forEach((race) => {
     const week = dayjs(race.date).isoWeek();
-    weeks[week] ??= [];
-    weeks[week]?.push(race);
+    weeks[week] ??= {
+      lastRaceDate: 0,
+      days: {},
+    };
+
+    const weekday = dayjs(race.date).isoWeekday();
+    weeks[week].days[weekday] ??= {
+      timeStamp: 0,
+      races: [],
+    };
+    weeks[week].days[weekday].races.push(race);
+  });
+
+  Object.values(weeks).forEach((week) => {
+    Object.values(week.days).forEach((day) => {
+      day.races.forEach((race) => {
+        if (race.date > week.lastRaceDate) {
+          week.lastRaceDate = race.date;
+        }
+        if (day.timeStamp === 0 || race.date < day.timeStamp) {
+          day.timeStamp = race.date;
+        }
+      });
+    });
   });
 
   return weeks;
