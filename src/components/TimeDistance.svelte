@@ -13,16 +13,12 @@
   const date = dayjs(timestamp);
 
   const formattedDate = date.format('HH:mm');
-  const dateDistance = date.isBefore(dayjs()) ? null : date.fromNow();
 </script>
 
 <div class="date-wrapper">
-  <span class:strikethrough={!dateDistance}>
+  <span class:strikethrough={date.isBefore(dayjs())}>
     {formattedDate}
   </span>
-  <!-- {#if dateDistance}
-    <small>{dateDistance}</small>
-  {/if} -->
 </div>
 
 <style scoped>

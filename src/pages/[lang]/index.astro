@@ -92,7 +92,7 @@ export function getStaticPaths() {
 <Layout title={t('nav.title')}>
   {
     Object.entries(raceWeeks).map(([weekNumber, week]) => (
-      <details open class="week" data-timestamp={week.lastRaceDate}>
+      <details class="week" data-timestamp={week.lastRaceDate}>
         <summary>
           <strong class="week-number">Week {weekNumber}</strong>
         </summary>
