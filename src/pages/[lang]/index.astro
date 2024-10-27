@@ -92,7 +92,7 @@ export function getStaticPaths() {
 <Layout title={t('nav.title')}>
   {
     Object.entries(raceWeeks).map(([weekNumber, week]) => (
-      <details class="week" data-timestamp={week.lastRaceDate}>
+      <details open class="week" data-timestamp={week.lastRaceDate}>
         <summary>
           <strong class="week-number">Week {weekNumber}</strong>
         </summary>
@@ -117,7 +117,19 @@ export function getStaticPaths() {
                   <span class="name">{race.name}</span>
                 </div>
 
-                <div class="circuit">
+                <a
+                  class="mobile"
+                  href="#!"
+                  data-name={race.circuit.name}
+                  data-city={race.circuit.city}
+                  data-country={t(('country.' + race.circuit.countryCode) as any)}
+                  data-tooltip=""
+                  data-placement="left"
+                >
+                  <Icon class="country-flag" name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={24} />
+                </a>
+
+                <div class="circuit desktop">
                   <div>
                     <span class="no-wrap">{race.circuit.name}</span>
 
@@ -168,8 +180,10 @@ export function getStaticPaths() {
   }
 
   .race {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    justify-content: space-between;
+    align-items: center;
     gap: 1em;
     font-size: 0.8em;
     padding: 1em;
@@ -177,9 +191,16 @@ export function getStaticPaths() {
 
     .title {
       display: flex;
-      gap: 0.5em;
+      flex-wrap: wrap;
+      gap: 0 0.5em;
       align-items: center;
     }
+  }
+
+  [data-tooltip]::before {
+    display: block;
+    content: attr(data-name) '\A' attr(data-city) ', ' attr(data-country);
+    white-space: pre;
   }
 
   .circuit {
@@ -195,14 +216,28 @@ export function getStaticPaths() {
     }
   }
 
-  @media screen and (width >= 768px) {
-    .race {
-      flex-direction: row;
-      justify-content: space-between;
+  .desktop {
+    display: none;
+  }
 
+  @media screen and (width >= 300px) {
+    .race {
       > div {
         margin-left: 1em;
       }
+    }
+  }
+
+  @media screen and (width >= 768px) {
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: flex;
+    }
+
+    .race {
+      grid-template-columns: 1fr 1fr;
     }
 
     .country-flag {
