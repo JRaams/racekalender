@@ -30,7 +30,7 @@ export function CreateGroupedRaceRows(lang: Language): WeeklyGroupedRaces {
     raceWeek.events.forEach((event) => {
       if (event.type !== 'race' && event.type !== 'sprint') return;
       races.push({
-        kind: 'F1',
+        kind: 'formula1',
         name: raceWeek.name.replace(/^formula 1/i, '').replace(/ \d+$/, ''),
         date: event.startAt,
         circuit: {
@@ -48,7 +48,7 @@ export function CreateGroupedRaceRows(lang: Language): WeeklyGroupedRaces {
     raceWeek.events.forEach((event) => {
       if (event.type !== 'sprint' && event.type !== 'race') return;
       races.push({
-        kind: 'MotoGP',
+        kind: 'motogp',
         name: raceWeek.name,
         date: event.startAt,
         circuit: {
@@ -67,7 +67,7 @@ export function CreateGroupedRaceRows(lang: Language): WeeklyGroupedRaces {
       if (event.type !== 'superpole_race' && event.type !== 'race') return;
 
       races.push({
-        kind: 'SBK',
+        kind: 'superbike',
         name: raceWeek.name,
         date: event.startAt,
         circuit: {

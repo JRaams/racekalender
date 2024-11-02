@@ -10,6 +10,7 @@ import dayjs from 'dayjs';
 import 'dayjs/locale/nl';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import dayOfYear from 'dayjs/plugin/dayOfYear';
+import { KindToLabelMap } from '~/types';
 
 const params = Astro.params;
 const lang = params.lang as Language;
@@ -109,12 +110,14 @@ export function getStaticPaths() {
                   <strong class="title">
                     {/* TODO: astro island? */}
                     <TimeDistance client:only="svelte" timestamp={race.date} lang={lang} />
-                    {race.kind}
+                    {KindToLabelMap[race.kind]}
                     <Icon name={TypeToIconMap[race.type]} size={16} />
                     {TypeToNameMap[race.type]}
                   </strong>
 
-                  <span class="name">{race.name}</span>
+                  <a class="name" href={race.kind}>
+                    <span>{race.name}</span>
+                  </a>
                 </div>
 
                 <a
@@ -194,6 +197,10 @@ export function getStaticPaths() {
       flex-wrap: wrap;
       gap: 0 0.5em;
       align-items: center;
+    }
+
+    .name {
+      padding-block: 1em;
     }
   }
 

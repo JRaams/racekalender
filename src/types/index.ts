@@ -1,8 +1,14 @@
 export const kinds = ['formula1', 'motogp', 'superbike'] as const;
 export type Kind = (typeof kinds)[number];
 
+export const KindToLabelMap: Record<Kind, string> = {
+  formula1: 'F1',
+  motogp: 'MotoGP',
+  superbike: 'SBK',
+};
+
 export type RaceWeek = {
-  kind?: string;
+  kind?: Kind;
   round: number;
   name: string;
   circuit: {
@@ -22,7 +28,7 @@ export type RaceWeek = {
 };
 
 export type RaceRow = {
-  kind: 'F1' | 'MotoGP' | 'SBK';
+  kind: Kind;
   type: 'sprint' | 'race' | 'superpole_race';
   name: string;
   date: number;
