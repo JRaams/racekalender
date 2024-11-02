@@ -115,7 +115,7 @@ export function getStaticPaths() {
                     {TypeToNameMap[race.type]}
                   </strong>
 
-                  <a class="name" href={race.kind}>
+                  <a class="name" href={`${race.kind}?r=${race.round}`}>
                     <span>{race.name}</span>
                   </a>
                 </div>

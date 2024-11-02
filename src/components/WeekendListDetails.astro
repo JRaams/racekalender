@@ -28,9 +28,11 @@ const t = useTranslations(lang);
         .sort((a, b) => a.startAt - b.startAt)
         .map((event) => (
           <tr>
-            <td class="type-cell">
-              <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
-              {event.name.split(' - ')[0]}
+            <td>
+              <div class="type-cell">
+                <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
+                {event.name.split(' - ')[0]}
+              </div>
             </td>
             <td>
               <TimeDisplay client:only="svelte" {lang} timestamp={event.startAt} />

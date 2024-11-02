@@ -29,6 +29,7 @@ export type RaceWeek = {
 
 export type RaceRow = {
   kind: Kind;
+  round: number;
   type: 'sprint' | 'race' | 'superpole_race';
   name: string;
   date: number;
