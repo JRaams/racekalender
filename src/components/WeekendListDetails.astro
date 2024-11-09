@@ -3,7 +3,6 @@ import { Icon } from 'astro-icon/components';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import type { RaceWeek } from '~/types';
 import { TypeToIconMap } from '~/types/eventtype';
-import TimeDisplay from './TimeDisplay.svelte';
 
 type Props = {
   raceWeek: RaceWeek;
@@ -35,7 +34,9 @@ const t = useTranslations(lang);
               </div>
             </td>
             <td>
-              <TimeDisplay client:only="svelte" {lang} timestamp={event.startAt} />
+              <small class="timestamp-full" data-timestamp={event.startAt}>
+                --:--
+              </small>
             </td>
             <td>
               <small>{event.laps ?? '-'}</small>

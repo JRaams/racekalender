@@ -1,6 +1,5 @@
 ---
 import { Icon } from 'astro-icon/components';
-import TimeDistance from '~/components/TimeDistance.svelte';
 import { languages, type Language } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/Layout.astro';
@@ -34,6 +33,12 @@ export function getStaticPaths() {
   import isoWeek from 'dayjs/plugin/isoWeek';
   dayjs.extend(isoWeek);
   dayjs.extend(dayOfYear);
+
+  const shortFormatter = new Intl.DateTimeFormat('default', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
 
   window.addEventListener('DOMContentLoaded', () => {
     let nextWeekNumber: number | undefined;
@@ -87,6 +92,12 @@ export function getStaticPaths() {
         $day.classList.add('current-day');
       }
     });
+
+    document.querySelectorAll('.timestamp-short').forEach(($timestamp) => {
+      const time = Number($timestamp.getAttribute('data-timestamp'));
+      if (!time || isNaN(time)) return;
+      $timestamp.innerHTML = shortFormatter.format(time);
+    });
   });
 </script>
 
@@ -108,8 +119,9 @@ export function getStaticPaths() {
               <div class="race" data-timestamp={race.date}>
                 <div>
                   <strong class="title">
-                    {/* TODO: astro island? */}
-                    <TimeDistance client:only="svelte" timestamp={race.date} lang={lang} />
+                    <span class="timestamp-short" data-timestamp={race.date}>
+                      --:--
+                    </span>
                     {KindToLabelMap[race.kind]}
                     <Icon name={TypeToIconMap[race.type]} size={16} />
                     {TypeToNameMap[race.type]}
