@@ -26,13 +26,24 @@ function getDayEnd(raceWeek: RaceWeek) {
 }
 ---
 
-<script>
+<script is:inline define:vars={{ lang }}>
   document.addEventListener('DOMContentLoaded', () => {
     const details = document.querySelectorAll('.weekend-list details');
     const today = new Date().getTime() / 1000;
 
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    const queryRound = params.r ? details[Number(params.r) - 1] : undefined;
+
+    if (queryRound) {
+      setTimeout(() => {
+        queryRound.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 1);
+      queryRound.setAttribute('open', '');
+    }
+
     for (let i = 0; i < details.length; i++) {
-      const d = details[i]!;
+      const d = details[i];
 
       const start = Number(d.getAttribute('data-day-start'));
       const end = Number(d.getAttribute('data-day-end'));
@@ -41,8 +52,6 @@ function getDayEnd(raceWeek: RaceWeek) {
         d.classList.add('past');
         continue;
       }
-
-      d.setAttribute('open', '');
 
       const summary = d.querySelector('summary');
       if (summary) {
@@ -53,9 +62,26 @@ function getDayEnd(raceWeek: RaceWeek) {
         summary.classList.add('primary');
       }
 
-      d.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (queryRound === undefined) {
+        d.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        d.setAttribute('open', '');
+      }
       break;
     }
+
+    const longFormatter = new Intl.DateTimeFormat(lang, {
+      weekday: 'short',
+      day: '2-digit',
+      month: 'long',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+
+    document.querySelectorAll('.timestamp-full').forEach(($timestamp) => {
+      const time = Number($timestamp.getAttribute('data-timestamp'));
+      if (!time || isNaN(time)) return;
+      $timestamp.innerHTML = longFormatter.format(time);
+    });
   });
 </script>
 

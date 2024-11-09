@@ -7,3 +7,9 @@ export const TypeToIconMap: Record<string, string> = {
   superpole_race: 'material-symbols:stylus-laser-pointer',
   race: 'material-symbols:workspace-premium',
 };
+
+export const TypeToNameMap: Record<string, string> = {
+  sprint: 'Sprint',
+  race: 'Race',
+  superpole_race: 'Superpole',
+};

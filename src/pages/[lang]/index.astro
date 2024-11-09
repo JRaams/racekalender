@@ -1,16 +1,25 @@
 ---
 import { Icon } from 'astro-icon/components';
-import TimeDistance from '~/components/TimeDistance.svelte';
 import { languages, type Language } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/Layout.astro';
-import { TypeToIconMap } from '~/types/eventtype';
+import { TypeToIconMap, TypeToNameMap } from '~/types/eventtype';
 import { CreateGroupedRaceRows } from '~/utils/racegrouper';
+import dayjs from 'dayjs';
+import 'dayjs/locale/nl';
+import relativeTime from 'dayjs/plugin/relativeTime';
+import dayOfYear from 'dayjs/plugin/dayOfYear';
+import { KindToLabelMap } from '~/types';
 
 const params = Astro.params;
 const lang = params.lang as Language;
+
+dayjs.extend(relativeTime);
+dayjs.extend(dayOfYear);
+dayjs.locale(lang);
+
 const t = useTranslations(lang);
-const races = CreateGroupedRaceRows(lang);
+const raceWeeks = CreateGroupedRaceRows(lang);
 
 export function getStaticPaths() {
   return Object.keys(languages).map((x) => ({ params: { lang: x } }));
@@ -20,236 +29,246 @@ export function getStaticPaths() {
 <script>
   import dayjs from 'dayjs';
 
+  import dayOfYear from 'dayjs/plugin/dayOfYear';
   import isoWeek from 'dayjs/plugin/isoWeek';
   dayjs.extend(isoWeek);
+  dayjs.extend(dayOfYear);
+
+  const shortFormatter = new Intl.DateTimeFormat('default', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
 
   window.addEventListener('DOMContentLoaded', () => {
     let nextWeekNumber: number | undefined;
+    let nextDayNumber: number | undefined;
     const now = new Date();
 
-    document.querySelectorAll('.race-week-row').forEach((tr) => {
-      const timestamp = Number(tr.getAttribute('data-timestamp'));
+    document.querySelectorAll('.week').forEach(($week) => {
+      const timestamp = Number($week.getAttribute('data-timestamp'));
       const date = dayjs(timestamp);
 
       if (date.isBefore(now, 'days')) {
-        tr.classList.add('past');
-        tr.classList.add('strikethrough');
+        $week.classList.add('past');
+
+        const $weekNumber = $week.querySelector('.week-number');
+        $weekNumber?.classList.add('strikethrough');
         return;
+      } else {
+        $week.setAttribute('open', '');
       }
 
       const weekNumber = date.isoWeek();
-
       if (nextWeekNumber === undefined) {
         nextWeekNumber = weekNumber;
-        tr.classList.add('current');
-        window.scrollTo({ top: tr.getBoundingClientRect().top + window.scrollY - 50, behavior: 'instant' });
+        $week.classList.add('current-week');
+
+        window.scrollTo({
+          top: $week.getBoundingClientRect().top + window.scrollY - 50,
+          behavior: 'instant',
+        });
       }
     });
 
-    document.querySelectorAll('.race-list-row').forEach((tr) => {
-      const timestamp = Number(tr.getAttribute('data-timestamp'));
+    document.querySelectorAll('.day').forEach(($day) => {
+      const timestamp = Number($day.getAttribute('data-timestamp'));
       const date = dayjs(timestamp);
+
       const weekNumber = date.isoWeek();
+      if (nextWeekNumber === weekNumber) {
+        $day.classList.add('current-week');
+      }
 
       if (date.isBefore(now, 'days')) {
-        tr.classList.add('past');
+        $day.classList.add('past');
+        $day.classList.add('strikethrough');
         return;
       }
 
-      if (nextWeekNumber === weekNumber) {
-        tr.classList.add('current');
+      const dayNumber = date.dayOfYear();
+      if (nextDayNumber === undefined) {
+        nextDayNumber = dayNumber;
+        $day.classList.add('current-day');
       }
+    });
+
+    document.querySelectorAll('.timestamp-short').forEach(($timestamp) => {
+      const time = Number($timestamp.getAttribute('data-timestamp'));
+      if (!time || isNaN(time)) return;
+      $timestamp.innerHTML = shortFormatter.format(time);
     });
   });
 </script>
 
 <Layout title={t('nav.title')}>
-  <div class="overflow-auto">
-    <table>
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">{t('list.table.name')}</th>
-          <th scope="col">{t('list.table.date')}</th>
-          <th scope="col">{t('list.table.circuit')}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          Object.entries(races).map(([week, races]) => (
-            <>
-              <tr class="race-week-row" data-timestamp={races.at(-1)?.date}>
-                <td colspan="1000">
-                  <strong>Week {week}</strong>
-                </td>
-              </tr>
+  {
+    Object.entries(raceWeeks).map(([weekNumber, week]) => (
+      <details class="week" data-timestamp={week.lastRaceDate}>
+        <summary>
+          <strong class="week-number">Week {weekNumber}</strong>
+        </summary>
 
-              {races.map((race) => (
-                <tr class="race-list-row" data-timestamp={race.date}>
-                  <td>{race.kind}</td>
-                  <td data-col={t('list.table.name')}>
-                    <div class="name-cell">
-                      {race.name}
+        {Object.values(week.days).map((day) => (
+          <>
+            <div class="day" data-timestamp={day.timeStamp}>
+              {dayjs(day.timeStamp).format('dddd DD MMMM')}
+            </div>
 
-                      {race.type === 'race' && (
-                        <small>
-                          <Icon name={TypeToIconMap[race.type]} size={16} />
-                          Race
-                        </small>
-                      )}
+            {day.races.map((race) => (
+              <div class="race" data-timestamp={race.date}>
+                <div>
+                  <strong class="title">
+                    <span class="timestamp-short" data-timestamp={race.date}>
+                      --:--
+                    </span>
+                    {KindToLabelMap[race.kind]}
+                    <Icon name={TypeToIconMap[race.type]} size={16} />
+                    {TypeToNameMap[race.type]}
+                  </strong>
 
-                      {race.type === 'sprint' && (
-                        <small>
-                          <Icon name={TypeToIconMap[race.type]} size={16} />
-                          Sprint
-                        </small>
-                      )}
+                  <a class="name" href={`${race.kind}?r=${race.round}`}>
+                    <span>{race.name}</span>
+                  </a>
+                </div>
 
-                      {race.type === 'superpole_race' && (
-                        <small>
-                          <Icon name={TypeToIconMap[race.type]} size={16} />
-                          Superpole
-                        </small>
-                      )}
-                    </div>
-                  </td>
-                  <td class="date-cell" data-col={t('list.table.date')}>
-                    <TimeDistance client:only="svelte" timestamp={race.date} lang={lang} />
-                  </td>
-                  <td data-col={t('list.table.circuit')}>
-                    <div class="flex-row">
-                      {<Icon name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={32} />}
-                      <div class="flex-col">
-                        <span class="no-wrap">{race.circuit.name}</span>
-                        <small>
-                          {race.circuit.city}, {t(('country.' + race.circuit.countryCode) as any)}
-                        </small>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </>
-          ))
-        }
-      </tbody>
-    </table>
-  </div>
+                <a
+                  class="mobile"
+                  href="#!"
+                  data-name={race.circuit.name}
+                  data-city={race.circuit.city}
+                  data-country={t(('country.' + race.circuit.countryCode) as any)}
+                  data-tooltip=""
+                  data-placement="left"
+                >
+                  <Icon class="country-flag" name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={24} />
+                </a>
+
+                <div class="circuit desktop">
+                  <div>
+                    <span class="no-wrap">{race.circuit.name}</span>
+
+                    <small>
+                      {race.circuit.city}, {t(('country.' + race.circuit.countryCode) as any)}
+                    </small>
+                  </div>
+
+                  <Icon class="country-flag" name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={24} />
+                </div>
+              </div>
+            ))}
+          </>
+        ))}
+      </details>
+    ))
+  }
 </Layout>
 
 <style>
-  table {
-    font-size: 16px;
+  .week {
+    border-left: 10px solid var(--pico-code-background-color);
+    border-right: 1px solid var(--pico-code-background-color);
+
+    summary {
+      background: var(--pico-code-background-color);
+      padding: 1em;
+      margin-bottom: 0;
+    }
   }
+  .current-week {
+    border-left-color: var(--pico-primary-background);
 
-  .race-week-row {
-    --pico-background-color: var(--pico-code-background-color);
+    summary {
+      background: var(--pico-primary-background);
 
-    &.current {
-      --pico-background-color: color-mix(in srgb, var(--pico-primary-background), transparent 60%);
-      --pico-contrast-focus: var(--pico-primary-background);
+      .week-number {
+        color: white;
+      }
     }
   }
 
-  .no-wrap {
-    white-space: nowrap;
-  }
-  tr.past {
-    filter: opacity(0.5);
-  }
-  tr.current {
-    --pico-contrast-focus: var(--pico-primary-underline);
-    --pico-table-border-color: var(--pico-primary-underline);
-    --pico-background-color: color-mix(in srgb, var(--pico-primary-background), transparent 90%);
+  .day {
+    font-size: 0.9em;
+    padding: 1em;
+    border-bottom: 1px solid var(--pico-code-background-color);
+    background-color: rgb(from var(--pico-code-background-color) r g b / 50%);
   }
 
-  .name-cell {
-    display: flex;
-    flex-direction: column;
+  .race {
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    font-size: 0.8em;
+    padding: 1em;
+    border-bottom: 1px solid var(--pico-code-background-color);
+
+    .title {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 0.5em;
+      align-items: center;
+    }
+
+    .name {
+      padding-block: 1em;
+    }
   }
-  .name-cell small {
+
+  [data-tooltip]::before {
+    display: block;
+    content: attr(data-name) '\A' attr(data-city) ', ' attr(data-country);
+    white-space: pre;
+  }
+
+  .circuit {
     display: flex;
     align-items: center;
-    gap: 0.25em;
-  }
+    justify-content: flex-end;
+    gap: 1em;
+    text-align: right;
 
-  .date-cell {
-    min-width: 250px;
-    min-height: 46px;
-  }
-
-  .flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.75em;
-  }
-
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-  }
-
-  svg {
-    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
-  }
-
-  @media screen and (width < 1400px) {
-    table {
-      font-size: 14px;
+    > div {
+      display: flex;
+      flex-direction: column;
     }
   }
 
-  @media screen and (width < 1100px) {
-    .no-wrap {
-      white-space: inherit;
-    }
+  .desktop {
+    display: none;
+  }
 
-    table {
-      thead {
-        display: none;
-      }
-    }
-
-    .race-week-row {
-      td {
-        border-bottom: none;
-      }
-    }
-
-    tbody {
-      tr {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1em;
-        border-radius: 4px;
-        border: 2px solid var(--pico-contrast-focus);
-
-        td[data-col] {
-          display: grid;
-          grid-template-columns: 70px 1fr;
-          place-items: center start;
-
-          &:last-child {
-            border-bottom: none;
-          }
-
-          &::before {
-            content: attr(data-col);
-            font-weight: bold;
-          }
-        }
+  @media screen and (width >= 300px) {
+    .race {
+      > div {
+        margin-left: 1em;
       }
     }
   }
 
-  @media screen and (width < 400px) {
-    tbody {
-      tr {
-        td[data-col] {
-          grid-template-columns: auto;
-        }
-      }
+  @media screen and (width >= 768px) {
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: flex;
+    }
+
+    .race {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .country-flag {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  @media screen and (width >= 1024px) {
+    .country-flag {
+      width: 48px;
+      height: 48px;
     }
   }
 </style>

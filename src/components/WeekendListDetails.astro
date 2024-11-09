@@ -3,7 +3,6 @@ import { Icon } from 'astro-icon/components';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import type { RaceWeek } from '~/types';
 import { TypeToIconMap } from '~/types/eventtype';
-import TimeDisplay from './TimeDisplay.svelte';
 
 type Props = {
   raceWeek: RaceWeek;
@@ -18,7 +17,7 @@ const t = useTranslations(lang);
   <thead>
     <tr>
       <th scope="col">{t('list.table.type')}</th>
-      <th scope="col">{t('list.table.time')}</th>
+      <th scope="col">{t('list.table.datetime')}</th>
       <th scope="col" class="lap-column">{t('list.table.laps')}</th>
     </tr>
   </thead>
@@ -28,12 +27,16 @@ const t = useTranslations(lang);
         .sort((a, b) => a.startAt - b.startAt)
         .map((event) => (
           <tr>
-            <td class="type-cell">
-              <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
-              {event.name.split(' - ')[0]}
+            <td>
+              <div class="type-cell">
+                <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
+                {event.name.split(' - ')[0]}
+              </div>
             </td>
             <td>
-              <TimeDisplay client:only="svelte" {lang} timestamp={event.startAt} />
+              <small class="timestamp-full" data-timestamp={event.startAt}>
+                --:--
+              </small>
             </td>
             <td>
               <small>{event.laps ?? '-'}</small>

@@ -1,5 +1,4 @@
 import sitemap from '@astrojs/sitemap';
-import svelte from '@astrojs/svelte';
 import icon from 'astro-icon';
 import purgecss from 'astro-purgecss';
 import robotsTxt from 'astro-robots-txt';
@@ -12,14 +11,13 @@ export default defineConfig({
     inlineStylesheets: 'auto',
   },
   integrations: [
-    svelte(),
     icon(),
+    robotsTxt(),
+    sitemap(),
     purgecss({
       safelist: {
         standard: [':hover', ':focus', ':where', ':is', 'button', '.past'],
       },
     }),
-    robotsTxt(),
-    sitemap(),
   ],
 });
