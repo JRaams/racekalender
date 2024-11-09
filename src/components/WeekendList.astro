@@ -29,7 +29,7 @@ function getDayEnd(raceWeek: RaceWeek) {
 <script is:inline define:vars={{ lang }}>
   document.addEventListener('DOMContentLoaded', () => {
     const details = document.querySelectorAll('.weekend-list details');
-    const today = new Date(1713564000000).getTime() / 1000;
+    const today = new Date().getTime() / 1000;
 
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
