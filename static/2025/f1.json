@@ -5,7 +5,8 @@
     "circuit": {
       "country": "Australia",
       "countryCode": "AU",
-      "city": "Melbourne"
+      "city": "Melbourne",
+      "name": "Albert Park Grand Prix Circuit"
     },
     "events": [
       {
@@ -51,7 +52,8 @@
     "circuit": {
       "country": "China",
       "countryCode": "CN",
-      "city": "Shanghai"
+      "city": "Shanghai",
+      "name": "Shanghai International Circuit"
     },
     "events": [
       {
@@ -97,7 +99,8 @@
     "circuit": {
       "country": "Japan",
       "countryCode": "JP",
-      "city": "Suzuka"
+      "city": "Suzuka",
+      "name": "Suzuka Circuit"
     },
     "events": [
       {
@@ -143,7 +146,8 @@
     "circuit": {
       "country": "Bahrain",
       "countryCode": "BH",
-      "city": "Sakhir"
+      "city": "Sakhir",
+      "name": "Bahrain International Circuit"
     },
     "events": [
       {
@@ -189,7 +193,8 @@
     "circuit": {
       "country": "Saudi Arabia",
       "countryCode": "SA",
-      "city": "Jeddah"
+      "city": "Jeddah",
+      "name": "Jeddah Corniche Circuit"
     },
     "events": [
       {
@@ -235,7 +240,8 @@
     "circuit": {
       "country": "United States",
       "countryCode": "US",
-      "city": "Miami"
+      "city": "Miami",
+      "name": "Miami International Autodrome"
     },
     "events": [
       {
@@ -281,7 +287,8 @@
     "circuit": {
       "country": "Italy",
       "countryCode": "IT",
-      "city": "Imola"
+      "city": "Imola",
+      "name": "Autodromo Internazionale Enzo e Dino Ferrari"
     },
     "events": [
       {
@@ -327,7 +334,8 @@
     "circuit": {
       "country": "Monaco",
       "countryCode": "MC",
-      "city": "Monaco"
+      "city": "Monaco",
+      "name": "Circuit de Monaco"
     },
     "events": [
       {
@@ -373,7 +381,8 @@
     "circuit": {
       "country": "Spain",
       "countryCode": "ES",
-      "city": "Barcelona"
+      "city": "Barcelona",
+      "name": "Circuit de Barcelona-Catalunya"
     },
     "events": [
       {
@@ -419,7 +428,8 @@
     "circuit": {
       "country": "Canada",
       "countryCode": "CA",
-      "city": "Montréal"
+      "city": "Montréal",
+      "name": "Circuit Gilles-Villeneuve"
     },
     "events": [
       {
@@ -465,7 +475,8 @@
     "circuit": {
       "country": "Austria",
       "countryCode": "AT",
-      "city": "Spielberg"
+      "city": "Spielberg",
+      "name": "Red Bull Ring"
     },
     "events": [
       {
@@ -511,7 +522,8 @@
     "circuit": {
       "country": "Great Britain",
       "countryCode": "GB",
-      "city": "Silverstone"
+      "city": "Silverstone",
+      "name": "Silverstone Circuit"
     },
     "events": [
       {
@@ -557,7 +569,8 @@
     "circuit": {
       "country": "Belgium",
       "countryCode": "BE",
-      "city": "Spa-Francorchamps"
+      "city": "Spa-Francorchamps",
+      "name": "Circuit de Spa-Francorchamps"
     },
     "events": [
       {
@@ -603,7 +616,8 @@
     "circuit": {
       "country": "Hungary",
       "countryCode": "HU",
-      "city": "Budapest"
+      "city": "Budapest",
+      "name": "Hungaroring"
     },
     "events": [
       {
@@ -649,7 +663,8 @@
     "circuit": {
       "country": "Netherlands",
       "countryCode": "NL",
-      "city": "Zandvoort"
+      "city": "Zandvoort",
+      "name": "Circuit Zandvoort"
     },
     "events": [
       {
@@ -695,7 +710,8 @@
     "circuit": {
       "country": "Italy",
       "countryCode": "IT",
-      "city": "Monza"
+      "city": "Monza",
+      "name": "Autodromo Nazionale Monza"
     },
     "events": [
       {
@@ -741,7 +757,8 @@
     "circuit": {
       "country": "Azerbaijan",
       "countryCode": "AZ",
-      "city": "Baku"
+      "city": "Baku",
+      "name": "Baku City Circuit"
     },
     "events": [
       {
@@ -787,7 +804,8 @@
     "circuit": {
       "country": "Singapore",
       "countryCode": "SG",
-      "city": "Marina Bay"
+      "city": "Marina Bay",
+      "name": "Marina Bay Street Circuit"
     },
     "events": [
       {
@@ -833,7 +851,8 @@
     "circuit": {
       "country": "United States",
       "countryCode": "US",
-      "city": "Austin"
+      "city": "Austin",
+      "name": "Circuit of The Americas"
     },
     "events": [
       {
@@ -879,7 +898,8 @@
     "circuit": {
       "country": "Mexico",
       "countryCode": "MX",
-      "city": "Mexico City"
+      "city": "Mexico City",
+      "name": "Autódromo Hermanos Rodríguez"
     },
     "events": [
       {
@@ -925,7 +945,8 @@
     "circuit": {
       "country": "Brazil",
       "countryCode": "BR",
-      "city": "São Paulo"
+      "city": "São Paulo",
+      "name": "Autódromo José Carlos Pace"
     },
     "events": [
       {
@@ -971,7 +992,8 @@
     "circuit": {
       "country": "United States",
       "countryCode": "US",
-      "city": "Las Vegas"
+      "city": "Las Vegas",
+      "name": "Las Vegas Strip Circuit"
     },
     "events": [
       {
@@ -1017,7 +1039,8 @@
     "circuit": {
       "country": "Qatar",
       "countryCode": "QA",
-      "city": "Lusail"
+      "city": "Lusail",
+      "name": "Lusail International Circuit"
     },
     "events": [
       {
@@ -1063,7 +1086,8 @@
     "circuit": {
       "country": "United Arab Emirates",
       "countryCode": "AE",
-      "city": "Yas Island"
+      "city": "Yas Island",
+      "name": "Yas Marina Circuit"
     },
     "events": [
       {
