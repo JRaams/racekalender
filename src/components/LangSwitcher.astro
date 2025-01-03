@@ -1,9 +1,10 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { languages } from '~/i18n/ui';
-import { getLangFromUrl } from '~/i18n/utils';
+import { languages, type Language } from '~/i18n/ui';
 
-const currentLanguage = getLangFromUrl(Astro.url);
+const params = Astro.params;
+const currentLanguage = params.lang as Language;
+
 const pathname = new URL(Astro.url).pathname;
 ---
 

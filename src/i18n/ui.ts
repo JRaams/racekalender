@@ -15,7 +15,7 @@ export const defaultLang = 'nl' satisfies Language;
 
 export const ui = {
   en: {
-    'nav.title': 'Racecalendar 2024',
+    'nav.title': 'Racecalendar',
     'list.table.name': 'Name',
     'list.table.circuit': 'Circuit',
     'list.table.type': 'Type',
@@ -60,7 +60,7 @@ export const ui = {
     'country.US': 'United States',
   },
   nl: {
-    'nav.title': 'Racekalender 2024',
+    'nav.title': 'Racekalender',
     'list.table.name': 'Naam',
     'list.table.circuit': 'Circuit',
     'list.table.type': 'Soort',

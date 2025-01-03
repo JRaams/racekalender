@@ -3,39 +3,26 @@ import WeekendList from '~/components/WeekendList.astro';
 import { languages, type Language } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/Layout.astro';
-import f1 from '~/static/2024/f1.json';
-import motogp from '~/static/2024/motogp.json';
-import superbike from '~/static/2024/superbike.json';
-import type { RaceWeek } from '~/types';
 import { kinds, type Kind } from '~/types';
+import raceYearData, { RaceYears, type RaceYear } from '~/utils/racedata';
 
 const params = Astro.params;
+const year = params.year as RaceYear;
 const lang = params.lang as Language;
 const kind = params.kind as Kind;
 const t = useTranslations(lang);
 
-let raceWeeks: RaceWeek[] = [];
-switch (kind) {
-  case 'formula1':
-    raceWeeks = f1;
-    break;
-  case 'motogp':
-    raceWeeks = motogp;
-    break;
-  case 'superbike':
-    raceWeeks = superbike;
-    break;
-  default:
-    break;
-}
+const raceWeeks = raceYearData[year][kind];
 
 export function getStaticPaths() {
   const paths = new Array();
 
-  Object.keys(languages).forEach((lang) => {
-    kinds.forEach((kind) => {
-      paths.push({
-        params: { lang, kind },
+  RaceYears.forEach((year) => {
+    Object.keys(languages).forEach((lang) => {
+      kinds.forEach((kind) => {
+        paths.push({
+          params: { lang, kind, year },
+        });
       });
     });
   });

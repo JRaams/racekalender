@@ -1,0 +1,49 @@
+[
+  {
+    "round": 1,
+    "name": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2024",
+    "circuit": {
+      "country": "Bahrain",
+      "countryCode": "BH",
+      "city": "Sakhir",
+      "name": "Bahrain International Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Bahrain Grand Prix",
+        "type": "practice",
+        "startAt": 1709206200000,
+        "endAt": 1709209800000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Bahrain Grand Prix",
+        "type": "practice",
+        "startAt": 1709218800000,
+        "endAt": 1709222400000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Bahrain Grand Prix",
+        "type": "practice",
+        "startAt": 1709296200000,
+        "endAt": 1709299800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Bahrain Grand Prix",
+        "type": "qualifying",
+        "startAt": 1709308800000,
+        "endAt": 1709312400000,
+        "laps": null
+      },
+      {
+        "name": "Race - Bahrain Grand Prix",
+        "type": "race",
+        "startAt": 1709391600000,
+        "endAt": 1709398800000,
+        "laps": 57
+      }
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "round": 1,
+    "name": "Grand Ridge Brewery Australian Round",
+    "circuit": {
+      "countryCode": "AU",
+      "country": "Australia",
+      "region": "Victoria",
+      "city": "Ventnor",
+      "name": "Phillip Island Grand Prix Circuit"
+    },
+    "events": [
+      {
+        "name": "FP1",
+        "type": "practice",
+        "startAt": 1708647600000,
+        "endAt": 1708650427000,
+        "laps": null
+      },
+      {
+        "name": "FP2",
+        "type": "practice",
+        "startAt": 1708664400000,
+        "endAt": 1708667540000,
+        "laps": null
+      },
+      {
+        "name": "FP3",
+        "type": "practice",
+        "startAt": 1708729200000,
+        "endAt": 1708730530000,
+        "laps": null
+      },
+      {
+        "name": "Superpole",
+        "type": "superpole_qualifying",
+        "startAt": 1708740000000,
+        "endAt": 1708741070000,
+        "laps": null
+      },
+      {
+        "name": "Race 1",
+        "type": "race",
+        "startAt": 1708750800000,
+        "endAt": 1708752827000,
+        "laps": 21
+      },
+      {
+        "name": "Superpole Race",
+        "type": "superpole_race",
+        "startAt": 1708826400000,
+        "endAt": 1708827475000,
+        "laps": 10
+      },
+      {
+        "name": "Race 2",
+        "type": "race",
+        "startAt": 1708840800000,
+        "endAt": 1708842218000,
+        "laps": 21
+      }
+    ]
+  }
+]

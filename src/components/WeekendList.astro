@@ -1,9 +1,10 @@
 ---
 import { Icon } from 'astro-icon/components';
 import type { RaceWeek } from '~/types';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { useTranslations } from '../i18n/utils';
 import WeekendListDetails from './WeekendListDetails.astro';
 import dayjs from 'dayjs';
+import type { Language } from '~/i18n/ui';
 
 type Props = {
   raceWeeks: RaceWeek[];
@@ -11,7 +12,8 @@ type Props = {
 
 const { raceWeeks } = Astro.props;
 
-const lang = getLangFromUrl(Astro.url);
+const params = Astro.params;
+const lang = params.lang as Language;
 const t = useTranslations(lang);
 
 function getDayStart(raceWeek: RaceWeek) {

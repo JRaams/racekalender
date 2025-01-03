@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { getLangFromUrl, useTranslations } from '~/i18n/utils';
+import type { Language } from '~/i18n/ui';
+import { useTranslations } from '~/i18n/utils';
 import type { RaceWeek } from '~/types';
 import { TypeToIconMap } from '~/types/eventtype';
 
@@ -9,7 +10,8 @@ type Props = {
 };
 
 const { raceWeek } = Astro.props;
-const lang = getLangFromUrl(Astro.url);
+const params = Astro.params;
+const lang = params.lang as Language;
 const t = useTranslations(lang);
 ---
 
