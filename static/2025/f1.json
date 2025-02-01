@@ -1,7 +1,7 @@
 [
   {
     "round": 1,
-    "name": "AUSTRALIAN GRAND PRIX",
+    "name": "LOUIS VUITTON AUSTRALIAN GRAND PRIX",
     "circuit": {
       "country": "Australia",
       "countryCode": "AU",
@@ -800,7 +800,7 @@
   },
   {
     "round": 18,
-    "name": "SINGAPORE GRAND PRIX",
+    "name": "SINGAPORE AIRLINES SINGAPORE GRAND PRIX",
     "circuit": {
       "country": "Singapore",
       "countryCode": "SG",
@@ -988,7 +988,7 @@
   },
   {
     "round": 22,
-    "name": "HEINEKEN SILVER LAS VEGAS GRAND PRIX",
+    "name": "HEINEKEN LAS VEGAS GRAND PRIX",
     "circuit": {
       "country": "United States",
       "countryCode": "US",

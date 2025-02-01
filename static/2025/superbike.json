@@ -125,7 +125,7 @@
   },
   {
     "round": 3,
-    "name": "Dutch Round",
+    "name": "Pirelli Dutch Round",
     "circuit": {
       "countryCode": "NL",
       "country": "Netherlands",
@@ -683,7 +683,7 @@
   },
   {
     "round": 12,
-    "name": "Spanish Round",
+    "name": "Pirelli Spanish Round",
     "circuit": {
       "countryCode": "ES",
       "country": "Spain",
