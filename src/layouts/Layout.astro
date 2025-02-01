@@ -19,7 +19,8 @@ const lang = params.lang as Language;
   const main = document.querySelector('main');
 
   if (header && main) {
-    const paddingTop = `${header.getBoundingClientRect()?.height}px`;
+    const height = Math.min(header.getBoundingClientRect().height, 138);
+    const paddingTop = `${height}px`;
     main.style.paddingTop = paddingTop;
   }
 </script>
