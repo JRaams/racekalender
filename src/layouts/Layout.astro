@@ -18,28 +18,10 @@ const lang = params.lang as Language;
   const header = document.querySelector('header');
   const main = document.querySelector('main');
 
-  const paddingTop = `${header?.getBoundingClientRect()?.height}px`;
-  let previousY = 0;
-  let previousTime = new Date().getTime();
-
-  window.addEventListener('scroll', () => {
-    let now = new Date().getTime();
-    if (now - previousTime < 100) return;
-    previousTime = now;
-
-    if (!header || !main) return;
-    const scrollPos = window.scrollY;
-
-    if (previousY < scrollPos) {
-      header.classList.remove('sticky');
-      main.style.paddingTop = '0';
-    } else {
-      header.classList.add('sticky');
-      main.style.paddingTop = paddingTop;
-    }
-
-    previousY = scrollPos;
-  });
+  if (header && main) {
+    const paddingTop = `${header.getBoundingClientRect()?.height}px`;
+    main.style.paddingTop = paddingTop;
+  }
 </script>
 
 <html lang={lang}>
@@ -54,7 +36,7 @@ const lang = params.lang as Language;
   </head>
 
   <body>
-    <header>
+    <header class="sticky">
       <div class="container">
         <Nav />
       </div>
