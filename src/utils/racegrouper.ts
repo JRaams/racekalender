@@ -2,10 +2,8 @@ import dayjs from 'dayjs';
 import isoWeek from 'dayjs/plugin/isoWeek';
 import type { Language } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
-import f1 from '~/static/2024/f1.json';
-import motogp from '~/static/2024/motogp.json';
-import superbike from '~/static/2024/superbike.json';
 import type { RaceRow } from '~/types';
+import racedata, { type RaceYear } from './racedata';
 
 type WeeklyGroupedRaces = Record<
   number,
@@ -21,12 +19,14 @@ type WeeklyGroupedRaces = Record<
   }
 >;
 
-export function CreateGroupedRaceRows(lang: Language): WeeklyGroupedRaces {
+export function CreateGroupedRaceRows(raceYear: RaceYear, lang: Language): WeeklyGroupedRaces {
   dayjs.extend(isoWeek);
   const t = useTranslations(lang);
   const races: RaceRow[] = [];
 
-  f1.forEach((raceWeek) => {
+  const { formula1, motogp, superbike } = racedata[raceYear]!;
+
+  formula1.forEach((raceWeek) => {
     raceWeek.events.forEach((event) => {
       if (event.type !== 'race' && event.type !== 'sprint') return;
       races.push({

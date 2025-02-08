@@ -2,42 +2,27 @@
 import '@picocss/pico/css/pico.blue.min.css';
 import '@picocss/pico/css/pico.colors.min.css';
 import Nav from '~/components/Nav.astro';
-import { getLangFromUrl } from '../i18n/utils';
+import type { Language } from '~/i18n/ui';
 
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
-const lang = getLangFromUrl(Astro.url);
+
+const params = Astro.params;
+const lang = params.lang as Language;
 ---
 
 <script>
   const header = document.querySelector('header');
   const main = document.querySelector('main');
 
-  const paddingTop = `${header?.getBoundingClientRect()?.height}px`;
-  let previousY = 0;
-  let previousTime = new Date().getTime();
-
-  window.addEventListener('scroll', () => {
-    let now = new Date().getTime();
-    if (now - previousTime < 100) return;
-    previousTime = now;
-
-    if (!header || !main) return;
-    const scrollPos = window.scrollY;
-
-    if (previousY < scrollPos) {
-      header.classList.remove('sticky');
-      main.style.paddingTop = '0';
-    } else {
-      header.classList.add('sticky');
-      main.style.paddingTop = paddingTop;
-    }
-
-    previousY = scrollPos;
-  });
+  if (header && main) {
+    const height = Math.min(header.getBoundingClientRect().height, 138);
+    const paddingTop = `${height}px`;
+    main.style.paddingTop = paddingTop;
+  }
 </script>
 
 <html lang={lang}>
@@ -52,7 +37,7 @@ const lang = getLangFromUrl(Astro.url);
   </head>
 
   <body>
-    <header>
+    <header class="sticky">
       <div class="container">
         <Nav />
       </div>

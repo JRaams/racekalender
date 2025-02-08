@@ -15,7 +15,7 @@ export const defaultLang = 'nl' satisfies Language;
 
 export const ui = {
   en: {
-    'nav.title': 'Racecalendar 2024',
+    'nav.title': 'Racecalendar',
     'list.table.name': 'Name',
     'list.table.circuit': 'Circuit',
     'list.table.type': 'Type',
@@ -27,8 +27,9 @@ export const ui = {
     'kind.motogp': 'Moto GP',
     'kind.superbike': 'Superbike',
 
-    'country.AU': 'Australia',
+    'country.AR': 'Argentinia',
     'country.AT': 'Austria',
+    'country.AU': 'Australia',
     'country.AZ': 'Azerbaijan',
     'country.BH': 'Bahrain',
     'country.BE': 'Belgium',
@@ -60,7 +61,7 @@ export const ui = {
     'country.US': 'United States',
   },
   nl: {
-    'nav.title': 'Racekalender 2024',
+    'nav.title': 'Racekalender',
     'list.table.name': 'Naam',
     'list.table.circuit': 'Circuit',
     'list.table.type': 'Soort',
@@ -72,8 +73,9 @@ export const ui = {
     'kind.motogp': 'Moto GP',
     'kind.superbike': 'Superbike',
 
-    'country.AU': 'Australië',
+    'country.AR': 'Argentinië',
     'country.AT': 'Oostenrijk',
+    'country.AU': 'Australië',
     'country.AZ': 'Azerbeidzjan',
     'country.BH': 'Bahrein',
     'country.BE': 'België',

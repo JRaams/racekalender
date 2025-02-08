@@ -1,0 +1,24 @@
+---
+import { RaceYears } from '~/utils/racedata';
+
+const params = Astro.params;
+const currentYear = params.year!.toString();
+
+const pathname = new URL(Astro.url).pathname;
+---
+
+<details class="dropdown">
+  <summary>
+    {currentYear}
+  </summary>
+
+  <ul dir="rtl">
+    {
+      RaceYears.map((raceYear) => raceYear.toString()).map((raceYear) => (
+        <li>
+          <a href={pathname.replace(currentYear, raceYear)}>{raceYear}</a>
+        </li>
+      ))
+    }
+  </ul>
+</details>

@@ -10,8 +10,10 @@ import 'dayjs/locale/nl';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import dayOfYear from 'dayjs/plugin/dayOfYear';
 import { KindToLabelMap } from '~/types';
+import { type RaceYear, RaceYears } from '~/utils/racedata';
 
 const params = Astro.params;
+const raceYear = params.year as RaceYear;
 const lang = params.lang as Language;
 
 dayjs.extend(relativeTime);
@@ -19,10 +21,10 @@ dayjs.extend(dayOfYear);
 dayjs.locale(lang);
 
 const t = useTranslations(lang);
-const raceWeeks = CreateGroupedRaceRows(lang);
+const raceWeeks = CreateGroupedRaceRows(raceYear, lang);
 
 export function getStaticPaths() {
-  return Object.keys(languages).map((x) => ({ params: { lang: x } }));
+  return RaceYears.flatMap((year) => Object.keys(languages).map((lang) => ({ params: { lang, year } })));
 }
 ---
 
@@ -65,7 +67,7 @@ export function getStaticPaths() {
         $week.classList.add('current-week');
 
         window.scrollTo({
-          top: $week.getBoundingClientRect().top + window.scrollY - 50,
+          top: $week.getBoundingClientRect().top + window.scrollY - 138,
           behavior: 'instant',
         });
       }

@@ -1,0 +1,1190 @@
+[
+  {
+    "round": 1,
+    "name": "THAILAND",
+    "circuit": {
+      "country": "Thailand",
+      "countryCode": "TH",
+      "city": "Buriram",
+      "name": "Chang International Circuit"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1740714300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1740729600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1740798600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1740801000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1740802500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1740816000000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1740902400000,
+        "laps": 26
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "name": "ARGENTINA",
+    "circuit": {
+      "country": "Argentina",
+      "countryCode": "AR",
+      "city": "Termas de Río Hondo",
+      "name": "Termas de Río Hondo"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1741959900000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1741975200000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1742044200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1742046600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1742048100000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1742061600000,
+        "laps": 12
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1742148000000,
+        "laps": 25
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "name": "USA",
+    "circuit": {
+      "country": "United States",
+      "countryCode": "US",
+      "city": "Austin, Texas",
+      "name": "Circuit Of The Americas"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1743176700000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1743192000000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1743261000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1743263400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1743264900000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1743278400000,
+        "laps": 10
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1743361200000,
+        "laps": 20
+      }
+    ]
+  },
+  {
+    "round": 4,
+    "name": "QATAR",
+    "circuit": {
+      "country": "Qatar",
+      "countryCode": "QA",
+      "city": "Lusail",
+      "name": "Lusail International Circuit"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1744375500000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1744390800000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1744455600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1744458000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1744459500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1744473600000,
+        "laps": 11
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1744563600000,
+        "laps": 21
+      }
+    ]
+  },
+  {
+    "round": 5,
+    "name": "SPAIN",
+    "circuit": {
+      "country": "Spain",
+      "countryCode": "ES",
+      "city": "Jerez de la Frontera",
+      "name": "Circuito de Jerez"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1745570700000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1745586000000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1745655000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1745657400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1745658900000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1745672400000,
+        "laps": 12
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1745755200000,
+        "laps": 25
+      }
+    ]
+  },
+  {
+    "round": 6,
+    "name": "FRANCE",
+    "circuit": {
+      "country": "France",
+      "countryCode": "FR",
+      "city": "Le Mans",
+      "name": "Le Mans"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1746780300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1746795600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1746864600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1746867000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1746868500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1746882000000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1746964800000,
+        "laps": 27
+      }
+    ]
+  },
+  {
+    "round": 7,
+    "name": "UNITED KINGDOM",
+    "circuit": {
+      "country": "Great Britain",
+      "countryCode": "GB",
+      "city": "Silverstone",
+      "name": "Silverstone Circuit"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1747997100000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1748012400000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1748081400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1748083800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1748085300000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1748098800000,
+        "laps": 10
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1748174400000,
+        "laps": 20
+      }
+    ]
+  },
+  {
+    "round": 8,
+    "name": "ARAGON",
+    "circuit": {
+      "country": "Spain",
+      "countryCode": "ES",
+      "city": "Alcañiz",
+      "name": "MotorLand Aragón"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1749199500000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1749214800000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1749283800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1749286200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1749287700000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1749301200000,
+        "laps": 11
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1749384000000,
+        "laps": 23
+      }
+    ]
+  },
+  {
+    "round": 9,
+    "name": "ITALY",
+    "circuit": {
+      "country": "Italy",
+      "countryCode": "IT",
+      "city": "Scarperia e San Piero",
+      "name": "Autodromo Internazionale del Mugello"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1750409100000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1750424400000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1750493400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1750495800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1750497300000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1750510800000,
+        "laps": 11
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1750593600000,
+        "laps": 23
+      }
+    ]
+  },
+  {
+    "round": 10,
+    "name": "NETHERLANDS",
+    "circuit": {
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "city": "Assen",
+      "name": "TT Circuit Assen"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1751013900000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1751029200000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1751098200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1751100600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1751102100000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1751115600000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1751198400000,
+        "laps": 26
+      }
+    ]
+  },
+  {
+    "round": 11,
+    "name": "GERMANY",
+    "circuit": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "city": "Hohenstein-Ernstthal",
+      "name": "Sachsenring"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1752223500000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1752238800000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1752307800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1752310200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1752311700000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1752325200000,
+        "laps": 15
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1752408000000,
+        "laps": 30
+      }
+    ]
+  },
+  {
+    "round": 12,
+    "name": "CZECHIA",
+    "circuit": {
+      "country": "Czechia",
+      "countryCode": "CZ",
+      "city": "Brno",
+      "name": "Automotodrom Brno"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1752828300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1752843600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1752912600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1752915000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1752916500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1752930000000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1753012800000,
+        "laps": 27
+      }
+    ]
+  },
+  {
+    "round": 13,
+    "name": "AUSTRIA",
+    "circuit": {
+      "country": "Austria",
+      "countryCode": "AT",
+      "city": "Spielberg",
+      "name": "Red Bull Ring"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1755247500000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1755262800000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1755331800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1755334200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1755335700000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1755349200000,
+        "laps": 14
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1755432000000,
+        "laps": 28
+      }
+    ]
+  },
+  {
+    "round": 14,
+    "name": "HUNGARY",
+    "circuit": {
+      "country": "Hungary",
+      "countryCode": "HU",
+      "city": "Balatonfőkajár",
+      "name": "Balaton Park"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1755852300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1755867600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1755936600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1755939000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1755940500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1755954000000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1756036800000,
+        "laps": 27
+      }
+    ]
+  },
+  {
+    "round": 15,
+    "name": "CATALONIA",
+    "circuit": {
+      "country": "Spain",
+      "countryCode": "ES",
+      "city": "Montmeló, Barcelona",
+      "name": "Circuit de Barcelona-Catalunya"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1757061900000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1757077200000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1757146200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1757148600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1757150100000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1757163600000,
+        "laps": 12
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1757246400000,
+        "laps": 24
+      }
+    ]
+  },
+  {
+    "round": 16,
+    "name": "SAN MARINO",
+    "circuit": {
+      "country": "San Marino",
+      "countryCode": "SM",
+      "city": "Misano Adriatico",
+      "name": "Misano World Circuit Marco Simoncelli"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1757666700000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1757682000000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1757751000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1757753400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1757754900000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1757768400000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1757851200000,
+        "laps": 27
+      }
+    ]
+  },
+  {
+    "round": 17,
+    "name": "JAPAN",
+    "circuit": {
+      "country": "Japan",
+      "countryCode": "JP",
+      "city": "Motegi",
+      "name": "Mobility Resort Motegi"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1758851100000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1758866400000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1758935400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1758937800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1758939300000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1758952800000,
+        "laps": 12
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1759035600000,
+        "laps": 24
+      }
+    ]
+  },
+  {
+    "round": 18,
+    "name": "INDONESIA",
+    "circuit": {
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "city": "Lombok",
+      "name": "Pertamina Mandalika Circuit"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1759459500000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1759474800000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1759543800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1759546200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1759547700000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1759561200000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1759647600000,
+        "laps": 27
+      }
+    ]
+  },
+  {
+    "round": 19,
+    "name": "AUSTRALIA",
+    "circuit": {
+      "country": "Australia",
+      "countryCode": "AU",
+      "city": "Ventnor",
+      "name": "Phillip Island"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1760658300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1760673600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1760742600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1760745000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1760746500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1760760000000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1760842800000,
+        "laps": 27
+      }
+    ]
+  },
+  {
+    "round": 20,
+    "name": "MALAYSIA",
+    "circuit": {
+      "country": "Malaysia",
+      "countryCode": "MY",
+      "city": "Sepang",
+      "name": "Petronas Sepang International Circuit"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1761273900000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1761289200000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1761358200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1761360600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1761362100000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1761375600000,
+        "laps": 10
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1761462000000,
+        "laps": 20
+      }
+    ]
+  },
+  {
+    "round": 21,
+    "name": "PORTUGAL",
+    "circuit": {
+      "country": "Portugal",
+      "countryCode": "PT",
+      "city": "Portimão",
+      "name": "Autódromo Internacional do Algarve"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1762512300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1762527600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1762596600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1762599000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1762600500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1762614000000,
+        "laps": 12
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1762696800000,
+        "laps": 25
+      }
+    ]
+  },
+  {
+    "round": 22,
+    "name": "VALENCIA",
+    "circuit": {
+      "country": "Spain",
+      "countryCode": "ES",
+      "city": "Cheste",
+      "name": "Circuit Ricardo Tormo"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1763113500000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1763128800000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1763197800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1763200200000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1763201700000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1763215200000,
+        "laps": 13
+      },
+      {
+        "name": "Race",
+        "type": "race",
+        "startAt": 1763298000000,
+        "laps": 27
+      }
+    ]
+  }
+]
