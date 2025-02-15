@@ -46,7 +46,7 @@
         "laps": 13
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1740902400000,
         "laps": 26
@@ -100,7 +100,7 @@
         "laps": 12
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1742148000000,
         "laps": 25
@@ -154,7 +154,7 @@
         "laps": 10
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1743361200000,
         "laps": 20
@@ -208,7 +208,7 @@
         "laps": 11
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1744563600000,
         "laps": 21
@@ -262,7 +262,7 @@
         "laps": 12
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1745755200000,
         "laps": 25
@@ -316,7 +316,7 @@
         "laps": 13
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1746964800000,
         "laps": 27
@@ -370,7 +370,7 @@
         "laps": 10
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1748174400000,
         "laps": 20
@@ -424,7 +424,7 @@
         "laps": 11
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1749384000000,
         "laps": 23
@@ -478,7 +478,7 @@
         "laps": 11
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1750593600000,
         "laps": 23
@@ -532,7 +532,7 @@
         "laps": 13
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1751198400000,
         "laps": 26
@@ -586,7 +586,7 @@
         "laps": 15
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1752408000000,
         "laps": 30
@@ -640,7 +640,7 @@
         "laps": 13
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1753012800000,
         "laps": 27
@@ -694,7 +694,7 @@
         "laps": 14
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1755432000000,
         "laps": 28
@@ -748,7 +748,7 @@
         "laps": 13
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1756036800000,
         "laps": 27
@@ -802,7 +802,7 @@
         "laps": 12
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1757246400000,
         "laps": 24
@@ -856,7 +856,7 @@
         "laps": 13
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1757851200000,
         "laps": 27
@@ -910,7 +910,7 @@
         "laps": 12
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1759035600000,
         "laps": 24
@@ -964,7 +964,7 @@
         "laps": 13
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1759647600000,
         "laps": 27
@@ -1018,7 +1018,7 @@
         "laps": 13
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1760842800000,
         "laps": 27
@@ -1072,7 +1072,7 @@
         "laps": 10
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1761462000000,
         "laps": 20
@@ -1126,9 +1126,9 @@
         "laps": 12
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
-        "startAt": 1762696800000,
+        "startAt": 1762693200000,
         "laps": 25
       }
     ]
@@ -1180,7 +1180,7 @@
         "laps": 13
       },
       {
-        "name": "Race",
+        "name": "Grand Prix",
         "type": "race",
         "startAt": 1763298000000,
         "laps": 27

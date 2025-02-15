@@ -142,7 +142,7 @@
   },
   {
     "round": 4,
-    "name": "BAHRAIN GRAND PRIX",
+    "name": "GULF AIR BAHRAIN GRAND PRIX",
     "circuit": {
       "country": "Bahrain",
       "countryCode": "BH",
@@ -330,7 +330,7 @@
   },
   {
     "round": 8,
-    "name": "GRAND PRIX DE MONACO",
+    "name": "TAG HEUER GRAND PRIX DE MONACO",
     "circuit": {
       "country": "Monaco",
       "countryCode": "MC",
