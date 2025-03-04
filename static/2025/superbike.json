@@ -14,49 +14,49 @@
         "name": "FP1",
         "type": "practice",
         "startAt": 1740097200000,
-        "endAt": 1740099900000,
+        "endAt": 1740101306000,
         "laps": null
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1740114000000,
-        "endAt": 1740116700000,
+        "endAt": 1740116948000,
         "laps": null
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1740178800000,
-        "endAt": 1740180000000,
+        "endAt": 1740180251000,
         "laps": null
       },
       {
         "name": "Superpole",
         "type": "superpole_qualifying",
         "startAt": 1740189600000,
-        "endAt": 1740190500000,
+        "endAt": 1740190956000,
         "laps": null
       },
       {
         "name": "Race 1",
         "type": "race",
         "startAt": 1740200400000,
-        "endAt": null,
+        "endAt": 1740202418000,
         "laps": 21
       },
       {
         "name": "Superpole Race",
         "type": "superpole_race",
         "startAt": 1740276000000,
-        "endAt": null,
+        "endAt": 1740277006000,
         "laps": 10
       },
       {
         "name": "Race 2",
         "type": "race",
         "startAt": 1740286800000,
-        "endAt": null,
+        "endAt": 1740288766000,
         "laps": 21
       }
     ]
@@ -110,14 +110,14 @@
       {
         "name": "Superpole Race",
         "type": "superpole_race",
-        "startAt": 1743332400000,
+        "startAt": 1743328800000,
         "endAt": null,
         "laps": 10
       },
       {
         "name": "Race 2",
         "type": "race",
-        "startAt": 1743343200000,
+        "startAt": 1743339600000,
         "endAt": null,
         "laps": 20
       }
@@ -625,9 +625,9 @@
     "circuit": {
       "countryCode": "PT",
       "country": "Portugal",
-      "region": "Algarve",
-      "city": "Portimão",
-      "name": "Algarve International Circuit"
+      "region": "Lisbon",
+      "city": "Alcabideche",
+      "name": "Autódromo Fernanda Pires da Silva"
     },
     "events": [
       {

@@ -247,36 +247,36 @@
       {
         "name": "Practice 1 - Miami Grand Prix",
         "type": "practice",
-        "startAt": 1746174600000,
-        "endAt": 1746178200000,
+        "startAt": 1746203400000,
+        "endAt": 1746207000000,
         "laps": null
       },
       {
         "name": "Sprint Qualifying - Miami Grand Prix",
         "type": "sprint_qualifying",
-        "startAt": 1746189000000,
-        "endAt": 1746191640000,
+        "startAt": 1746217800000,
+        "endAt": 1746220440000,
         "laps": null
       },
       {
         "name": "Sprint - Miami Grand Prix",
         "type": "sprint",
-        "startAt": 1746259200000,
-        "endAt": 1746262800000,
+        "startAt": 1746288000000,
+        "endAt": 1746291600000,
         "laps": 19
       },
       {
         "name": "Qualifying - Miami Grand Prix",
         "type": "qualifying",
-        "startAt": 1746273600000,
-        "endAt": 1746277200000,
+        "startAt": 1746302400000,
+        "endAt": 1746306000000,
         "laps": null
       },
       {
         "name": "Race - Miami Grand Prix",
         "type": "race",
-        "startAt": 1746360000000,
-        "endAt": 1746367200000,
+        "startAt": 1746388800000,
+        "endAt": 1746396000000,
         "laps": 57
       }
     ]
@@ -435,36 +435,36 @@
       {
         "name": "Practice 1 - Canadian Grand Prix",
         "type": "practice",
-        "startAt": 1749807000000,
-        "endAt": 1749810600000,
+        "startAt": 1749835800000,
+        "endAt": 1749839400000,
         "laps": null
       },
       {
         "name": "Practice 2 - Canadian Grand Prix",
         "type": "practice",
-        "startAt": 1749819600000,
-        "endAt": 1749823200000,
+        "startAt": 1749848400000,
+        "endAt": 1749852000000,
         "laps": null
       },
       {
         "name": "Practice 3 - Canadian Grand Prix",
         "type": "practice",
-        "startAt": 1749889800000,
-        "endAt": 1749893400000,
+        "startAt": 1749918600000,
+        "endAt": 1749922200000,
         "laps": null
       },
       {
         "name": "Qualifying - Canadian Grand Prix",
         "type": "qualifying",
-        "startAt": 1749902400000,
-        "endAt": 1749906000000,
+        "startAt": 1749931200000,
+        "endAt": 1749934800000,
         "laps": null
       },
       {
         "name": "Race - Canadian Grand Prix",
         "type": "race",
-        "startAt": 1749981600000,
-        "endAt": 1749988800000,
+        "startAt": 1750010400000,
+        "endAt": 1750017600000,
         "laps": 70
       }
     ]
@@ -858,36 +858,36 @@
       {
         "name": "Practice 1 - United States Grand Prix",
         "type": "practice",
-        "startAt": 1760686200000,
-        "endAt": 1760689800000,
+        "startAt": 1760722200000,
+        "endAt": 1760725800000,
         "laps": null
       },
       {
         "name": "Sprint Qualifying - United States Grand Prix",
         "type": "sprint_qualifying",
-        "startAt": 1760700600000,
-        "endAt": 1760703240000,
+        "startAt": 1760736600000,
+        "endAt": 1760739240000,
         "laps": null
       },
       {
         "name": "Sprint - United States Grand Prix",
         "type": "sprint",
-        "startAt": 1760770800000,
-        "endAt": 1760774400000,
+        "startAt": 1760806800000,
+        "endAt": 1760810400000,
         "laps": 19
       },
       {
         "name": "Qualifying - United States Grand Prix",
         "type": "qualifying",
-        "startAt": 1760785200000,
-        "endAt": 1760788800000,
+        "startAt": 1760821200000,
+        "endAt": 1760824800000,
         "laps": null
       },
       {
         "name": "Race - United States Grand Prix",
         "type": "race",
-        "startAt": 1760864400000,
-        "endAt": 1760871600000,
+        "startAt": 1760900400000,
+        "endAt": 1760907600000,
         "laps": 56
       }
     ]
@@ -905,36 +905,36 @@
       {
         "name": "Practice 1 - Mexico City Grand Prix",
         "type": "practice",
-        "startAt": 1761287400000,
-        "endAt": 1761291000000,
+        "startAt": 1761330600000,
+        "endAt": 1761334200000,
         "laps": null
       },
       {
         "name": "Practice 2 - Mexico City Grand Prix",
         "type": "practice",
-        "startAt": 1761300000000,
-        "endAt": 1761303600000,
+        "startAt": 1761343200000,
+        "endAt": 1761346800000,
         "laps": null
       },
       {
         "name": "Practice 3 - Mexico City Grand Prix",
         "type": "practice",
-        "startAt": 1761370200000,
-        "endAt": 1761373800000,
+        "startAt": 1761413400000,
+        "endAt": 1761417000000,
         "laps": null
       },
       {
         "name": "Qualifying - Mexico City Grand Prix",
         "type": "qualifying",
-        "startAt": 1761382800000,
-        "endAt": 1761386400000,
+        "startAt": 1761426000000,
+        "endAt": 1761429600000,
         "laps": null
       },
       {
         "name": "Race - Mexico City Grand Prix",
         "type": "race",
-        "startAt": 1761465600000,
-        "endAt": 1761472800000,
+        "startAt": 1761508800000,
+        "endAt": 1761516000000,
         "laps": 71
       }
     ]
@@ -952,36 +952,36 @@
       {
         "name": "Practice 1 - São Paulo Grand Prix",
         "type": "practice",
-        "startAt": 1762504200000,
-        "endAt": 1762507800000,
+        "startAt": 1762525800000,
+        "endAt": 1762529400000,
         "laps": null
       },
       {
         "name": "Sprint Qualifying - São Paulo Grand Prix",
         "type": "sprint_qualifying",
-        "startAt": 1762518600000,
-        "endAt": 1762521240000,
+        "startAt": 1762540200000,
+        "endAt": 1762542840000,
         "laps": null
       },
       {
         "name": "Sprint - São Paulo Grand Prix",
         "type": "sprint",
-        "startAt": 1762588800000,
-        "endAt": 1762592400000,
+        "startAt": 1762610400000,
+        "endAt": 1762614000000,
         "laps": 24
       },
       {
         "name": "Qualifying - São Paulo Grand Prix",
         "type": "qualifying",
-        "startAt": 1762603200000,
-        "endAt": 1762606800000,
+        "startAt": 1762624800000,
+        "endAt": 1762628400000,
         "laps": null
       },
       {
         "name": "Race - São Paulo Grand Prix",
         "type": "race",
-        "startAt": 1762686000000,
-        "endAt": 1762693200000,
+        "startAt": 1762707600000,
+        "endAt": 1762714800000,
         "laps": 71
       }
     ]
@@ -999,36 +999,36 @@
       {
         "name": "Practice 1 - Las Vegas Grand Prix",
         "type": "practice",
-        "startAt": 1763627400000,
-        "endAt": 1763631000000,
+        "startAt": 1763685000000,
+        "endAt": 1763688600000,
         "laps": null
       },
       {
         "name": "Practice 2 - Las Vegas Grand Prix",
         "type": "practice",
-        "startAt": 1763640000000,
-        "endAt": 1763643600000,
+        "startAt": 1763697600000,
+        "endAt": 1763701200000,
         "laps": null
       },
       {
         "name": "Practice 3 - Las Vegas Grand Prix",
         "type": "practice",
-        "startAt": 1763713800000,
-        "endAt": 1763717400000,
+        "startAt": 1763771400000,
+        "endAt": 1763775000000,
         "laps": null
       },
       {
         "name": "Qualifying - Las Vegas Grand Prix",
         "type": "qualifying",
-        "startAt": 1763726400000,
-        "endAt": 1763730000000,
+        "startAt": 1763784000000,
+        "endAt": 1763787600000,
         "laps": null
       },
       {
         "name": "Race - Las Vegas Grand Prix",
         "type": "race",
-        "startAt": 1763812800000,
-        "endAt": 1763820000000,
+        "startAt": 1763870400000,
+        "endAt": 1763877600000,
         "laps": 50
       }
     ]
