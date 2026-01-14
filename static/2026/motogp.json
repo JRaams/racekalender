@@ -1,0 +1,56 @@
+[
+  {
+    "round": 1,
+    "name": "THAILAND",
+    "circuit": {
+      "country": "Thailand",
+      "countryCode": "TH",
+      "city": "Buriram",
+      "name": "Chang International Circuit"
+    },
+    "events": [
+      {
+        "name": "Free Practice Nr. 1",
+        "type": "practice",
+        "startAt": 1740714300000,
+        "laps": null
+      },
+      {
+        "name": "Practice",
+        "type": "practice",
+        "startAt": 1740729600000,
+        "laps": null
+      },
+      {
+        "name": "Free Practice Nr. 2",
+        "type": "practice",
+        "startAt": 1740798600000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 1 ",
+        "type": "qualifying",
+        "startAt": 1740801000000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying Nr. 2 ",
+        "type": "qualifying",
+        "startAt": 1740802500000,
+        "laps": null
+      },
+      {
+        "name": "Sprint",
+        "type": "sprint",
+        "startAt": 1740816000000,
+        "laps": 13
+      },
+      {
+        "name": "Grand Prix",
+        "type": "race",
+        "startAt": 1740902400000,
+        "laps": 26
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "round": 1,
+    "name": "LOUIS VUITTON AUSTRALIAN GRAND PRIX",
+    "circuit": {
+      "country": "Australia",
+      "countryCode": "AU",
+      "city": "Melbourne",
+      "name": "Albert Park Grand Prix Circuit"
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Australian Grand Prix",
+        "type": "practice",
+        "startAt": 1741915800000,
+        "endAt": 1741919400000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Australian Grand Prix",
+        "type": "practice",
+        "startAt": 1741928400000,
+        "endAt": 1741932000000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Australian Grand Prix",
+        "type": "practice",
+        "startAt": 1742002200000,
+        "endAt": 1742005800000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Australian Grand Prix",
+        "type": "qualifying",
+        "startAt": 1742014800000,
+        "endAt": 1742018400000,
+        "laps": null
+      },
+      {
+        "name": "Race - Australian Grand Prix",
+        "type": "race",
+        "startAt": 1742097600000,
+        "endAt": 1742104800000,
+        "laps": 58
+      }
+    ]
+  }
+]

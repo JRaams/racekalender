@@ -10,23 +10,23 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/sitemap": "^3.2.1",
-    "@iconify-json/flagpack": "^1.2.2",
-    "@iconify-json/material-symbols": "^1.2.14",
-    "@picocss/pico": "^2.0.6",
-    "astro": "^5.2.3",
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/sitemap": "^3.6.1",
+    "@iconify-json/flagpack": "^1.2.7",
+    "@iconify-json/material-symbols": "^1.2.50",
+    "@picocss/pico": "^2.1.1",
+    "astro": "^5.16.7",
     "astro-icon": "^1.1.5",
-    "astro-purgecss": "^5.1.0",
+    "astro-purgecss": "^5.3.0",
     "astro-robots-txt": "^1.0.0",
-    "autoprefixer": "^10.4.20",
-    "cssnano": "^7.0.6",
-    "dayjs": "^1.11.13",
+    "autoprefixer": "^10.4.23",
+    "cssnano": "^7.1.2",
+    "dayjs": "^1.11.19",
     "purgecss": "^7.0.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "prettier": "^3.4.2",
+    "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1"
   },
   "packageManager": "pnpm@9.15.4"

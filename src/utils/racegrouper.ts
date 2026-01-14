@@ -24,9 +24,9 @@ export function CreateGroupedRaceRows(raceYear: RaceYear, lang: Language): Weekl
   const t = useTranslations(lang);
   const races: RaceRow[] = [];
 
-  const { formula1, motogp, superbike } = racedata[raceYear]!;
+  const yearlyData = racedata[raceYear];
 
-  formula1.forEach((raceWeek) => {
+  yearlyData?.formula1?.forEach((raceWeek) => {
     raceWeek.events.forEach((event) => {
       if (event.type !== 'race' && event.type !== 'sprint') return;
       races.push({
@@ -45,7 +45,7 @@ export function CreateGroupedRaceRows(raceYear: RaceYear, lang: Language): Weekl
     });
   });
 
-  motogp.forEach((raceWeek) => {
+  yearlyData?.motogp?.forEach((raceWeek) => {
     raceWeek.events.forEach((event) => {
       if (event.type !== 'sprint' && event.type !== 'race') return;
       races.push({
@@ -64,7 +64,7 @@ export function CreateGroupedRaceRows(raceYear: RaceYear, lang: Language): Weekl
     });
   });
 
-  superbike.forEach((raceWeek) => {
+  yearlyData?.superbike?.forEach((raceWeek) => {
     raceWeek.events.forEach((event) => {
       if (event.type !== 'superpole_race' && event.type !== 'race') return;
 
