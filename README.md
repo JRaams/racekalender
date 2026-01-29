@@ -1,5 +1,10 @@
 # Race calendar
 
+## TODO 2026
+
+1. Wait for https://www.formula1.com/en/racing/2026/spain to get updated -> Circuit information missing
+2. Wait for motogp data to become available, as of 2026-01-29 only the first race (Thailand) is available
+
 Counting down the days until the next race!
 
 ![Astro 5.16](https://img.shields.io/badge/-Astro%205.16-black?style=for-the-badge&logo=Astro)
