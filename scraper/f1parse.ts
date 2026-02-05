@@ -164,4 +164,5 @@ for (const meta of f1MetaData as F1WeekendMeta[]) {
   }
 }
 
-await Bun.write(`${import.meta.dir}/data/f1.json`, JSON.stringify(raceWeeks, null, 2));
+const currentYear = new Date().getFullYear();
+await Bun.write(`${import.meta.dir}/../static/${currentYear}/f1.json`, JSON.stringify(raceWeeks, null, 2));

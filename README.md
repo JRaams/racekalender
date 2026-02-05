@@ -1,9 +1,5 @@
 # Race calendar
 
-## TODO 2026
-
-2. Wait for motogp data to become available, as of 2026-01-29 only the first race (Thailand) is available
-
 Counting down the days until the next race!
 
 ![Astro 5.16](https://img.shields.io/badge/-Astro%205.16-black?style=for-the-badge&logo=Astro)

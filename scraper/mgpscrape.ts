@@ -6,7 +6,7 @@ const browser = await puppeteer.launch({
   executablePath: '/usr/bin/brave-browser',
   defaultViewport: null,
   args: ['--start-maximized'],
-  headless: false, // todo remove
+  headless: false,
 });
 
 const overviewPage = await browser.newPage();

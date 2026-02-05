@@ -161,4 +161,5 @@ for (const meta of mgpMetaData as MotoGPWeekendMeta[]) {
   }
 }
 
-await Bun.write(`${import.meta.dir}/data/motogp.json`, JSON.stringify(raceWeeks, null, 2));
+const currentYear = new Date().getFullYear();
+await Bun.write(`${import.meta.dir}/../static/${currentYear}/motogp.json`, JSON.stringify(raceWeeks, null, 2));
