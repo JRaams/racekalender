@@ -7,5 +7,5 @@
       "~/static/*": ["static/*"]
     }
   },
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "node_modules", "scraper", "public/goatcounter"]
 }
