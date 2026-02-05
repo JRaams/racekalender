@@ -63,9 +63,7 @@ function extractLaps(html: string, eventType: string, circuit: typeof circuits[0
     const lapsMatch = html.match(/<dt[^>]*>Number of Laps<\/dt>\s*<dd[^>]*>(\d+)<\/dd>/i)?.[1];
 
     if (!lapsMatch) {
-      console.error('Failed to extract laps from HTML', circuit);
-      return null
-      // throw new Error('Failed to extract laps from HTML');
+      throw new Error('Failed to extract laps from HTML');
     }
 
     const laps = parseInt(lapsMatch, 10);
