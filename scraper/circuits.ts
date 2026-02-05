@@ -1,4 +1,4 @@
-export const circuits = [
+export const f1Circuits = [
   {
     "country": "Australia",
     "countryCode": "AU",
@@ -173,5 +173,162 @@ export const circuits = [
     "city": "Yas Marina",
     "name": "Yas Marina Circuit",
     "length": 5.281
+  }
+]
+
+export const mgpCircuits = [
+  {
+    "country": "Australia",
+    "countryCode": "AU",
+    "city": "Phillip Island",
+    "name": "Phillip Island",
+    "length": 4.448
+  },
+  {
+    "country": "Austria",
+    "countryCode": "AT",
+    "city": "Spielberg",
+    "name": "Red Bull Ring - Spielberg",
+    "length": 4.348
+  },
+  {
+    "country": "Brazil",
+    "countryCode": "BR",
+    "city": "Goiânia",
+    "name": "Autódromo Internacional de Goiânia – Ayrton Senna",
+    "length": 3.835
+  },
+  {
+    "country": "Czech Republic",
+    "countryCode": "CZ",
+    "city": "Brno",
+    "name": "Automotodrom Brno",
+    "length": 5.403
+  },
+  {
+    "country": "France",
+    "countryCode": "FR",
+    "city": "Le Mans",
+    "name": "Le Mans",
+    "length": 4.185
+  },
+  {
+    "country": "Germany",
+    "countryCode": "DE",
+    "city": "Sachsenring",
+    "name": "Sachsenring",
+    "length": 3.671
+  },
+  {
+    "country": "Great Britain",
+    "countryCode": "GB",
+    "city": "Silverstone",
+    "name": "Silverstone Circuit",
+    "length": 5.9
+  },
+  {
+    "country": "Hungary",
+    "countryCode": "HU",
+    "city": "Balaton",
+    "name": "Balaton Park",
+    "length": 4.075
+  },
+  {
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "city": "Mandalika",
+    "name": "Pertamina Mandalika Circuit",
+    "length": 4.301
+  },
+  {
+    "country": "Italy",
+    "countryCode": "IT",
+    "city": "Mugello",
+    "name": "Autodromo Internazionale del Mugello",
+    "length": 5.245
+  },
+  {
+    "country": "Japan",
+    "countryCode": "JP",
+    "city": "Motegi",
+    "name": "Mobility Resort Motegi",
+    "length": 4.801
+  },
+  {
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "city": "Sepang",
+    "name": "Petronas Sepang International Circuit",
+    "length": 5.543
+  },
+  {
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "city": "Assen",
+    "name": "TT Circuit Assen",
+    "length": 4.542
+  },
+  {
+    "country": "Portugal",
+    "countryCode": "PT",
+    "city": "Portimão",
+    "name": "Autódromo Internacional do Algarve",
+    "length": 4.592
+  },
+  {
+    "country": "Qatar",
+    "countryCode": "QA",
+    "city": "Lusail",
+    "name": "Lusail International Circuit",
+    "length": 5.38
+  },
+  {
+    "country": "San Marino",
+    "countryCode": "SM",
+    "city": "Misano",
+    "name": "Misano World Circuit Marco Simoncelli",
+    "length": 4.226
+  },
+  {
+    "country": "Spain",
+    "countryCode": "ES",
+    "city": "Alcañiz",
+    "name": "MotorLand Aragón",
+    "length": 5.077
+  },
+  {
+    "country": "Spain",
+    "countryCode": "ES",
+    "city": "Barcelona",
+    "name": "Circuit de Barcelona-Catalunya",
+    "length": 4.657
+  },
+  {
+    "country": "Spain",
+    "countryCode": "ES",
+    "city": "Cheste",
+    "name": "Circuit Ricardo Tormo",
+    "length": 4.005
+  },
+  {
+    "country": "Spain",
+    "countryCode": "ES",
+    "city": "Jerez",
+    "name": "Circuito de Jerez - Ángel Nieto",
+    "length": 4.423
+  },
+  {
+    "country": "Thailand",
+    "countryCode": "TH",
+    "city": "Buriram",
+    "name": "Chang International Circuit",
+    "length": 4.554
+  },
+  {
+    "country": "United States",
+    "countryCode": "US",
+    "city": "Austin",
+    "name": "Circuit Of The Americas",
+    "length": 5.513
   }
 ]

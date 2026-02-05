@@ -38,43 +38,36 @@ console.log(`Found ${weekendLinks.length} round links`);
 
 await overviewPage.close();
 
-const weekends: { index: number; link: string; fileName: string; filePath: string }[] = [];
+const weekends: { index: number; link: string; fileName: string; eventId: string }[] = [];
 
-async function fetchAndSavePage(link: string, index: number): Promise<void> {
-  if (!link) return;
-
-  const page = await browser.newPage();
-  await page.emulateTimezone('Europe/London');
+// Extract event metadata from links
+for (let i = 0; i < weekendLinks.length; i++) {
+  const link = weekendLinks[i];
+  if (!link) continue;
 
   try {
-    console.log(`Visiting ${index + 1}/${weekendLinks.length}: ${link}`);
-
-    await page.goto(link, {
-      waitUntil: 'networkidle2',
-      timeout: 0,
-    });
-
-    const content = await page.content();
-
     const urlPath = new URL(link).pathname;
-    const fileName = urlPath.split('/').at(-2)!;
-    const filePath = `${import.meta.dir}/html/motogp/${fileName}.html`;
-
-    weekends.push({ index, link, fileName, filePath });
-    await Bun.write(filePath, content);
-    console.log(`Saved: ${filePath}`);
+    const pathParts = urlPath.split('/').filter(p => p);
+    
+    // Extract fileName (e.g., "thailand", "brasil") and eventId (UUID)
+    // URL format: /en/calendar/2026/event/thailand/364a0bd9-d3c2-4ab3-a4cd-211ff469953e
+    const eventIndex = pathParts.indexOf('event');
+    if (eventIndex === -1 || eventIndex >= pathParts.length - 1) {
+      throw new Error(`Could not parse event from link: ${link}`);
+    }
+    
+    const fileName = pathParts[eventIndex + 1];
+    const eventId = pathParts[eventIndex + 2];
+    
+    if (!fileName || !eventId) {
+      throw new Error(`Could not extract fileName or eventId from link: ${link}`);
+    }
+    
+    weekends.push({ index: i, link, fileName, eventId });
+    console.log(`Extracted: ${fileName} (${eventId})`);
   } catch (error) {
-    console.error(`Error processing ${link}:`, error);
-  } finally {
-    await page.close();
+    throw new Error(`Error processing ${link}: ${error}`);
   }
-}
-
-const BATCH_SIZE = 5;
-
-for (let i = 0; i < weekendLinks.length; i += BATCH_SIZE) {
-  const batch = weekendLinks.slice(i, i + BATCH_SIZE);
-  await Promise.all(batch.map((link, batchIndex) => fetchAndSavePage(link, i + batchIndex)));
 }
 
 weekends.sort((a, b) => a.index - b.index);

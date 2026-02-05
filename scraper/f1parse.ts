@@ -1,6 +1,6 @@
 import * as htmlparser2 from "htmlparser2";
-import { circuits } from "./circuits";
-import type { RaceWeek, WeekendMeta } from "./types";
+import { f1Circuits } from "./circuits";
+import type { F1WeekendMeta, RaceWeek } from "./types";
 
 const f1Meta = await Bun.file(`${import.meta.dir}/meta/f1.json`).text();
 
@@ -51,7 +51,7 @@ function mapEventType(eventId: string): string {
   return 'practice'; // default
 }
 
-function extractLaps(html: string, eventType: string, circuit: typeof circuits[0] | null): number | null {
+function extractLaps(html: string, eventType: string, circuit: typeof f1Circuits[0] | null): number | null {
   if (eventType === 'sprint') {
     if (circuit && 'length' in circuit && typeof circuit.length === 'number') {
       return Math.ceil(100 / circuit.length);
@@ -77,7 +77,7 @@ function extractLaps(html: string, eventType: string, circuit: typeof circuits[0
   return null;
 }
 
-function findCircuit(location: any): typeof circuits[0] | null {
+function findCircuit(location: any): typeof f1Circuits[0] | null {
   if (!location) return null;
 
   const cityName = location.name?.toLowerCase();
@@ -87,21 +87,21 @@ function findCircuit(location: any): typeof circuits[0] | null {
   const countryFromAddress = addressParts.length > 1 ? addressParts[addressParts.length - 1] : null;
 
   if (cityName) {
-    const matchByCity = circuits.find(circuit => 
+    const matchByCity = f1Circuits.find(circuit => 
       circuit.city.toLowerCase() === cityName
     );
     if (matchByCity) return matchByCity;
   }
 
   if (countryFromAddress) {
-    const matchByCountry = circuits.find(circuit => 
+    const matchByCountry = f1Circuits.find(circuit => 
       circuit.country.toLowerCase() === countryFromAddress
     );
     if (matchByCountry) return matchByCountry;
   }
 
   if (cityName) {
-    const partialMatch = circuits.find(circuit => 
+    const partialMatch = f1Circuits.find(circuit => 
       circuit.city.toLowerCase().includes(cityName) || 
       cityName.includes(circuit.city.toLowerCase())
     );
@@ -111,7 +111,7 @@ function findCircuit(location: any): typeof circuits[0] | null {
   return null;
 }
 
-function parseRaceWeek(html: string, meta: WeekendMeta): RaceWeek | null {
+function parseRaceWeek(html: string, meta: F1WeekendMeta): RaceWeek | null {
   const jsonLd = extractJsonLd(html);
   if (!jsonLd || !jsonLd.subEvent || !Array.isArray(jsonLd.subEvent)) {
     throw new Error('Failed to extract JSON-LD data or subEvent array');
@@ -156,7 +156,7 @@ function parseRaceWeek(html: string, meta: WeekendMeta): RaceWeek | null {
 
 const raceWeeks: RaceWeek[] = [];
 
-for (const meta of f1MetaData as WeekendMeta[]) {
+for (const meta of f1MetaData as F1WeekendMeta[]) {
   const html = await Bun.file(meta.filePath).text();
   const raceWeek = parseRaceWeek(html, meta);
   if (raceWeek) {

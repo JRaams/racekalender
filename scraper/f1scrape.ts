@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer-core';
-import type { WeekendMeta } from './types';
+import type { F1WeekendMeta } from './types';
 
 console.log('Launching browser...');
 
@@ -39,7 +39,7 @@ const roundLinks = await overviewPage.evaluate(() => {
 console.log(`Found ${roundLinks.length} round links`);
 await overviewPage.close();
 
-const weekends: WeekendMeta[] = [];
+const weekends: F1WeekendMeta[] = [];
 
 async function fetchAndSavePage(link: string, index: number): Promise<void> {
   if (!link) return;

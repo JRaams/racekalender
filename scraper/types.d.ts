@@ -1,8 +1,15 @@
-export type WeekendMeta = {
+export type F1WeekendMeta = {
     index: number;
     link: string;
     fileName: string;
-    filePath: string;
+    filePath?: string;
+};
+
+export type MotoGPWeekendMeta = {
+    index: number;
+    link: string;
+    fileName: string;
+    eventId: string;
 };
 
 export type RaceWeek = {
