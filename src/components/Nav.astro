@@ -29,7 +29,7 @@ const kindsThisYear = Object.keys(raceData[year]);
     </li>
 
     <li class="title">
-      <a href={'/' + year + '/' + lang + '/'} class="secondary">
+      <a href={'/' + year + '/' + lang + '/'}  class={kind === undefined ? 'primary': 'secondary'} aria-current={kind === undefined}>
         <strong>{t('nav.title')}</strong>
       </a>
     </li>
@@ -37,7 +37,7 @@ const kindsThisYear = Object.keys(raceData[year]);
     {
       kindsThisYear.map((x) => (
         <li class="desktop">
-          <a href={'/' + year + '/' + lang + '/' + x} aria-current={kind === x}>
+          <a href={'/' + year + '/' + lang + '/' + x} class={kind === x ? 'primary': 'secondary'} aria-current={kind === x}>
             {t(('kind.' + x) as any)}
           </a>
         </li>
@@ -58,7 +58,7 @@ const kindsThisYear = Object.keys(raceData[year]);
     {
       kindsThisYear.map((x) => (
         <li>
-          <a href={'/' + year + '/' + lang + '/' + x} aria-current={kind === x}>
+          <a href={'/' + year + '/' + lang + '/' + x} class={kind === x ? 'primary': 'secondary'} aria-current={kind === x}>
             {t(('kind.' + x) as any)}
           </a>
         </li>
@@ -79,6 +79,10 @@ const kindsThisYear = Object.keys(raceData[year]);
   #hamburger-icon svg {
     height: 17px;
     width: auto;
+  }
+
+  a.primary {
+    color: var(--pico-primary);
   }
 
   input#nav-toggle:checked ~ .mobile-nav-items {
