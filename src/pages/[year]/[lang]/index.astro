@@ -40,7 +40,7 @@ export function getStaticPaths() {
   import dayjs from 'dayjs';
 
   import dayOfYear from 'dayjs/plugin/dayOfYear';
-  import isoWeek from 'dayjs/plugin/isoWeek';
+import isoWeek from 'dayjs/plugin/isoWeek';
   dayjs.extend(isoWeek);
   dayjs.extend(dayOfYear);
 
@@ -54,10 +54,16 @@ export function getStaticPaths() {
     let nextWeekNumber: number | undefined;
     let nextDayNumber: number | undefined;
     const now = new Date();
+    const currentYear = now.getFullYear();
 
     document.querySelectorAll('.week').forEach(($week) => {
       const timestamp = Number($week.getAttribute('data-timestamp'));
       const date = dayjs(timestamp);
+
+      if (date.year() < currentYear) {
+        $week.setAttribute('open', '')
+        return;
+      }
 
       if (date.isBefore(now, 'days')) {
         $week.classList.add('past');
