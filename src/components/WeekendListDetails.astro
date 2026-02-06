@@ -30,10 +30,11 @@ const t = useTranslations(lang);
         .map((event) => (
           <tr>
             <td>
-              <div class="type-cell">
+              <small>
                 <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
-                {event.name.split(' - ')[0]}
-              </div>
+                {t(('type.' + event.type) as any)}
+                {event.typeQuantity && ` ${event.typeQuantity}`}
+              </small>
             </td>
             <td>
               <small class="timestamp-full" data-timestamp={event.startAt}>
@@ -54,11 +55,5 @@ const t = useTranslations(lang);
     .lap-column {
       width: 0;
     }
-  }
-
-  .type-cell {
-    display: flex;
-    align-items: center;
-    gap: 0.25em;
   }
 </style>

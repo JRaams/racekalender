@@ -11,9 +11,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1740714300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -23,21 +24,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1740798600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1740801000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1740802500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -65,9 +69,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1741959900000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -77,21 +82,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1742044200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1742046600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1742048100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -119,9 +127,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1743176700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -131,21 +140,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1743261000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1743263400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1743265500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -173,9 +185,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1744375500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -185,21 +198,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1744459200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1744461600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1744463100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -227,9 +243,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1745570700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -239,21 +256,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1745655000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1745657400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1745658900000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -281,9 +301,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1746780300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -293,21 +314,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1746864600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1746867000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1746868500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -335,9 +359,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1747997100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -347,21 +372,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1748081400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1748083800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1748085300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -389,9 +417,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1749199500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -401,21 +430,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1749283800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1749286200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1749287700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -443,9 +475,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1750409100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -455,21 +488,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1750493400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1750495800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1750497300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -497,9 +533,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1751013900000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -509,21 +546,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1751098200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1751100600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1751102100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -551,9 +591,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1752223500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -563,21 +604,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1752307800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1752310200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1752311700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -605,9 +649,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1752828300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -617,21 +662,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1752912600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1752915000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1752916500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -659,9 +707,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1755247500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -671,21 +720,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1755331800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1755334200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1755335700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -713,9 +765,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1755852300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -725,21 +778,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1755936600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1755939000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1755940500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -767,9 +823,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1757061900000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -779,21 +836,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1757146200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1757148600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1757150100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -821,9 +881,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1757666700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -833,21 +894,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1757751000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1757753400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1757754900000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -875,9 +939,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1758851100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -887,21 +952,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1758935400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1758937800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1758939300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -929,9 +997,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1759459500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -941,21 +1010,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1759543800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1759546200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1759547700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -983,9 +1055,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1760658300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -995,21 +1068,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1760742600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1760745000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1760746500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -1037,9 +1113,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1761273900000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -1049,21 +1126,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1761358200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1761360600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1761362100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -1091,9 +1171,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1762512300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -1103,21 +1184,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1762596600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1762599000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1762600500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",
@@ -1145,9 +1229,10 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1763113500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice",
@@ -1157,21 +1242,24 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
         "startAt": 1763197800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "startAt": 1763200200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "startAt": 1763201700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Sprint",

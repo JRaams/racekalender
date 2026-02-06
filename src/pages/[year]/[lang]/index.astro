@@ -13,7 +13,7 @@ import { KindToLabelMap } from '~/types';
 import { type RaceYear, RaceYears } from '~/utils/racedata';
 
 const params = Astro.params;
-const raceYear = params.year as RaceYear;
+const raceYear = Number(params.year) as RaceYear;
 const lang = params.lang as Language;
 
 dayjs.extend(relativeTime);
@@ -24,7 +24,15 @@ const t = useTranslations(lang);
 const raceWeeks = CreateGroupedRaceRows(raceYear, lang);
 
 export function getStaticPaths() {
-  return RaceYears.flatMap((year) => Object.keys(languages).map((lang) => ({ params: { lang, year } })));
+  const paths = new Array();
+
+  Object.keys(languages).forEach((lang) => {
+    RaceYears.forEach((year) => {
+      paths.push({ params: { lang, year: year } });
+    });
+  });
+
+  return paths;
 }
 ---
 
@@ -46,10 +54,16 @@ export function getStaticPaths() {
     let nextWeekNumber: number | undefined;
     let nextDayNumber: number | undefined;
     const now = new Date();
+    const currentYear = now.getFullYear();
 
     document.querySelectorAll('.week').forEach(($week) => {
       const timestamp = Number($week.getAttribute('data-timestamp'));
       const date = dayjs(timestamp);
+
+      if (date.year() < currentYear) {
+        $week.setAttribute('open', '');
+        return;
+      }
 
       if (date.isBefore(now, 'days')) {
         $week.classList.add('past');

@@ -7,6 +7,17 @@ export const KindToLabelMap: Record<Kind, string> = {
   superbike: 'SBK',
 };
 
+export type EventType =
+  | 'practice'
+  | 'free_practice'
+  | 'qualifying'
+  | 'race'
+  | 'sprint_qualifying'
+  | 'sprint'
+  | 'warm_up'
+  | 'superpole_qualifying'
+  | 'superpole_race';
+
 export type RaceWeek = {
   kind?: Kind;
   round: number;
@@ -20,7 +31,8 @@ export type RaceWeek = {
   };
   events: {
     name: string;
-    type: string; // 'practice' | 'qualifying' | 'superpole_qualifying' | 'superpole' | 'sprint' | 'race';
+    type: string;
+    typeQuantity?: number;
     startAt: number;
     endAt?: number | null;
     laps?: number | null;

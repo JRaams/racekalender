@@ -14,21 +14,24 @@
         "type": "practice",
         "startAt": 1709206200000,
         "endAt": 1709209800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Bahrain Grand Prix",
         "type": "practice",
         "startAt": 1709218800000,
         "endAt": 1709222400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Bahrain Grand Prix",
         "type": "practice",
         "startAt": 1709296200000,
         "endAt": 1709299800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Bahrain Grand Prix",
@@ -61,21 +64,24 @@
         "type": "practice",
         "startAt": 1709818200000,
         "endAt": 1709821800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Saudi Arabian Grand Prix",
         "type": "practice",
         "startAt": 1709831400000,
         "endAt": 1709835000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Saudi Arabian Grand Prix",
         "type": "practice",
         "startAt": 1709904600000,
         "endAt": 1709908200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Saudi Arabian Grand Prix",
@@ -108,21 +114,24 @@
         "type": "practice",
         "startAt": 1711071000000,
         "endAt": 1711074600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Australian Grand Prix",
         "type": "practice",
         "startAt": 1711083600000,
         "endAt": 1711087200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Australian Grand Prix",
         "type": "practice",
         "startAt": 1711157400000,
         "endAt": 1711161000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Australian Grand Prix",
@@ -155,21 +164,24 @@
         "type": "practice",
         "startAt": 1712284200000,
         "endAt": 1712287800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Japanese Grand Prix",
         "type": "practice",
         "startAt": 1712296800000,
         "endAt": 1712300400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Japanese Grand Prix",
         "type": "practice",
         "startAt": 1712370600000,
         "endAt": 1712374200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Japanese Grand Prix",
@@ -202,7 +214,8 @@
         "type": "practice",
         "startAt": 1713497400000,
         "endAt": 1713501000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying - Chinese Grand Prix",
@@ -249,7 +262,8 @@
         "type": "practice",
         "startAt": 1714753800000,
         "endAt": 1714757400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying - Miami Grand Prix",
@@ -296,21 +310,24 @@
         "type": "practice",
         "startAt": 1715945400000,
         "endAt": 1715949000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Emilia Romagna Grand Prix",
         "type": "practice",
         "startAt": 1715958000000,
         "endAt": 1715961600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Emilia Romagna Grand Prix",
         "type": "practice",
         "startAt": 1716028200000,
         "endAt": 1716031800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Emilia Romagna Grand Prix",
@@ -343,21 +360,24 @@
         "type": "practice",
         "startAt": 1716550200000,
         "endAt": 1716553800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Monaco Grand Prix",
         "type": "practice",
         "startAt": 1716562800000,
         "endAt": 1716566400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Monaco Grand Prix",
         "type": "practice",
         "startAt": 1716633000000,
         "endAt": 1716636600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Monaco Grand Prix",
@@ -390,21 +410,24 @@
         "type": "practice",
         "startAt": 1717781400000,
         "endAt": 1717785000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Canadian Grand Prix",
         "type": "practice",
         "startAt": 1717794000000,
         "endAt": 1717797600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Canadian Grand Prix",
         "type": "practice",
         "startAt": 1717864200000,
         "endAt": 1717867800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Canadian Grand Prix",
@@ -437,21 +460,24 @@
         "type": "practice",
         "startAt": 1718969400000,
         "endAt": 1718973000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Spanish Grand Prix",
         "type": "practice",
         "startAt": 1718982000000,
         "endAt": 1718985600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Spanish Grand Prix",
         "type": "practice",
         "startAt": 1719052200000,
         "endAt": 1719055800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Spanish Grand Prix",
@@ -484,7 +510,8 @@
         "type": "practice",
         "startAt": 1719570600000,
         "endAt": 1719574200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying - Austrian Grand Prix",
@@ -531,21 +558,24 @@
         "type": "practice",
         "startAt": 1720179000000,
         "endAt": 1720182600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - British Grand Prix",
         "type": "practice",
         "startAt": 1720191600000,
         "endAt": 1720195200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - British Grand Prix",
         "type": "practice",
         "startAt": 1720261800000,
         "endAt": 1720265400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - British Grand Prix",
@@ -578,21 +608,24 @@
         "type": "practice",
         "startAt": 1721388600000,
         "endAt": 1721392200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Hungarian Grand Prix",
         "type": "practice",
         "startAt": 1721401200000,
         "endAt": 1721404800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Hungarian Grand Prix",
         "type": "practice",
         "startAt": 1721471400000,
         "endAt": 1721475000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Hungarian Grand Prix",
@@ -625,21 +658,24 @@
         "type": "practice",
         "startAt": 1721993400000,
         "endAt": 1721997000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Belgian Grand Prix",
         "type": "practice",
         "startAt": 1722006000000,
         "endAt": 1722009600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Belgian Grand Prix",
         "type": "practice",
         "startAt": 1722076200000,
         "endAt": 1722079800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Belgian Grand Prix",
@@ -672,21 +708,24 @@
         "type": "practice",
         "startAt": 1724409000000,
         "endAt": 1724412600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Dutch Grand Prix",
         "type": "practice",
         "startAt": 1724421600000,
         "endAt": 1724425200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Dutch Grand Prix",
         "type": "practice",
         "startAt": 1724491800000,
         "endAt": 1724495400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Dutch Grand Prix",
@@ -719,21 +758,24 @@
         "type": "practice",
         "startAt": 1725017400000,
         "endAt": 1725021000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Italian Grand Prix",
         "type": "practice",
         "startAt": 1725030000000,
         "endAt": 1725033600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Italian Grand Prix",
         "type": "practice",
         "startAt": 1725100200000,
         "endAt": 1725103800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Italian Grand Prix",
@@ -766,21 +808,24 @@
         "type": "practice",
         "startAt": 1726219800000,
         "endAt": 1726223400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Azerbaijan Grand Prix",
         "type": "practice",
         "startAt": 1726232400000,
         "endAt": 1726236000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Azerbaijan Grand Prix",
         "type": "practice",
         "startAt": 1726302600000,
         "endAt": 1726306200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Azerbaijan Grand Prix",
@@ -813,21 +858,24 @@
         "type": "practice",
         "startAt": 1726824600000,
         "endAt": 1726828200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Singapore Grand Prix",
         "type": "practice",
         "startAt": 1726837200000,
         "endAt": 1726840800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Singapore Grand Prix",
         "type": "practice",
         "startAt": 1726911000000,
         "endAt": 1726914600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Singapore Grand Prix",
@@ -860,7 +908,8 @@
         "type": "practice",
         "startAt": 1729272600000,
         "endAt": 1729276200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying - United States Grand Prix",
@@ -907,21 +956,24 @@
         "type": "practice",
         "startAt": 1729881000000,
         "endAt": 1729884600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Mexico City Grand Prix",
         "type": "practice",
         "startAt": 1729893600000,
         "endAt": 1729897200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Mexico City Grand Prix",
         "type": "practice",
         "startAt": 1729963800000,
         "endAt": 1729967400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Mexico City Grand Prix",
@@ -954,7 +1006,8 @@
         "type": "practice",
         "startAt": 1730471400000,
         "endAt": 1730475000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying - São Paulo Grand Prix",
@@ -1001,21 +1054,24 @@
         "type": "practice",
         "startAt": 1732242600000,
         "endAt": 1732246200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Las Vegas Grand Prix",
         "type": "practice",
         "startAt": 1732255200000,
         "endAt": 1732258800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Las Vegas Grand Prix",
         "type": "practice",
         "startAt": 1732329000000,
         "endAt": 1732332600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Las Vegas Grand Prix",
@@ -1048,7 +1104,8 @@
         "type": "practice",
         "startAt": 1732887000000,
         "endAt": 1732890600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Qualifying - Qatar Grand Prix",
@@ -1095,21 +1152,24 @@
         "type": "practice",
         "startAt": 1733477400000,
         "endAt": 1733481000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "Practice 2 - Abu Dhabi Grand Prix",
         "type": "practice",
         "startAt": 1733490000000,
         "endAt": 1733493600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "Practice 3 - Abu Dhabi Grand Prix",
         "type": "practice",
         "startAt": 1733567400000,
         "endAt": 1733571000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Qualifying - Abu Dhabi Grand Prix",

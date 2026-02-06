@@ -1,18 +1,20 @@
 ---
 import type { Language } from '~/i18n/ui';
-import { kinds } from '~/types';
 import type { RaceYear } from '~/utils/racedata';
+import raceData from '~/utils/racedata';
 import { useTranslations } from '../i18n/utils';
 import LangSwitcher from './LangSwitcher.astro';
 import ThemeSwitcher from './ThemeSwitcher.astro';
 import YearSwitcher from './YearSwitcher.astro';
 
 const params = Astro.params;
-const year = params.year as unknown as RaceYear;
+const year = Number(params.year) as RaceYear;
 const kind = params.kind;
 const lang = params.lang as Language;
 
 const t = useTranslations(lang);
+
+const kindsThisYear = Object.keys(raceData[year]);
 ---
 
 <nav>
@@ -27,15 +29,23 @@ const t = useTranslations(lang);
     </li>
 
     <li class="title">
-      <a href={'/' + year + '/' + lang + '/'} class="secondary">
+      <a
+        href={'/' + year + '/' + lang + '/'}
+        class={kind === undefined ? 'primary' : 'secondary'}
+        aria-current={kind === undefined}
+      >
         <strong>{t('nav.title')}</strong>
       </a>
     </li>
 
     {
-      kinds.map((x) => (
+      kindsThisYear.map((x) => (
         <li class="desktop">
-          <a href={'/' + year + '/' + lang + '/' + x} aria-current={kind === x}>
+          <a
+            href={'/' + year + '/' + lang + '/' + x}
+            class={kind === x ? 'primary' : 'secondary'}
+            aria-current={kind === x}
+          >
             {t(('kind.' + x) as any)}
           </a>
         </li>
@@ -54,9 +64,13 @@ const t = useTranslations(lang);
 <div class="mobile-nav-items">
   <ul>
     {
-      kinds.map((x) => (
+      kindsThisYear.map((x) => (
         <li>
-          <a href={'/' + year + '/' + lang + '/' + x} aria-current={kind === x}>
+          <a
+            href={'/' + year + '/' + lang + '/' + x}
+            class={kind === x ? 'primary' : 'secondary'}
+            aria-current={kind === x}
+          >
             {t(('kind.' + x) as any)}
           </a>
         </li>
@@ -77,6 +91,10 @@ const t = useTranslations(lang);
   #hamburger-icon svg {
     height: 17px;
     width: auto;
+  }
+
+  a.primary {
+    color: var(--pico-primary);
   }
 
   input#nav-toggle:checked ~ .mobile-nav-items {

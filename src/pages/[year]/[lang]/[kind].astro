@@ -3,26 +3,24 @@ import WeekendList from '~/components/WeekendList.astro';
 import { languages, type Language } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/Layout.astro';
-import { kinds, type Kind } from '~/types';
-import raceYearData, { RaceYears, type RaceYear } from '~/utils/racedata';
+import { type Kind } from '~/types';
+import raceData, { type RaceYear } from '~/utils/racedata';
 
 const params = Astro.params;
-const year = params.year as RaceYear;
+const year = Number(params.year) as RaceYear;
 const lang = params.lang as Language;
 const kind = params.kind as Kind;
 const t = useTranslations(lang);
 
-const raceWeeks = raceYearData[year][kind];
+const raceWeeks = raceData[year][kind] || [];
 
 export function getStaticPaths() {
   const paths = new Array();
 
-  RaceYears.forEach((year) => {
-    Object.keys(languages).forEach((lang) => {
-      kinds.forEach((kind) => {
-        paths.push({
-          params: { lang, kind, year },
-        });
+  Object.keys(languages).forEach((lang) => {
+    Object.entries(raceData).forEach(([year, data]) => {
+      Object.keys(data).forEach((kind) => {
+        paths.push({ params: { lang, kind, year } });
       });
     });
   });
