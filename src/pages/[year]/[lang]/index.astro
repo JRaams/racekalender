@@ -40,7 +40,7 @@ export function getStaticPaths() {
   import dayjs from 'dayjs';
 
   import dayOfYear from 'dayjs/plugin/dayOfYear';
-import isoWeek from 'dayjs/plugin/isoWeek';
+  import isoWeek from 'dayjs/plugin/isoWeek';
   dayjs.extend(isoWeek);
   dayjs.extend(dayOfYear);
 
@@ -61,7 +61,7 @@ import isoWeek from 'dayjs/plugin/isoWeek';
       const date = dayjs(timestamp);
 
       if (date.year() < currentYear) {
-        $week.setAttribute('open', '')
+        $week.setAttribute('open', '');
         return;
       }
 

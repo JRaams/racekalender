@@ -47,22 +47,22 @@ for (let i = 0; i < weekendLinks.length; i++) {
 
   try {
     const urlPath = new URL(link).pathname;
-    const pathParts = urlPath.split('/').filter(p => p);
-    
+    const pathParts = urlPath.split('/').filter((p) => p);
+
     // Extract fileName (e.g., "thailand", "brasil") and eventId (UUID)
     // URL format: /en/calendar/2026/event/thailand/364a0bd9-d3c2-4ab3-a4cd-211ff469953e
     const eventIndex = pathParts.indexOf('event');
     if (eventIndex === -1 || eventIndex >= pathParts.length - 1) {
       throw new Error(`Could not parse event from link: ${link}`);
     }
-    
+
     const fileName = pathParts[eventIndex + 1];
     const eventId = pathParts[eventIndex + 2];
-    
+
     if (!fileName || !eventId) {
       throw new Error(`Could not extract fileName or eventId from link: ${link}`);
     }
-    
+
     weekends.push({ index: i, link, fileName, eventId });
     console.log(`Extracted: ${fileName} (${eventId})`);
   } catch (error) {

@@ -32,7 +32,7 @@ const t = useTranslations(lang);
             <td>
               <small>
                 <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
-                {t(('type.' + event.type as any))}
+                {t(('type.' + event.type) as any)}
                 {event.typeQuantity && ` ${event.typeQuantity}`}
               </small>
             </td>
