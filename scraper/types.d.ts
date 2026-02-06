@@ -25,7 +25,7 @@ export type RaceWeek = {
     };
     events: {
         name: string;
-        type: string; // 'practice' | 'qualifying' | 'superpole_qualifying' | 'superpole' | 'sprint' | 'race';
+        type: string; // 'practice' | 'free_practice' | 'qualifying' | 'superpole_qualifying' | 'superpole' | 'sprint' | 'race';
         startAt: number;
         endAt?: number | null;
         laps?: number | null;

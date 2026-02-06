@@ -48,7 +48,7 @@ function mapEventType(eventId: string): string {
   if (eventId.includes('#Race')) {
     return 'race';
   }
-  return 'practice'; // default
+  throw new Error(`Unknown event type: ${eventId}`);
 }
 
 function extractLaps(html: string, eventType: string, circuit: typeof f1Circuits[0] | null): number | null {
@@ -133,6 +133,7 @@ function parseRaceWeek(html: string, meta: F1WeekendMeta): RaceWeek | null {
       throw new Error('Failed to extract event name');
     }
     const eventType = mapEventType(subEvent['@id'] || '');
+    const typeQuantityStr = name.match(/(\d+)/)?.[1];
     const startAt = subEvent.startDate ? new Date(subEvent.startDate).getTime() : 0;
     const endAt = subEvent.endDate ? new Date(subEvent.endDate).getTime() : null;
     const laps = extractLaps(html, eventType, circuit);
@@ -140,6 +141,7 @@ function parseRaceWeek(html: string, meta: F1WeekendMeta): RaceWeek | null {
     return {
       name,
       type: eventType,
+      typeQuantity: typeQuantityStr ? Number(typeQuantityStr) : undefined,
       startAt,
       endAt,
       laps,

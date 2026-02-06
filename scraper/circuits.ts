@@ -237,7 +237,7 @@ export const mgpCircuits = [
     "country": "Indonesia",
     "countryCode": "ID",
     "city": "Mandalika",
-    "name": "Pertamina Mandalika Circuit",
+    "name": "Pertamina Mandalika International Circuit",
     "length": 4.301
   },
   {

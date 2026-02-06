@@ -15,21 +15,24 @@
         "type": "practice",
         "startAt": 1740097200000,
         "endAt": 1740101306000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1740114000000,
         "endAt": 1740116948000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1740178800000,
         "endAt": 1740180251000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -43,7 +46,8 @@
         "type": "race",
         "startAt": 1740200400000,
         "endAt": 1740202418000,
-        "laps": 21
+        "laps": 21,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -57,7 +61,8 @@
         "type": "race",
         "startAt": 1740286800000,
         "endAt": 1740288766000,
-        "laps": 21
+        "laps": 21,
+        "typeQuantity": 2
       }
     ]
   },
@@ -77,21 +82,24 @@
         "type": "practice",
         "startAt": 1743158100000,
         "endAt": 1743161597000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1743174000000,
         "endAt": 1743176890000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1743238800000,
         "endAt": 1743240206000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -105,7 +113,8 @@
         "type": "race",
         "startAt": 1743256800000,
         "endAt": 1743258973000,
-        "laps": 20
+        "laps": 20,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -119,7 +128,8 @@
         "type": "race",
         "startAt": 1743339600000,
         "endAt": 1743340853000,
-        "laps": 20
+        "laps": 20,
+        "typeQuantity": 2
       }
     ]
   },
@@ -139,21 +149,24 @@
         "type": "practice",
         "startAt": 1744359600000,
         "endAt": 1744362474000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1744376400000,
         "endAt": 1744379312000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1744441200000,
         "endAt": 1744442562000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -167,7 +180,8 @@
         "type": "race",
         "startAt": 1744459200000,
         "endAt": 1744461420000,
-        "laps": 20
+        "laps": 20,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -181,7 +195,8 @@
         "type": "race",
         "startAt": 1744545600000,
         "endAt": 1744547751000,
-        "laps": 20
+        "laps": 20,
+        "typeQuantity": 2
       }
     ]
   },
@@ -201,21 +216,24 @@
         "type": "practice",
         "startAt": 1746174000000,
         "endAt": 1746176700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1746190800000,
         "endAt": 1746193500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1746255600000,
         "endAt": 1746256800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -229,7 +247,8 @@
         "type": "race",
         "startAt": 1746273600000,
         "endAt": null,
-        "laps": 24
+        "laps": 24,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -243,7 +262,8 @@
         "type": "race",
         "startAt": 1746360000000,
         "endAt": null,
-        "laps": 24
+        "laps": 24,
+        "typeQuantity": 2
       }
     ]
   },
@@ -263,21 +283,24 @@
         "type": "practice",
         "startAt": 1747384500000,
         "endAt": 1747387200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1747400400000,
         "endAt": 1747403100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1747465200000,
         "endAt": 1747466400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -291,7 +314,8 @@
         "type": "race",
         "startAt": 1747483200000,
         "endAt": null,
-        "laps": 22
+        "laps": 22,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -305,7 +329,8 @@
         "type": "race",
         "startAt": 1747569600000,
         "endAt": null,
-        "laps": 22
+        "laps": 22,
+        "typeQuantity": 2
       }
     ]
   },
@@ -325,21 +350,24 @@
         "type": "practice",
         "startAt": 1749803700000,
         "endAt": 1749806400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1749819600000,
         "endAt": 1749822300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1749884400000,
         "endAt": 1749885600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -353,7 +381,8 @@
         "type": "race",
         "startAt": 1749902400000,
         "endAt": null,
-        "laps": 22
+        "laps": 22,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -367,7 +396,8 @@
         "type": "race",
         "startAt": 1749988800000,
         "endAt": null,
-        "laps": 22
+        "laps": 22,
+        "typeQuantity": 2
       }
     ]
   },
@@ -387,21 +417,24 @@
         "type": "practice",
         "startAt": 1752225600000,
         "endAt": 1752228300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1752242400000,
         "endAt": 1752245100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1752307200000,
         "endAt": 1752308400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -415,7 +448,8 @@
         "type": "race",
         "startAt": 1752325200000,
         "endAt": null,
-        "laps": 23
+        "laps": 23,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -429,7 +463,8 @@
         "type": "race",
         "startAt": 1752411600000,
         "endAt": null,
-        "laps": 23
+        "laps": 23,
+        "typeQuantity": 2
       }
     ]
   },
@@ -449,21 +484,24 @@
         "type": "practice",
         "startAt": 1753431600000,
         "endAt": 1753434300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1753448400000,
         "endAt": 1753451100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1753513200000,
         "endAt": 1753514400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -477,7 +515,8 @@
         "type": "race",
         "startAt": 1753531200000,
         "endAt": null,
-        "laps": 23
+        "laps": 23,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -491,7 +530,8 @@
         "type": "race",
         "startAt": 1753617600000,
         "endAt": null,
-        "laps": 23
+        "laps": 23,
+        "typeQuantity": 2
       }
     ]
   },
@@ -511,21 +551,24 @@
         "type": "practice",
         "startAt": 1757060400000,
         "endAt": 1757063100000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1757077200000,
         "endAt": 1757079900000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1757142000000,
         "endAt": 1757143200000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -539,7 +582,8 @@
         "type": "race",
         "startAt": 1757160000000,
         "endAt": null,
-        "laps": 21
+        "laps": 21,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -553,7 +597,8 @@
         "type": "race",
         "startAt": 1757251800000,
         "endAt": null,
-        "laps": 21
+        "laps": 21,
+        "typeQuantity": 2
       }
     ]
   },
@@ -573,21 +618,24 @@
         "type": "practice",
         "startAt": 1758875700000,
         "endAt": 1758878400000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1758891600000,
         "endAt": 1758894300000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1758956400000,
         "endAt": 1758957600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -601,7 +649,8 @@
         "type": "race",
         "startAt": 1758974400000,
         "endAt": null,
-        "laps": 18
+        "laps": 18,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -615,7 +664,8 @@
         "type": "race",
         "startAt": 1759060800000,
         "endAt": null,
-        "laps": 18
+        "laps": 18,
+        "typeQuantity": 2
       }
     ]
   },
@@ -635,21 +685,24 @@
         "type": "practice",
         "startAt": 1760088900000,
         "endAt": 1760091600000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1760104800000,
         "endAt": 1760107500000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1760169600000,
         "endAt": 1760170800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -663,7 +716,8 @@
         "type": "race",
         "startAt": 1760187600000,
         "endAt": null,
-        "laps": 22
+        "laps": 22,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -677,7 +731,8 @@
         "type": "race",
         "startAt": 1760274000000,
         "endAt": null,
-        "laps": 22
+        "laps": 22,
+        "typeQuantity": 2
       }
     ]
   },
@@ -697,21 +752,24 @@
         "type": "practice",
         "startAt": 1760690100000,
         "endAt": 1760692800000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 1
       },
       {
         "name": "FP2",
         "type": "practice",
         "startAt": 1760706000000,
         "endAt": 1760708700000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 2
       },
       {
         "name": "FP3",
         "type": "practice",
         "startAt": 1760770800000,
         "endAt": 1760772000000,
-        "laps": null
+        "laps": null,
+        "typeQuantity": 3
       },
       {
         "name": "Superpole",
@@ -725,7 +783,8 @@
         "type": "race",
         "startAt": 1760788800000,
         "endAt": null,
-        "laps": 21
+        "laps": 21,
+        "typeQuantity": 1
       },
       {
         "name": "Superpole Race",
@@ -739,7 +798,8 @@
         "type": "race",
         "startAt": 1760875200000,
         "endAt": null,
-        "laps": 21
+        "laps": 21,
+        "typeQuantity": 2
       }
     ]
   }

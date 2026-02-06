@@ -31,13 +31,16 @@ function mapEventType(kind: string, name: string): string {
     return 'qualifying';
   }
   if (kindLower === 'practice') {
+    if (nameLower.includes('free')) {
+      return 'free_practice';
+    }
     return 'practice';
   }
   if (kindLower === 'warm_up') {
-    return 'practice'; 
+    return 'warm_up'; 
   }
   
-  return 'practice';
+  throw new Error(`Unknown event type: ${kind} ${name}`);
 }
 
 type Circuit = {
@@ -121,6 +124,7 @@ async function parseRaceWeek(meta: MotoGPWeekendMeta): Promise<RaceWeek | null> 
     const name = session.name || '';
     const kind = session.kind || '';
     const eventType = mapEventType(kind, name);
+    const typeQuantityStr = name.match(/(\d+)/)?.[1];
     const startAt = session.date_start ? new Date(session.date_start).getTime() : 0;
     const endAt = session.date_end ? new Date(session.date_end).getTime() : null;
     
@@ -134,6 +138,7 @@ async function parseRaceWeek(meta: MotoGPWeekendMeta): Promise<RaceWeek | null> 
     return {
       name,
       type: eventType,
+      typeQuantity: typeQuantityStr ? Number(typeQuantityStr) : undefined,
       startAt,
       endAt,
       laps,

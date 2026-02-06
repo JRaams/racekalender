@@ -12,7 +12,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1772163900000,
         "endAt": 1772166600000,
         "laps": null
@@ -26,7 +27,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1772248200000,
         "endAt": 1772250000000,
         "laps": null
@@ -34,6 +36,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1772250600000,
         "endAt": 1772251500000,
         "laps": null
@@ -41,6 +44,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1772252100000,
         "endAt": 1772253000000,
         "laps": null
@@ -54,7 +58,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1772336400000,
         "endAt": 1772337000000,
         "laps": null
@@ -81,7 +85,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1774015500000,
         "endAt": 1774019100000,
         "laps": null
@@ -95,7 +100,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1774098600000,
         "endAt": 1774100400000,
         "laps": null
@@ -103,6 +109,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1774101000000,
         "endAt": 1774101900000,
         "laps": null
@@ -110,6 +117,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1774102500000,
         "endAt": 1774103400000,
         "laps": null
@@ -123,7 +131,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1774186800000,
         "endAt": 1774187400000,
         "laps": null
@@ -150,7 +158,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1774626300000,
         "endAt": 1774629000000,
         "laps": null
@@ -164,7 +173,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1774710600000,
         "endAt": 1774712400000,
         "laps": null
@@ -172,6 +182,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1774713000000,
         "endAt": 1774713900000,
         "laps": null
@@ -179,6 +190,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1774714500000,
         "endAt": 1774715400000,
         "laps": null
@@ -192,7 +204,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1774798800000,
         "endAt": 1774799400000,
         "laps": null
@@ -219,7 +231,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1775825100000,
         "endAt": 1775827800000,
         "laps": null
@@ -233,7 +246,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1775908800000,
         "endAt": 1775910600000,
         "laps": null
@@ -241,6 +255,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1775911200000,
         "endAt": 1775912100000,
         "laps": null
@@ -248,6 +263,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1775912700000,
         "endAt": 1775913600000,
         "laps": null
@@ -261,7 +277,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1775997600000,
         "endAt": 1775998200000,
         "laps": null
@@ -288,7 +304,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1777020300000,
         "endAt": 1777023000000,
         "laps": null
@@ -302,7 +319,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1777104600000,
         "endAt": 1777106400000,
         "laps": null
@@ -310,6 +328,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1777107000000,
         "endAt": 1777107900000,
         "laps": null
@@ -317,6 +336,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1777108500000,
         "endAt": 1777109400000,
         "laps": null
@@ -330,7 +350,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1777189200000,
         "endAt": 1777189800000,
         "laps": null
@@ -357,7 +377,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1778229900000,
         "endAt": 1778232600000,
         "laps": null
@@ -371,7 +392,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1778314200000,
         "endAt": 1778316000000,
         "laps": null
@@ -379,6 +401,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1778316600000,
         "endAt": 1778317500000,
         "laps": null
@@ -386,6 +409,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1778318100000,
         "endAt": 1778319000000,
         "laps": null
@@ -399,7 +423,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1778398800000,
         "endAt": 1778399400000,
         "laps": null
@@ -426,7 +450,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1778834700000,
         "endAt": 1778837400000,
         "laps": null
@@ -440,7 +465,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1778919000000,
         "endAt": 1778920800000,
         "laps": null
@@ -448,6 +474,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1778921400000,
         "endAt": 1778922300000,
         "laps": null
@@ -455,6 +482,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1778922900000,
         "endAt": 1778923800000,
         "laps": null
@@ -468,7 +496,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1779003600000,
         "endAt": 1779004200000,
         "laps": null
@@ -495,7 +523,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1780044300000,
         "endAt": 1780047000000,
         "laps": null
@@ -509,7 +538,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1780128600000,
         "endAt": 1780130400000,
         "laps": null
@@ -517,6 +547,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1780131000000,
         "endAt": 1780131900000,
         "laps": null
@@ -524,6 +555,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1780132500000,
         "endAt": 1780133400000,
         "laps": null
@@ -537,7 +569,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1780213200000,
         "endAt": 1780213800000,
         "laps": null
@@ -564,7 +596,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1780649100000,
         "endAt": 1780651800000,
         "laps": null
@@ -578,7 +611,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1780733400000,
         "endAt": 1780735200000,
         "laps": null
@@ -586,6 +620,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1780735800000,
         "endAt": 1780736700000,
         "laps": null
@@ -593,6 +628,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1780737300000,
         "endAt": 1780738200000,
         "laps": null
@@ -606,7 +642,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1780818000000,
         "endAt": 1780818600000,
         "laps": null
@@ -633,7 +669,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1781858700000,
         "endAt": 1781861400000,
         "laps": null
@@ -647,7 +684,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1781943000000,
         "endAt": 1781944800000,
         "laps": null
@@ -655,6 +693,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1781945400000,
         "endAt": 1781946300000,
         "laps": null
@@ -662,6 +701,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1781946900000,
         "endAt": 1781947800000,
         "laps": null
@@ -675,7 +715,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1782027600000,
         "endAt": 1782028200000,
         "laps": null
@@ -702,7 +742,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1782463500000,
         "endAt": 1782466200000,
         "laps": null
@@ -716,7 +757,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1782547800000,
         "endAt": 1782549600000,
         "laps": null
@@ -724,6 +766,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1782550200000,
         "endAt": 1782551100000,
         "laps": null
@@ -731,6 +774,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1782551700000,
         "endAt": 1782552600000,
         "laps": null
@@ -744,7 +788,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1782632400000,
         "endAt": 1782633000000,
         "laps": null
@@ -771,7 +815,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1783673100000,
         "endAt": 1783675800000,
         "laps": null
@@ -785,7 +830,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1783757400000,
         "endAt": 1783759200000,
         "laps": null
@@ -793,6 +839,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1783759800000,
         "endAt": 1783760700000,
         "laps": null
@@ -800,6 +847,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1783761300000,
         "endAt": 1783762200000,
         "laps": null
@@ -813,7 +861,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1783842000000,
         "endAt": 1783842600000,
         "laps": null
@@ -840,7 +888,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1786099500000,
         "endAt": 1786102200000,
         "laps": null
@@ -854,7 +903,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1786183800000,
         "endAt": 1786185600000,
         "laps": null
@@ -862,6 +912,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1786186200000,
         "endAt": 1786187100000,
         "laps": null
@@ -869,6 +920,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1786187700000,
         "endAt": 1786188600000,
         "laps": null
@@ -882,7 +934,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1786264800000,
         "endAt": 1786265400000,
         "laps": null
@@ -909,7 +961,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1787906700000,
         "endAt": 1787909400000,
         "laps": null
@@ -923,7 +976,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1787991000000,
         "endAt": 1787992800000,
         "laps": null
@@ -931,6 +985,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1787993400000,
         "endAt": 1787994300000,
         "laps": null
@@ -938,6 +993,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1787994900000,
         "endAt": 1787995800000,
         "laps": null
@@ -951,7 +1007,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1788075600000,
         "endAt": 1788076200000,
         "laps": null
@@ -978,7 +1034,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1789116300000,
         "endAt": 1789119000000,
         "laps": null
@@ -992,7 +1049,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1789200600000,
         "endAt": 1789202400000,
         "laps": null
@@ -1000,6 +1058,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1789203000000,
         "endAt": 1789203900000,
         "laps": null
@@ -1007,6 +1066,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1789204500000,
         "endAt": 1789205400000,
         "laps": null
@@ -1020,7 +1080,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1789285200000,
         "endAt": 1789285800000,
         "laps": null
@@ -1047,7 +1107,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1789721100000,
         "endAt": 1789723800000,
         "laps": null
@@ -1061,7 +1122,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1789805400000,
         "endAt": 1789807200000,
         "laps": null
@@ -1069,6 +1131,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1789807800000,
         "endAt": 1789808700000,
         "laps": null
@@ -1076,6 +1139,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1789809300000,
         "endAt": 1789810200000,
         "laps": null
@@ -1089,7 +1153,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1789890000000,
         "endAt": 1789890600000,
         "laps": null
@@ -1116,7 +1180,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1790905500000,
         "endAt": 1790908200000,
         "laps": null
@@ -1130,7 +1195,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1790989800000,
         "endAt": 1790991600000,
         "laps": null
@@ -1138,6 +1204,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1790992200000,
         "endAt": 1790993100000,
         "laps": null
@@ -1145,6 +1212,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1790993700000,
         "endAt": 1790994600000,
         "laps": null
@@ -1158,7 +1226,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1791074400000,
         "endAt": 1791075000000,
         "laps": null
@@ -1179,13 +1247,14 @@
       "country": "Indonesia",
       "countryCode": "ID",
       "city": "Mandalika",
-      "name": "Pertamina Mandalika Circuit",
+      "name": "Pertamina Mandalika International Circuit",
       "length": 4.301
     },
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1791513900000,
         "endAt": 1791516600000,
         "laps": null
@@ -1199,7 +1268,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1791598200000,
         "endAt": 1791600000000,
         "laps": null
@@ -1207,6 +1277,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1791600600000,
         "endAt": 1791601500000,
         "laps": null
@@ -1214,6 +1285,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1791602100000,
         "endAt": 1791603000000,
         "laps": null
@@ -1227,7 +1299,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1791686400000,
         "endAt": 1791687000000,
         "laps": null
@@ -1254,7 +1326,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1792712700000,
         "endAt": 1792715400000,
         "laps": null
@@ -1268,7 +1341,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1792797000000,
         "endAt": 1792798800000,
         "laps": null
@@ -1276,6 +1350,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1792799400000,
         "endAt": 1792800300000,
         "laps": null
@@ -1283,6 +1358,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1792800900000,
         "endAt": 1792801800000,
         "laps": null
@@ -1296,7 +1372,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1792881600000,
         "endAt": 1792882200000,
         "laps": null
@@ -1323,7 +1399,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1793328300000,
         "endAt": 1793331000000,
         "laps": null
@@ -1337,7 +1414,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1793412600000,
         "endAt": 1793414400000,
         "laps": null
@@ -1345,6 +1423,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1793415000000,
         "endAt": 1793415900000,
         "laps": null
@@ -1352,6 +1431,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1793416500000,
         "endAt": 1793417400000,
         "laps": null
@@ -1365,7 +1445,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1793500800000,
         "endAt": 1793501400000,
         "laps": null
@@ -1392,7 +1472,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1794566700000,
         "endAt": 1794569400000,
         "laps": null
@@ -1406,7 +1487,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1794651000000,
         "endAt": 1794652800000,
         "laps": null
@@ -1414,6 +1496,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1794653400000,
         "endAt": 1794654300000,
         "laps": null
@@ -1421,6 +1504,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1794654900000,
         "endAt": 1794655800000,
         "laps": null
@@ -1434,7 +1518,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1794735600000,
         "endAt": 1794736200000,
         "laps": null
@@ -1461,7 +1545,8 @@
     "events": [
       {
         "name": "Free Practice Nr. 1",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 1,
         "startAt": 1795167900000,
         "endAt": 1795170600000,
         "laps": null
@@ -1475,7 +1560,8 @@
       },
       {
         "name": "Free Practice Nr. 2",
-        "type": "practice",
+        "type": "free_practice",
+        "typeQuantity": 2,
         "startAt": 1795252200000,
         "endAt": 1795254000000,
         "laps": null
@@ -1483,6 +1569,7 @@
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
+        "typeQuantity": 1,
         "startAt": 1795254600000,
         "endAt": 1795255500000,
         "laps": null
@@ -1490,6 +1577,7 @@
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
+        "typeQuantity": 2,
         "startAt": 1795256100000,
         "endAt": 1795257000000,
         "laps": null
@@ -1503,7 +1591,7 @@
       },
       {
         "name": "Warm Up",
-        "type": "practice",
+        "type": "warm_up",
         "startAt": 1795336800000,
         "endAt": 1795337400000,
         "laps": null
