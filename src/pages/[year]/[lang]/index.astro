@@ -139,7 +139,7 @@ export function getStaticPaths() {
                       --:--
                     </span>
                     {KindToLabelMap[race.kind]}
-                    <Icon name={TypeToIconMap[race.type]} size={16} />
+                    <Icon is:inline name={TypeToIconMap[race.type]} size={16} />
                     {TypeToNameMap[race.type]}
                   </strong>
 
@@ -157,7 +157,12 @@ export function getStaticPaths() {
                   data-tooltip=""
                   data-placement="left"
                 >
-                  <Icon class="country-flag" name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={24} />
+                  <Icon
+                    is:inline
+                    class="country-flag"
+                    name={'flagpack:' + race.circuit.countryCode.toLowerCase()}
+                    size={24}
+                  />
                 </a>
 
                 <div class="circuit desktop">
@@ -169,7 +174,12 @@ export function getStaticPaths() {
                     </small>
                   </div>
 
-                  <Icon class="country-flag" name={'flagpack:' + race.circuit.countryCode.toLowerCase()} size={24} />
+                  <Icon
+                    is:inline
+                    class="country-flag"
+                    name={'flagpack:' + race.circuit.countryCode.toLowerCase()}
+                    size={24}
+                  />
                 </div>
               </div>
             ))}

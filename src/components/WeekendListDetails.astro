@@ -31,7 +31,7 @@ const t = useTranslations(lang);
           <tr>
             <td>
               <small>
-                <Icon name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
+                <Icon is:inline name={TypeToIconMap[event.type] ?? 'material-symbols:brightness-empty'} size={16} />
                 {t(('type.' + event.type) as any)}
                 {event.typeQuantity && ` ${event.typeQuantity}`}
               </small>
