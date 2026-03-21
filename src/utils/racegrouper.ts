@@ -41,6 +41,7 @@ export function CreateGroupedRaceRows(raceYear: RaceYear, lang: Language): Weekl
           country: t(`country.${raceWeek.circuit.countryCode}` as any),
         },
         type: event.type,
+        cancelReason: raceWeek.cancelReason,
       });
     });
   });
@@ -60,6 +61,7 @@ export function CreateGroupedRaceRows(raceYear: RaceYear, lang: Language): Weekl
           country: t(`country.${raceWeek.circuit.countryCode}` as any),
         },
         type: event.type,
+        cancelReason: raceWeek.cancelReason,
       });
     });
   });
@@ -80,6 +82,7 @@ export function CreateGroupedRaceRows(raceYear: RaceYear, lang: Language): Weekl
           country: t(`country.${raceWeek.circuit.countryCode}` as any),
         },
         type: event.type,
+        cancelReason: raceWeek.cancelReason,
       });
     });
   });

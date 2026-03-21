@@ -37,6 +37,7 @@ export type RaceWeek = {
     endAt?: number | null;
     laps?: number | null;
   }[];
+  cancelReason?: string;
 };
 
 export type RaceRow = {
@@ -51,4 +52,5 @@ export type RaceRow = {
     city: string;
     name: string;
   };
+  cancelReason?: string | undefined;
 };

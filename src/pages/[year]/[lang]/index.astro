@@ -132,56 +132,62 @@ export function getStaticPaths() {
             </div>
 
             {day.races.map((race) => (
-              <div class="race" data-timestamp={race.date}>
-                <div>
-                  <strong class="title">
-                    <span class="timestamp-short" data-timestamp={race.date}>
-                      --:--
-                    </span>
-                    {KindToLabelMap[race.kind]}
-                    <Icon is:inline name={TypeToIconMap[race.type]} size={16} />
-                    {TypeToNameMap[race.type]}
-                  </strong>
+              <>
+                {race.cancelReason && (
+                  <p class="canceled-reason canceled-bg"> 🚫 {t(('cancelReason.' + race.cancelReason) as any)}</p>
+                )}
 
-                  <a class="name" href={`${race.kind}?r=${race.round}`}>
-                    <span>{race.name}</span>
-                  </a>
-                </div>
-
-                <a
-                  class="mobile"
-                  href="#!"
-                  data-name={race.circuit.name}
-                  data-city={race.circuit.city}
-                  data-country={t(('country.' + race.circuit.countryCode) as any)}
-                  data-tooltip=""
-                  data-placement="left"
-                >
-                  <Icon
-                    is:inline
-                    class="country-flag"
-                    name={'flagpack:' + race.circuit.countryCode.toLowerCase()}
-                    size={24}
-                  />
-                </a>
-
-                <div class="circuit desktop">
+                <div data-timestamp={race.date} class:list={['race', race.cancelReason ? 'canceled-bg' : '']}>
                   <div>
-                    <span class="no-wrap">{race.circuit.name}</span>
+                    <strong class="title">
+                      <span class="timestamp-short" data-timestamp={race.date}>
+                        --:--
+                      </span>
+                      {KindToLabelMap[race.kind]}
+                      <Icon is:inline name={TypeToIconMap[race.type]} size={16} />
+                      {TypeToNameMap[race.type]}
+                    </strong>
 
-                    <small>
-                      {race.circuit.city}, {t(('country.' + race.circuit.countryCode) as any)}
-                    </small>
+                    <a class="name" href={`${race.kind}?r=${race.round}`}>
+                      <span>{race.name}</span>
+                    </a>
                   </div>
 
-                  <Icon
-                    is:inline
-                    class="country-flag"
-                    name={'flagpack:' + race.circuit.countryCode.toLowerCase()}
-                    size={24}
-                  />
+                  <a
+                    class="mobile"
+                    href="#!"
+                    data-name={race.circuit.name}
+                    data-city={race.circuit.city}
+                    data-country={t(('country.' + race.circuit.countryCode) as any)}
+                    data-tooltip=""
+                    data-placement="left"
+                  >
+                    <Icon
+                      is:inline
+                      class="country-flag"
+                      name={'flagpack:' + race.circuit.countryCode.toLowerCase()}
+                      size={24}
+                    />
+                  </a>
+
+                  <div class="circuit desktop">
+                    <div>
+                      <span class="no-wrap">{race.circuit.name}</span>
+
+                      <small>
+                        {race.circuit.city}, {t(('country.' + race.circuit.countryCode) as any)}
+                      </small>
+                    </div>
+
+                    <Icon
+                      is:inline
+                      class="country-flag"
+                      name={'flagpack:' + race.circuit.countryCode.toLowerCase()}
+                      size={24}
+                    />
+                  </div>
                 </div>
-              </div>
+              </>
             ))}
           </>
         ))}
@@ -218,6 +224,17 @@ export function getStaticPaths() {
     padding: 1em;
     border-bottom: 1px solid var(--pico-code-background-color);
     background-color: rgb(from var(--pico-code-background-color) r g b / 50%);
+  }
+
+  .canceled-bg {
+    background-color: var(--pico-color-grey-900);
+  }
+
+  .canceled-reason {
+    color: var(--pico-color-red-500);
+    font-size: 0.8em;
+    padding: 1em 0 0 2em;
+    margin: 0;
   }
 
   .race {

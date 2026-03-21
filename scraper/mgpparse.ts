@@ -113,7 +113,9 @@ async function parseRaceWeek(meta: MotoGPWeekendMeta): Promise<RaceWeek | null> 
 
   const broadcasts = scheduleData.broadcasts || [];
 
-  const motogpSessions = broadcasts.filter((session: any) => session.category?.acronym === 'MGP');
+  const motogpSessions = broadcasts.filter(
+    (session: any) => session.category?.acronym === 'MGP' && session.kind !== 'PRESS',
+  );
 
   const events = motogpSessions.map((session: any) => {
     const name = session.name || '';

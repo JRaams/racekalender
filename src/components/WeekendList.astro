@@ -91,10 +91,14 @@ function getDayEnd(raceWeek: RaceWeek) {
   {
     raceWeeks.map((raceWeek) => (
       <details data-day-start={getDayStart(raceWeek)} data-day-end={getDayEnd(raceWeek)}>
-        <summary role="button" class="secondary outline">
+        <summary role="button" class:list={['secondary outline', raceWeek.cancelReason ? 'canceled-summary' : '']}>
           <h5>
             {raceWeek.round}. {raceWeek.name}
           </h5>
+
+          {raceWeek.cancelReason && (
+            <span class="canceled-reason"> 🚫 {t(('cancelReason.' + raceWeek.cancelReason) as any)}</span>
+          )}
 
           <div class="summary-subtitle">
             {<Icon is:inline name={'flagpack:' + raceWeek.circuit.countryCode.toLowerCase()} size={32} />}
@@ -154,5 +158,13 @@ function getDayEnd(raceWeek: RaceWeek) {
 
   .details-wrapper {
     margin-bottom: 2em;
+  }
+
+  .canceled-summary {
+    background: var(--pico-color-grey-900);
+  }
+
+  .canceled-reason {
+    color: var(--pico-color-red-500);
   }
 </style>

@@ -69,6 +69,8 @@ export const ui = {
     'country.ES': 'Spain',
     'country.TH': 'Thailand',
     'country.US': 'United States',
+
+    'cancelReason.iranWar': 'canceled due to war in Iran',
   },
   nl: {
     'nav.title': 'Racekalender',
@@ -125,5 +127,7 @@ export const ui = {
     'country.ES': 'Spanje',
     'country.TH': 'Thailand',
     'country.US': 'Verenigde Staten',
+
+    'cancelReason.iranWar': 'Geannuleerd vanwege oorlog in Iran',
   },
 } as const;
