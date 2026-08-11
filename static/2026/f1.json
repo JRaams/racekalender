@@ -862,11 +862,11 @@
     "round": 18,
     "name": "GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA",
     "circuit": {
-      "country": "Bahrain",
-      "countryCode": "BH",
-      "city": "Sakhir",
-      "name": "Bahrain International Circuit",
-      "length": 5.412
+      "country": "Malaysia",
+      "countryCode": "MY",
+      "city": "Sepang",
+      "name": "Sepang International Circuit",
+      "length": 5.543
     },
     "events": [
       {
@@ -905,7 +905,7 @@
         "type": "race",
         "startAt": 1791097200000,
         "endAt": 1791104400000,
-        "laps": 58
+        "laps": 56
       }
     ]
   },

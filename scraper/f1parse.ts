@@ -85,6 +85,12 @@ function extractLaps(html: string, eventType: string, circuit: (typeof f1Circuit
 function findCircuit(location: any): (typeof f1Circuits)[0] | null {
   if (!location) return null;
 
+  // TODO remove after 2026 season's ridiculous naming scheme..
+  if (location.address === 'Kuala Lumpur, Bahrain') {
+    location.name = "Sepang International Circuit"
+    location.address = "Sepang, Malaysia"
+  }
+
   const cityName = location.name?.toLowerCase();
   const address = location.address?.toLowerCase() || '';
 

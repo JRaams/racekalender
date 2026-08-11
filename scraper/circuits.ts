@@ -181,6 +181,13 @@ export const f1Circuits = [
     name: 'Yas Marina Circuit',
     length: 5.281,
   },
+  {
+    country: 'Malaysia',
+    countryCode: 'MY',
+    city: "Sepang",
+    name: "Sepang International Circuit",
+    length: 5.543
+  }
 ];
 
 export const mgpCircuits = [
