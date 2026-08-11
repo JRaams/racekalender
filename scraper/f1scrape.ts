@@ -18,7 +18,14 @@ await overviewPage.goto('https://www.formula1.com/en/racing/2026', {
 
 const roundLinks = await overviewPage.evaluate(() => {
   const links: string[] = [];
-  const roundElements = Array.from(document.querySelectorAll('#maincontent span')).filter((span: any) =>
+
+  const cardWrapper = document.querySelectorAll('.contents > div')[1];
+
+  if (!cardWrapper) {
+    throw new Error('Could not find card wrapper')
+  }
+
+  const roundElements = Array.from(cardWrapper.querySelectorAll('#maincontent span')).filter((span: any) =>
     span.textContent?.toLowerCase().includes('round'),
   );
 

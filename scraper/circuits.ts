@@ -63,6 +63,13 @@ export const f1Circuits = [
     length: 4.657,
   },
   {
+    country: 'Spain',
+    countryCode: 'ES',
+    city: 'Madrid',
+    name: 'Circuito de Madring',
+    length: 5.416,
+  },
+  {
     country: 'Canada',
     countryCode: 'CA',
     city: 'Montréal',

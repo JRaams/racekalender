@@ -269,7 +269,7 @@
         "name": "Practice 1 - Miami Grand Prix",
         "type": "practice",
         "typeQuantity": 1,
-        "startAt": 1777653000000,
+        "startAt": 1777651200000,
         "endAt": 1777656600000,
         "laps": null
       },
@@ -297,8 +297,8 @@
       {
         "name": "Race - Miami Grand Prix",
         "type": "race",
-        "startAt": 1777838400000,
-        "endAt": 1777845600000,
+        "startAt": 1777827600000,
+        "endAt": 1777834800000,
         "laps": 57
       }
     ]
@@ -764,7 +764,7 @@
       "countryCode": "ES",
       "city": "Madrid",
       "name": "Circuito de Madring",
-      "length": 4.657
+      "length": 5.416
     },
     "events": [
       {
@@ -860,6 +860,57 @@
   },
   {
     "round": 18,
+    "name": "GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA",
+    "circuit": {
+      "country": "Bahrain",
+      "countryCode": "BH",
+      "city": "Sakhir",
+      "name": "Bahrain International Circuit",
+      "length": 5.412
+    },
+    "events": [
+      {
+        "name": "Practice 1 - Bahrain Grand Prix",
+        "type": "practice",
+        "typeQuantity": 1,
+        "startAt": 1790915400000,
+        "endAt": 1790919000000,
+        "laps": null
+      },
+      {
+        "name": "Practice 2 - Bahrain Grand Prix",
+        "type": "practice",
+        "typeQuantity": 2,
+        "startAt": 1790928000000,
+        "endAt": 1790931600000,
+        "laps": null
+      },
+      {
+        "name": "Practice 3 - Bahrain Grand Prix",
+        "type": "practice",
+        "typeQuantity": 3,
+        "startAt": 1791001800000,
+        "endAt": 1791005400000,
+        "laps": null
+      },
+      {
+        "name": "Qualifying - Bahrain Grand Prix",
+        "type": "qualifying",
+        "startAt": 1791014400000,
+        "endAt": 1791018000000,
+        "laps": null
+      },
+      {
+        "name": "Race - Bahrain Grand Prix",
+        "type": "race",
+        "startAt": 1791097200000,
+        "endAt": 1791104400000,
+        "laps": 58
+      }
+    ]
+  },
+  {
+    "round": 19,
     "name": "SINGAPORE AIRLINES SINGAPORE GRAND PRIX",
     "circuit": {
       "country": "Singapore",
@@ -908,7 +959,7 @@
     ]
   },
   {
-    "round": 19,
+    "round": 20,
     "name": "MSC CRUISES UNITED STATES GRAND PRIX",
     "circuit": {
       "country": "United States",
@@ -959,7 +1010,7 @@
     ]
   },
   {
-    "round": 20,
+    "round": 21,
     "name": "GRAN PREMIO DE LA CIUDAD DE MÉXICO",
     "circuit": {
       "country": "Mexico",
@@ -1010,7 +1061,7 @@
     ]
   },
   {
-    "round": 21,
+    "round": 22,
     "name": "MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO",
     "circuit": {
       "country": "Brazil",
@@ -1061,7 +1112,7 @@
     ]
   },
   {
-    "round": 22,
+    "round": 23,
     "name": "HEINEKEN LAS VEGAS GRAND PRIX",
     "circuit": {
       "country": "United States",
@@ -1112,7 +1163,7 @@
     ]
   },
   {
-    "round": 23,
+    "round": 24,
     "name": "QATAR AIRWAYS QATAR GRAND PRIX",
     "circuit": {
       "country": "Qatar",
@@ -1163,7 +1214,7 @@
     ]
   },
   {
-    "round": 24,
+    "round": 25,
     "name": "ETIHAD AIRWAYS ABU DHABI GRAND PRIX",
     "circuit": {
       "country": "United Arab Emirates",

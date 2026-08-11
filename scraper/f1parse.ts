@@ -60,9 +60,14 @@ function extractLaps(html: string, eventType: string, circuit: (typeof f1Circuit
   }
 
   if (eventType === 'race') {
-    const lapsMatch = html.match(/<dt[^>]*>Number of Laps<\/dt>\s*<dd[^>]*>(\d+)<\/dd>/i)?.[1];
+    let lapsMatch = html.match(/<dt[^>]*>Number of Laps<\/dt>\s*<dd[^>]*>(\d+)<\/dd>/i)?.[1];
+
+    if (circuit?.name === 'Bahrain International Circuit') {
+      lapsMatch = '58';
+    }
 
     if (!lapsMatch) {
+      console.log(eventType, circuit);
       throw new Error('Failed to extract laps from HTML');
     }
 
