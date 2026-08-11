@@ -209,7 +209,7 @@ export const mgpCircuits = [
     country: 'Czech Republic',
     countryCode: 'CZ',
     city: 'Brno',
-    name: 'Automotodrom Brno',
+    name: 'CREDITAS Autodrom Brno',
     length: 5.403,
   },
   {

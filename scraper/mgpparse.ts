@@ -108,7 +108,7 @@ async function parseRaceWeek(meta: MotoGPWeekendMeta): Promise<RaceWeek | null> 
 
   let circuit = findCircuit(circuitName, circuitCity);
   if (!circuit) {
-    throw new Error(`Failed to find circuit for ${circuitName} ${circuitCity}`);
+    throw new Error(`Failed to find circuit for '${circuitName}' in '${circuitCity}'`);
   }
 
   const broadcasts = scheduleData.broadcasts || [];
