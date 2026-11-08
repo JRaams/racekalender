@@ -664,7 +664,7 @@
       "country": "Czech Republic",
       "countryCode": "CZ",
       "city": "Brno",
-      "name": "Automotodrom Brno",
+      "name": "CREDITAS Autodrom Brno",
       "length": 5.403
     },
     "events": [
@@ -1118,7 +1118,7 @@
         "name": "Practice",
         "type": "practice",
         "startAt": 1789736400000,
-        "endAt": 1789740000000,
+        "endAt": 1789740420000,
         "laps": null
       },
       {
@@ -1191,7 +1191,7 @@
         "name": "Practice",
         "type": "practice",
         "startAt": 1790920800000,
-        "endAt": 1790924400000,
+        "endAt": 1790925300000,
         "laps": null
       },
       {
@@ -1199,23 +1199,23 @@
         "type": "free_practice",
         "typeQuantity": 2,
         "startAt": 1790989800000,
-        "endAt": 1790991600000,
+        "endAt": 1790992200000,
         "laps": null
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "typeQuantity": 1,
-        "startAt": 1790992200000,
-        "endAt": 1790993100000,
+        "startAt": 1790992680000,
+        "endAt": 1790993580000,
         "laps": null
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "typeQuantity": 2,
-        "startAt": 1790993700000,
-        "endAt": 1790994600000,
+        "startAt": 1790994180000,
+        "endAt": 1790995080000,
         "laps": null
       },
       {
@@ -1228,8 +1228,8 @@
       {
         "name": "Warm Up",
         "type": "warm_up",
-        "startAt": 1791074400000,
-        "endAt": 1791075000000,
+        "startAt": 1791074100000,
+        "endAt": 1791075300000,
         "laps": null
       },
       {
@@ -1263,8 +1263,8 @@
       {
         "name": "Practice",
         "type": "practice",
-        "startAt": 1791529200000,
-        "endAt": 1791532800000,
+        "startAt": 1791531300000,
+        "endAt": 1791534900000,
         "laps": null
       },
       {
@@ -1272,23 +1272,23 @@
         "type": "free_practice",
         "typeQuantity": 2,
         "startAt": 1791598200000,
-        "endAt": 1791600000000,
+        "endAt": 1791600180000,
         "laps": null
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "typeQuantity": 1,
-        "startAt": 1791600600000,
-        "endAt": 1791601500000,
+        "startAt": 1791600900000,
+        "endAt": 1791601800000,
         "laps": null
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "typeQuantity": 2,
-        "startAt": 1791602100000,
-        "endAt": 1791603000000,
+        "startAt": 1791602400000,
+        "endAt": 1791603300000,
         "laps": null
       },
       {
@@ -1308,8 +1308,8 @@
       {
         "name": "Grand Prix",
         "type": "race",
-        "startAt": 1791698400000,
-        "endAt": 1791698400000,
+        "startAt": 1791702000000,
+        "endAt": 1791702000000,
         "laps": 27
       }
     ]
@@ -1337,7 +1337,7 @@
         "name": "Practice",
         "type": "practice",
         "startAt": 1792728000000,
-        "endAt": 1792731600000,
+        "endAt": 1792732200000,
         "laps": null
       },
       {
@@ -1379,10 +1379,10 @@
         "laps": null
       },
       {
-        "name": "Grand Prix",
+        "name": "Grand Prix - Cancelled",
         "type": "race",
-        "startAt": 1792897200000,
-        "endAt": 1792897200000,
+        "startAt": 1792906200000,
+        "endAt": 1792906200000,
         "laps": 27
       }
     ]
@@ -1403,7 +1403,7 @@
         "type": "free_practice",
         "typeQuantity": 1,
         "startAt": 1793328300000,
-        "endAt": 1793331000000,
+        "endAt": 1793331300000,
         "laps": null
       },
       {
@@ -1475,60 +1475,60 @@
         "name": "Free Practice Nr. 1",
         "type": "free_practice",
         "typeQuantity": 1,
-        "startAt": 1793969100000,
-        "endAt": 1793971800000,
+        "startAt": 1793965500000,
+        "endAt": 1793968200000,
         "laps": null
       },
       {
         "name": "Practice",
         "type": "practice",
-        "startAt": 1793984400000,
-        "endAt": 1793988000000,
+        "startAt": 1793980800000,
+        "endAt": 1793984400000,
         "laps": null
       },
       {
         "name": "Free Practice Nr. 2",
         "type": "free_practice",
         "typeQuantity": 2,
-        "startAt": 1794052800000,
-        "endAt": 1794054600000,
+        "startAt": 1794049200000,
+        "endAt": 1794051000000,
         "laps": null
       },
       {
         "name": "Qualifying Nr. 1 ",
         "type": "qualifying",
         "typeQuantity": 1,
-        "startAt": 1794055200000,
-        "endAt": 1794056100000,
+        "startAt": 1794051600000,
+        "endAt": 1794052500000,
         "laps": null
       },
       {
         "name": "Qualifying Nr. 2 ",
         "type": "qualifying",
         "typeQuantity": 2,
-        "startAt": 1794056700000,
-        "endAt": 1794057600000,
+        "startAt": 1794053100000,
+        "endAt": 1794054000000,
         "laps": null
       },
       {
         "name": "Tissot Sprint",
         "type": "sprint",
-        "startAt": 1794070800000,
-        "endAt": 1794070800000,
-        "laps": 11
+        "startAt": 1794067200000,
+        "endAt": 1794067200000,
+        "laps": 10
       },
       {
         "name": "Warm Up",
         "type": "warm_up",
-        "startAt": 1794141600000,
-        "endAt": 1794142200000,
+        "startAt": 1794138000000,
+        "endAt": 1794138600000,
         "laps": null
       },
       {
         "name": "Grand Prix",
         "type": "race",
-        "startAt": 1794157200000,
-        "endAt": 1794157200000,
+        "startAt": 1794153600000,
+        "endAt": 1794153600000,
         "laps": 22
       }
     ]
